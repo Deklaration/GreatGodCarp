@@ -1,4 +1,4 @@
-image_alpha = 0.2
+image_alpha = 0
 fiskid = 0
 idset = false
-timer = 30
+timer = 5

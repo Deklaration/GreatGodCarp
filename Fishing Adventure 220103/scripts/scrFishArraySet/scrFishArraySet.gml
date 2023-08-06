@@ -52,9 +52,9 @@ var fishNames = [
     "Sunsetgill",
     "Whirlskimmer",
     "Quillure",
-    "SapphireSturgeon",
-    "DiamondSturgeon",
-    "RubySturgeon",
+    "Sapphire Sturgeon",
+    "Diamond Sturgeon",
+    "Ruby Sturgeon",
     "Echoesolace",
     "Flyfin"
 ];
