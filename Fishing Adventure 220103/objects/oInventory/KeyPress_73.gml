@@ -1,0 +1,8 @@
+scrInventoryAdd(oInventory,0)
+scrInventoryAdd(oInventory,0)
+scrInventoryAdd(oInventory,1)
+scrInventoryAdd(oInventory,2)
+scrInventoryAdd(oInventory,2)
+scrInventoryAdd(oInventory,2)
+scrInventoryAdd(oInventory,3)
+scrInventoryAdd(oInventory,4)

@@ -1,0 +1,1 @@
+dyliquid_draw_texture(c_white, c_red, 0.9, 1, texture, 256, 256);

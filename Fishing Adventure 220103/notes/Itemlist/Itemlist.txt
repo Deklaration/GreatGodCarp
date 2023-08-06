@@ -1,0 +1,5 @@
+0 = Ingenting
+1 = Rumblescumbler
+2 = Pinkie-Pie
+3 = Tall fin
+4 = Gray boy

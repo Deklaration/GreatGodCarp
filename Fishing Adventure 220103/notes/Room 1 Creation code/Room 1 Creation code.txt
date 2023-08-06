@@ -1,0 +1,32 @@
+global.angle = 0 
+global.greensection = 30
+global.yellowsection = 10
+global.wheelspeed = 7
+global.fishbait = false
+global.fishcaught = false
+
+for (var i=0; i<oProtFishing.x; i += 64)
+{
+	instance_create_depth(i,oProtFishing.y+72,0,oWater)
+	instance_create_depth(i,room_height,0,oMark)
+}
+for (var j=0; j<room_width; j += 64)
+{
+	instance_create_depth(oProtFishing.x + 24 + j,oProtFishing.y+64,0,oDock)
+}
+
+instance_create_depth(x,y,0,oNothing)
+
+for (var i = 0; i < irandom_range(3,6); i += 1)
+{
+instance_create_depth(random_range(100,oDock.x-150),random_range(oWater.y+100,oMark.y-100),i,oFish)	
+}
+for (var j = i; j < irandom_range(i,8); j += 1)
+{
+instance_create_depth(random_range(100,oDock.x-150),random_range(oWater.y+100,oMark.y-100),j,oFish2)	
+}
+for (var k = j; k < irandom_range(j,10); k += 1)
+{
+instance_create_depth(random_range(100,oDock.x-150),random_range(oWater.y+100,oMark.y-100),k,oFish3)	
+}
+

@@ -1,0 +1,25 @@
+Att göra
+global.rod1dur går inte ned när man kastar??
+NPC Generator har inga skor när man pratar med dem i rutan. 
+Flytta alla trunks till botten av sprite, och uppdatera kronorna efter det
+
+Tankar
+Hela ön är ryggen på en val/skölpadda. Måste ge den fisk så den inte simmar ned i havet och dränker alla.
+Penil Rod ska man få tag på i en pappershandel
+Polka rod i en godisbutik
+Typ det sjunde fiskespöet ska vara ett FAKTISKT fiskespö.
+Olika fiskar har olika "typer" eller kvaliteér. Man behöver godisbete för godisfiskar etc.
+Det är en hel stad uppdelad i olika områden. Clocktown, ding don dell etc etc. Hur designar jag en stad? Papper + penna??
+fixa skugga som på gräs överallt, och se till att det finns ytor där man vill mysa.
+
+I slutet kan man prata med sköldpaddan och berätta läget. Så lovar den att inte sjunka ned för att hämta mat
+
+
+
+
+NY ATT GÖRA 2023-07-18
+
+
+Det är en så jävla rörig kod. Hur ska det kunna skalas ordentligt?
+Man borde inte kunna kasta ut en lina om man inte har equippat en
+Nytt system för att dra upp fisken. Som i https://www.newgrounds.com/portal/view/861793

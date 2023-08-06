@@ -1,0 +1,7 @@
+draw_self()
+draw_set_color(c_white)
+draw_line_width(self.x-9,self.y+10-20,self.x - 20,self.y-5-20,2)
+draw_set_color(c_black)
+draw_sprite(sBodderCircle,subimageC,xline,yline-20)
+draw_line(self.x-20,self.y-5-20,xline,yline-20)
+draw_sprite(sBobber,subimage,xline,yline-20)

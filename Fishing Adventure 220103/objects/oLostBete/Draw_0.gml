@@ -1,0 +1,1 @@
+draw_sprite_ext(sBete,0,losttobottomx,losttobottomy,losttobottomxscale,losttobottomyscale,losttobottomangle,c_white,alpha)

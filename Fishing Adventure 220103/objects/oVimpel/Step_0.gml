@@ -1,0 +1,1 @@
+depth = oPole.depth -10

@@ -1,0 +1,1 @@
+//oCamera.follow = self

@@ -1,0 +1,14 @@
+image_alpha = 1
+talking = false
+createtext = false
+face = sShopkeeperPortrait
+mouthmove = sShopkeeperMouth
+create = false
+text = false
+bagfull = false
+shopfull = false
+createshopchoice = false
+shopkeeperspeed = 0
+timer = 10
+expensive = false
+mask_index = sShopMaskIndex

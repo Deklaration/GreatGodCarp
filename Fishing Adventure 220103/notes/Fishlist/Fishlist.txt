@@ -1,0 +1,132 @@
+Great God Carp - Fishes
+
+
+
+Lake fish
+
+Lakelight: The luminescent spots on this fish's body can light up dark lake waters.
+
+Muddweller: Known for burrowing in lake beds, this fish stirs up mud to hide from predators.
+
+Reedripple: It weaves through reeds with ease, its movements creating beautiful ripples on the lake surface.
+
+Lakegem: Its jewel-like scales are said to bring good fortune to those who find it.
+
+Weedsnout: Known for its elongated snout, it probes through lake weed for tiny creatures.
+
+Echodepth: This unique species uses sound waves to navigate the dark depths of lakes.
+
+Whisklash: The lake's playful companion. Its whisker-like fins playfully dance through the water, bringing smiles to lakeside observers.
+
+Bubblerise: Its playful leaps create bubbles that rise to the surface, adding charm to the tranquil waters.
+
+
+
+
+Ocean fish
+
+Waveshimmer: This fish's metallic scales refract sunlight, causing a dazzling shimmer underwater.
+
+Coralfin: Coral-colored scales, blend seamlessly with vibrant coral reefs in warm ocean waters.
+
+Saltysurge: Able to withstand the harshest saltwater conditions, their scales contain salt crystals.
+
+Tidalflicker: This fish can manipulate the tidal currents to disorient predators.
+
+Abyssglow: Found in the ocean's darkest depths, its bioluminescent glow attracts curious prey.
+
+Surfdrifter: Known for its long, slow migrations across vast oceans, powered by the waves.
+
+Finfury: Swift ocean dweller. Dazzling scales, vibrant patterns race through warm waters. Often seen in tropical regions.
+
+Lumipuff: Soft, puffy appearance, gentle glow create calming presence. Inhabits serene, clear waters.
+
+Seaspike: Covered in spiky scales, it uses its body to protect itself from predators.
+
+Pearlshimmer: It's iridescent scales give off a pearl-like sheen, dazzling under the ocean sun.
+
+Surgeknight: This common fish has black and silver armored scales, appearing knight-like.
+
+Silverflicker: This silver surfer shimmers, confusing predators with its darting movements.
+
+Stormdrifter: It thrives during stormy weather, using the turbulent waves to its advantage.
+
+Ink fish: It is said that a book written with the ink from the ink fish will surely be a masterpiece.
+
+
+
+
+Forest fish
+
+Leafscale: Found in forest streams, its scales mimic fallen leaves for camouflage.
+
+Timbertrickle: This fish inhabits water trapped in hollow trees, surviving on insects that fall in.
+
+Kelpshield: This fish has evolved to blend perfectly into kelp forests, making it a master of hide and seek.
+
+Vinerider: Known to slide over moist vines during heavy rain, it spends as much time in trees as in water.
+
+Barkbiter: Known to nibble on tree roots that hang into forest water bodies.
+
+Fernflutter: Its fins resemble fern leaves, providing perfect camouflage in forest ponds.
+
+Blossomfin: The fins of this fish bloom like flowers when it's ready to mate.
+
+Pinescale: This scary-looking has needle-like scales, blending seamlessly in pine forests.
+
+Roottrickle: This Timbertrickle variant is found in water-filled roots of ancient trees.
+
+Oakscale: This Leafscale variant's oak-leaf pattern provides superior camouflage.
+
+Blossomflutter: This Fernflutter variant's flower-like fins are considered an exquisite sight.
+
+Dracofin: Mythical forest swimmer. Dragon-like fins allow it to glide with enchantment in mystical woodland streams.
+
+Fluffin: Dreamy forest drifter. Fins resemble fluff, drifts dreamily through calm, mossy streams in heart of woodlands.
+
+
+
+River fish
+
+Streamgill: Streamgills have slender bodies that allow them to dart quickly between rocks. Their gills shine like gemstones under the sun.
+
+Rapidskimmer: Known for its ability to dance on the water's surface, Rapidskimmer are often mistaken for water bugs.
+
+Aqualite: The aquatic gem. Shimmering scales emit a soothing glow, mesmerizing underwater display. Prefers clear rivers with gentle currents.
+
+Bouldermaw: With its jaw lined with rock-hard teeth, Bouldermaw can crunch through pebbles to find food.
+
+Brookflare: These iridescent fish create a mesmerizing light show as they leap out of the water.
+
+Currentswift: Its streamlined body is perfect for high-speed pursuits in fast-moving waters.
+
+Mossfin: Prefers slow-moving or stagnant waters and has a moss-like fin which provides camouflage.
+
+Rivertwirl: Known for its spiral movement against the current, creating miniature whirlpools.
+
+Pebbletrout: This pebbly-scaled fish is a master of camouflage in rocky riverbeds.
+
+Sunsetgill: A variant of Streamgill, Sunsetgills gleam a brilliant orange-red at dusk.
+
+Whirlskimmer: Spins rapidly, creating a mesmerizing water display.
+
+Quillure: Elegant quill-like fins, graceful glide enchanting presence is calm waterways.
+
+
+
+
+Deeply rare fish
+
+Sapphire Sturgeon: This elusive fish has sapphire scales said to have magical properties.
+
+Diamond Sturgeon: Shimmers like a jewel in clear water. A beautiful, elusive prize testing angler skills.
+
+Ruby Sturgeon: Glowing red like fire, its ruby scales are said to hold intense heat.
+
+Echoesolace: This fish sings an enchanting melody, but is heard only once every hundred years.
+
+
+
+Flying fish
+
+Flyfin: Airborne ocean marvel. Leaping from waves, gliding above water, soars alongside ocean winds with graceful aerial flips.
