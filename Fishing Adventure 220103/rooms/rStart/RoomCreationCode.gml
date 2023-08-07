@@ -102,7 +102,8 @@ global.key_right = vk_right
 global.key_pause = vk_enter
 
 scrFishArraySet()
-
+scrRodArraySet()
+scrBaitArraySet()
 
 
 
@@ -127,6 +128,7 @@ global.activerod = 0
 global.roddur = 0
 global.rodthrow = 0
 
+/*
 global.rod1 =
 {
 	throwpower : 1,

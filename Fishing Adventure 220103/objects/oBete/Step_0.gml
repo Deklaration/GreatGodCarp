@@ -27,7 +27,7 @@ if water = false
 	
 	if global.paused = false
 	{
-	hspeed = -global.rodthrow //SKA ANPASSAS EFTER SPÖ. 2.4 ÄR MAXSTYRKAN. 
+	hspeed = -global.rodarray[global.activerod,3]// global.rodthrow //SKA ANPASSAS EFTER SPÖ. 2.4 ÄR MAXSTYRKAN. 
 	vspeed +=0.03
 	}
 

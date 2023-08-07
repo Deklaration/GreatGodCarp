@@ -18,6 +18,8 @@ if !instance_exists(oText)
 	createtext = false
 }
 
+
+
 //Linan, betet och spöt
 
 xline = self.x - 40 + flow

@@ -74,7 +74,10 @@ else
 }
 
 
-
+if place_meeting(x,y,oWall)
+{
+	instance_destroy(self)
+}
 
 timer = 10
 dirchange = true
@@ -102,6 +105,8 @@ else
 
 function scrGeneratorBeginStep()
 {
+
+
 
 if instance_exists(oProt)
 {

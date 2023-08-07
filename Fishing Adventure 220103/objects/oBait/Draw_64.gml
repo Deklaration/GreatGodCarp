@@ -21,10 +21,10 @@ if instance_exists(oFishGuide)
 					{
 						draw_sprite_ext(sSlot,1,xx,yy,1,1,0,c_white,oFishGuide.alpha)
 						scrDrawSet(fStandard,c_black,fa_center)	
-						name = scrStringWrap(baitname[i],130,"\n",true)
+						name = scrStringWrap(global.baitarray[i+1,0],130,"\n",true)
 						draw_text_color(oFishGuide.x+70,oFishGuide.y+75,name,c_black,c_black,c_black,c_black,oFishGuide.alpha)
 						scrDrawSet(fTextbox,c_black,fa_center)	
-							if global.activebait = baitname[i]
+							if global.activebait = i+1
 							{
 								draw_text_color(oFishGuide.x+70,oFishGuide.y+98,"Active",c_green,c_green,c_green,c_green,oFishGuide.alpha)
 							}
@@ -34,11 +34,11 @@ if instance_exists(oFishGuide)
 						
 								if keyboard_check_pressed(global.key_a) && buttonreset = 0
 								{
-									global.activebait = baitname[i]
+									global.activebait = i+1
 									buttonreset = 1
 								}
 							}
-						desc = scrStringWrap(baitdesc[i],130,"\n",true)
+						desc = scrStringWrap(global.baitarray[i+1,1],130,"\n",true)
 						draw_text_color(oFishGuide.x+70,oFishGuide.y+185,desc,c_black,c_black,c_black,c_black,oFishGuide.alpha)
 						draw_sprite_ext(sBaitIcon,inventory[i],oFishGuide.x+68,oFishGuide.y+145,4,4,0,c_white,oFishGuide.alpha)
 					}

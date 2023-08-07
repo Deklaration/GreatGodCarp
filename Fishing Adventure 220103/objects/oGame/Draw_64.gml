@@ -28,8 +28,8 @@ if room != rTitlescreen
 
 draw_sprite(sSlot,0,450,7)
 draw_sprite(sSlot,0,420,7)
-draw_sprite(sRodsIcon,rodimage,432,19)
-draw_sprite(sBaitIcon,baitimage,462,19)
+draw_sprite(sRodsIcon,global.activerod,432,19)
+draw_sprite(sBaitIcon,global.activebait,462,19)
 scrDrawSet(fTextbox,c_black,fa_right)
 draw_text(412,10,"£: " + string(global.gold))
 draw_text(412,8,"£: " + string(global.gold))
@@ -37,7 +37,9 @@ draw_text(411,9,"£: " + string(global.gold))
 draw_text(413,9,"£: " + string(global.gold))
 scrDrawSet(fTextbox,c_yellow,fa_right)
 draw_text(412,9,"£: " + string(global.gold))
-
+}
+//rodimage = global.activerod
+/*
 if global.activerod = "It's a stick"
 {
 	rodimage = 1

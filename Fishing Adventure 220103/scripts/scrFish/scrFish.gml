@@ -424,13 +424,12 @@ if i = 3 //SLÅSS
 	
 	if fighttimerset = false
 	{
-		global.fighttimer = fighttimer
+		global.fighttimer = fighttimer * global.rodarray[global.activerod,1]
 		fighttimerset = true
 		instance_create_depth(x+10,y,self.depth-1,oPull)
 		depth -=10
 	}
 		
-	//fighttimer -=1
 	
 	if ingenspeednu = false
 	{
@@ -455,51 +454,10 @@ if i = 3 //SLÅSS
 		}
 		oProtFishing.image_speed = 0.2
 
-		//if fighttimer > 0
-		//{
-		//oProtFishing.sprite_index = sProtFishingPull
-		//}
-		//else
-		//{
-		//oProtFishing.sprite_index = sProtFishingReeling
-		//}
-		
+	
 		
 		
 
-		
-		
-		/* Det gamla, när man ska egga på knappen
-		if keyboard_check_pressed(global.key_a) && fighttimer > 0  //Eggar på Z för att veva in
-		{
-			catchratio += oBete.baitpower
-		}
-	
-		if catchratio > fightsize && fighttimer < 0  // Om man hinner
-		{
-			oBete.success = true
-			if fighttimer < -50
-			{
-				catchratio = 0
-				oBete.success = false
-				oBete.fail = false
-				fighttimer = global.fighttimer
-			}
-		}
-	
-		if catchratio <= fightsize && fighttimer < 0 // om man inte hinner
-		{		
-			oBete.fail = true
-			if fighttimer < -50
-			{
-				catchratio = 0
-				oBete.success = false
-				oBete.fail = false
-				fighttimer = global.fighttimer
-			}
-		}
-		*/
-		
 		
 		
 		

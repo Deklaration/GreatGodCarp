@@ -15,12 +15,13 @@ else
 }
 
 //FISKESPÖN
-
+/*
 if global.activerod = "It's a stick"
 {
-	global.rodthrow = 1
+	global.rodthrow = global.fisharray[1,3]
+	global.rodpower = global.
 }
-
+*/
 
 //TURIST
 

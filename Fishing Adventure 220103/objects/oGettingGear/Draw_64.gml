@@ -21,7 +21,7 @@ if i = 3
 	scrInventoryAdd(oBait,1)
 //	scrRodsAdd(oRods,1)
 //	scrBaitAdd(oBait,1)
-global.activerod = "It's a stick"
-global.activebait = "Safety pin"
+global.activerod = 1//"It's a stick"
+global.activebait = 1// "Safety pin"
 	instance_destroy(self)
 }

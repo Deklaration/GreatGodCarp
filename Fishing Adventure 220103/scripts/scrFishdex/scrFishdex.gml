@@ -10,7 +10,6 @@ scrDrawSet(fFishdexSmall,c_black,fa_left)
 //scrDrawSet(fTextboxSmall,c_black,fa_left)
 
 
-
 if _sida = 1
 {
 page = _sida
@@ -78,7 +77,7 @@ switch(global.fisharray[i,11])
 	
 	if global.fishcolor[i+page] = c_white
 	{
-	draw_sprite_ext(sRarity,rarityIndex,self.x-135 + (xx * 2),self.y+120 + (50 * (i)) - yy,1,1,0,c_white,alpha)
+	draw_sprite_ext(sRarity,rarityIndex,self.x-134 + (xx * 2),self.y+120 + (50 * (i)) - yy,1,1,0,c_white,alpha)
 	}
 	
 	draw_text_ext_color(self.x-130 + (xx * 2), self.y+115 + (50 * (i)) - yy,string(fishinfotype[i+page]),10,10000,c_black,c_black,c_black,c_black,alpha)
