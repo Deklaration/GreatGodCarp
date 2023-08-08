@@ -23,7 +23,7 @@ turntimer-=1
 
 if (keyboard_check_pressed(global.key_right)) && open = true && changekey = false
 {
-	if sida < 5 && sida >-1
+	if sida < 9 && sida >-1
 	{
 		sida +=1
 		flipright = true

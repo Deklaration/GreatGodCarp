@@ -6,6 +6,10 @@ ps_pull = part_system_create();
 
 pt_pull = part_type_create();
 
+ps_mud = part_system_create();
+
+pt_mud = part_type_create();
+
 
 //if state = "fish"
 //{
@@ -37,6 +41,19 @@ part_type_direction(pt_pull,0,270,0,3);
 part_type_gravity(pt_pull,0,270);
 part_type_orientation(pt_pull,0,0,0,0,1);
 part_type_life(pt_pull,10,20);
+
+
+
+part_type_shape(pt_mud, pt_shape_square);  // Keep the cloud shape
+//part_type_shape(pt_mud, pt_shape_cloud);  // Keep the cloud shape
+part_type_size(pt_mud, 0.2, 0.5, 0, 0);   // Keep the size range
+part_type_scale(pt_mud, 0.1, 0.1);        // Keep the scale the same
+part_type_alpha3(pt_mud, 0.3, 1, 0);      // Same alpha values for a fade-in and fade-out effect
+part_type_speed(pt_mud, 0.1, 0.17, 0, 0);  // Increase the speed slightly to help the particles spread out
+part_type_direction(pt_mud, 60, 120, 0, 0); // Set a range for the direction (60 to 120 degrees) for a fan-like spread
+part_type_gravity(pt_mud, 0.002, 90);     // Keep the gentle upward gravity
+part_type_orientation(pt_mud, 0, 0, 0, 0, 1); // Same orientation
+part_type_life(pt_mud, 60, 130);//120);          // Keep the lifespan
 /*
 }
 

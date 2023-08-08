@@ -1,26 +1,3 @@
-if place_meeting(x,y,oFish1) && fiskid = oNothing
-{
-	fiskid = other.fiskid
-	timer = other.sprite_width / 4
-}
-
-if place_meeting(x,y,oFish2) && fiskid = oNothing
-{
-	fiskid = other.fiskid
-	timer =  other.sprite_width / 4
-}
-
-if place_meeting(x,y,oFish3) && fiskid = oNothing
-{
-	fiskid = other.fiskid
-	timer =  other.sprite_width / 4
-}
-
-if place_meeting(x,y,oFish4) && fiskid = oNothing
-{
-	fiskid = other.fiskid
-	timer =  other.sprite_width / 4
-}
 
 if place_meeting(x,y,oFishParent) && fiskid = oNothing
 {

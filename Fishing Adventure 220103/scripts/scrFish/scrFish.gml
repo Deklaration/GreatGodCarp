@@ -6,10 +6,23 @@ fightsize = strong //Används inte just nu. Borde kanske vara kopplat till hur d
 fighttimer = fight_time //Hur länge fisken kämpar innan den drar sig
 baitmovespeed = _baitmovespeed //Hur snabbt oPullBarHitUte rör sig från sida till sida
 baitmovedistance = _baitmovedistance //Hur långt oPullBarHitUte rör sig. Inte mer än 15!
-f = fishnumber
+//f = fishnumber
+
 sightLength = _sightLength
 sightWidth = _sightWidth
 //info = information
+
+var object_name = object_get_name(object_index);
+var modified_name = string_copy(object_name, 6, string_length(object_name) - 5);
+
+for (var u = 0; u < array_length(global.fishNames); u++) {
+    if (global.fishNames[u] == modified_name) {
+        f = u;
+        break;
+    }
+}
+
+
 
 
 //fishname = _fishname
@@ -51,10 +64,15 @@ timer = irandom_range(20,70)
 hitidset = false
 image_speed = 0
 i=0
-j = irandom_range(0,5)
+//j = irandom_range(0,5)
 add = false
 
-path_start(path[j],random_range(0.14,0.5),path_action_restart,false) //0.3,2
+
+fishPath = global.fisharray[f,12]
+pathSpeedMin = random_range(0.9,1.1)
+pathSpeedMax = random_range(1.7,2)
+
+path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false) //0.3,2
 
 if global.fiskesida = "right"
 {
@@ -100,7 +118,7 @@ o _/       \  /| o              o     ___/|__      o
                     \_______/  \| 
 */
 function scrFishStep(){
-	
+
 if global.vegan = true
 {
 	sprite_index = global.fisharray[f,2]
@@ -178,7 +196,7 @@ if global.paused = false
 	
 	if up = true && !place_meeting(x,y,oMark) && path_position = 1
 	{
-		path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+		path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 		up = false
 	}
 	
@@ -197,7 +215,7 @@ if global.paused = false
 	
 	if down = true &&  y > oWaterCol.y+7 && path_position = 1
 	{
-		path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+		path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 
 		down = false
 	}
@@ -227,7 +245,7 @@ if global.paused = false
 	
 		if left = true && x < oProtFishing.x-25 && path_position = 1 //DOCK
 		{
-			path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+			path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 			left = false
 		}
 	}
@@ -237,7 +255,7 @@ if global.paused = false
 	
 		if left = true && x > oProtFishing.x+25 && path_position = 1 //DOCK
 		{
-			path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+			path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 			left = false
 		}
 	}
@@ -256,7 +274,7 @@ if global.paused = false
 	
 		if !instance_exists(oBete)
 		{
-			path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+			path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 			i = 0
 		}
 	
@@ -264,7 +282,7 @@ if global.paused = false
 		{
 			if oBete.losttobottom = true
 			{
-				path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+				path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 				i = 0
 			}
 	
@@ -284,7 +302,7 @@ if global.paused = false
 		 
 			if distance_to_object(oBete) > random_range(50,80)
 			{
-				path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+				path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 				i = 0
 			}
 		
@@ -368,7 +386,7 @@ if global.paused = false
 	
 			if oBete.losttobottom = true
 			{
-				path_start(path[j],random_range(0.13,0.5),path_action_restart,false)
+				path_start(fishPath,random_range(pathSpeedMin,pathSpeedMax),path_action_restart,false)
 				i = 0
 			}
 		
@@ -651,6 +669,8 @@ draw_self()
 scrDrawSet(fTextbox,c_white,fa_center)
 //draw_text(self.x,self.y,"CR: " + string(catchratio) + " FS: " + string(fightsize) + " FT: " + string(fighttimer))
 
+draw_text(x,y+5,f)
+draw_path(fishPath,x,y,false)
 
 if hspeed < 0
 {

@@ -53,6 +53,7 @@ Stormdrifter: It thrives during stormy weather, using the turbulent waves to its
 
 Inkfish: It is said that a book written with the ink from the inkfish will surely be a masterpiece.
 
+Floatsquish: "This delicate jellyfish glows with an ethereal light, illuminating the deep with a soft, gentle luminescence.
 
 
 
@@ -64,21 +65,15 @@ Timbertrickle: This fish inhabits water trapped in hollow trees, surviving on in
 
 Kelpshield: This fish has evolved to blend perfectly into kelp forests, making it a master of hide and seek.
 
-Vinerider: Known to slide over moist vines during heavy rain, it spends as much time in trees as in water.
-
 Barkbiter: Known to nibble on tree roots that hang into forest water bodies.
 
 Fernflutter: Its fins resemble fern leaves, providing perfect camouflage in forest ponds.
-
-Blossomfin: The fins of this fish bloom like flowers when it's ready to mate.
 
 Pinescale: This scary-looking has needle-like scales, blending seamlessly in pine forests.
 
 Roottrickle: This Timbertrickle variant is found in water-filled roots of ancient trees.
 
 Oakscale: This Leafscale variant's oak-leaf pattern provides superior camouflage.
-
-Blossomflutter: This Fernflutter variant's flower-like fins are considered an exquisite sight.
 
 Dracofin: Mythical forest swimmer. Dragon-like fins allow it to glide with enchantment in mystical woodland streams.
 
@@ -117,11 +112,11 @@ Quillure: Elegant quill-like fins, graceful glide enchanting presence is calm wa
 
 Deeply rare fish
 
-Sapphire Sturgeon: This elusive fish has sapphire scales said to have magical properties.
+Sappurgeon: This elusive fish has sapphire scales said to have magical properties.
 
-Diamond Sturgeon: Shimmers like a jewel in clear water. A beautiful, elusive prize testing angler skills.
+Diamurgeon: Shimmers like a jewel in clear water. A beautiful, elusive prize testing angler skills.
 
-Ruby Sturgeon: Glowing red like fire, its ruby scales are said to hold intense heat.
+Ruburgeon: Glowing red like fire, its ruby scales are said to hold intense heat.
 
 Echoesolace: This fish sings an enchanting melody, but is heard only once every hundred years.
 
