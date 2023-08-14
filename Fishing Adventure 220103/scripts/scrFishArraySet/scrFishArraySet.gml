@@ -38,7 +38,7 @@ function scrFishArraySet(){
     "Silverflicker",// 20
     "Stormdrifter",// 21
     "Inkfish",    // 22
-	"Floatsquish",// 23
+	"Softsquish",// 23
     "Leafscale",  // 24
     "Timbertrickle",// 25
     "Kelpshield", // 26
@@ -94,7 +94,7 @@ var fishRarity = [
     5,  // "Silverflicker",
     5,  // "Stormdrifter",
     10, // "Inkfish",
-	50, // "Floatsquish,
+	50, // "Softsquish,
     1,  // "Leafscale",
     5,  // "Timbertrickle",
     10, // "Kelpshield",
@@ -286,6 +286,14 @@ global.flyingFish = [
     oFishFlyfin
 ];
 
+
+
+///////////////////////////////////////////////////
+////////////////////////PATHS//////////////////////
+///////////////////////////////////////////////////
+
+
+
 var paths = ds_map_create();
 //Paths for the fish
 
@@ -295,11 +303,10 @@ var paths = ds_map_create();
 
 // Lakelight
 var lakeLightPoints = [181, 246, 190, 230, 200, 240, 210, 230, 220, 240, 230, 230, 240, 240, 250, 230, 260, 240, 270, 230];
-var lakelight_path = create_fish_path(lakeLightPoints);
-paths[? "Lakelight"] = lakelight_path
+var lakelightPath = create_fish_path(lakeLightPoints);
+paths[? "Lakelight"] = lakelightPath
 
 // Muddweller
-//var muddwellerPoints = [181, 246, 170, 260, 190, 255, 180, 240, 195, 235, 185, 245, 200, 250];
 var muddwellerPoints = [
     180, 250, // Start near the surface
     190, 300, // Dive down
@@ -307,28 +314,261 @@ var muddwellerPoints = [
     240, 310, 250, 300, 260, 310, 270, 300,
     280, 250  // Move back towards the surface
 ];
-var muddweller_path = create_fish_path(muddwellerPoints);
-paths[? "Muddweller"] = muddweller_path
+var muddwellerPath = create_fish_path(muddwellerPoints);
+paths[? "Muddweller"] = muddwellerPath
+
+// Reedripple
+var reedripplePoints = [180, 250, 190, 240, 200, 250, 210, 240, 220, 250, 230, 240, 240, 250, 250, 240, 260, 250, 270, 240];
+var reedripplePath = create_fish_path(oFishReedripple, reedripplePoints);
+paths[? "Reedripple"] = reedripplePath;
+
+// Lakegem
+var lakegemPoints = [200, 240, 210, 230, 220, 240, 230, 230, 240, 240, 250, 230, 250, 240, 250, 230, 250, 240, 250, 230];
+var lakegemPath = create_fish_path(oFishLakegem, lakegemPoints);
+paths[? "Lakegem"] = lakegemPath;
+
+// Weedsnout
+var weedsnoutPoints = [200, 240, 190, 250, 210, 260, 200, 250, 190, 240, 200, 230, 210, 240, 220, 230, 230, 220, 240, 210];
+var weedsnoutPath = create_fish_path(oFishWeedsnout, weedsnoutPoints);
+paths[? "Weedsnout"] = weedsnoutPath;
+
+// Echodepth
+var echodepthPoints = [200, 250, 210, 260, 220, 250, 230, 240, 240, 250, 250, 260, 260, 250, 270, 240, 280, 250, 290, 260];
+var echodepthPath = create_fish_path(oFishEchodepth, echodepthPoints);
+paths[? "Echodepth"] = echodepthPath;
 
 // Whisklash
 var whisklashPoints = [150, 240, 160, 220, 180, 250, 200, 220, 210, 230, 220, 210, 230, 240, 250, 220, 270, 240, 290, 220];
 var whisklash_path = create_fish_path(whisklashPoints);
-paths[? "Whisklash"] = whisklash_path
+paths[? "Whisklash"] = whisklash_path;
 
-
-
-//Ocean fish 
+// Bubblerise
+var bubblerisePoints = [180, 230, 190, 260, 200, 230, 210, 250, 220, 230, 230, 250, 240, 230, 250, 260, 260, 230, 270, 250];
+var bubblerisePath = create_fish_path(oFishBubblerise, bubblerisePoints);
+paths[? "Bubblerise"] = bubblerisePath;
 
 // Waveshimmer
-var waveShimmerPoints = [181, 246, 195, 235, 210, 245, 225, 235, 240, 245, 255, 235];
-var waveShimmerPath = create_fish_path(waveShimmerPoints);
+var waveshimmerPoints = [180, 230, 185, 240, 190, 230, 195, 240, 200, 230, 205, 240, 210, 230, 215, 240, 220, 230, 225, 240];
+var waveshimmerPath = create_fish_path(oFishWaveshimmer, waveshimmerPoints);
+paths[? "Waveshimmer"] = waveshimmerPath;
+
+// Coralfin
+var coralfinPoints = [160, 235, 170, 245, 180, 235, 190, 225, 200, 235, 210, 245, 220, 235, 230, 225, 240, 235, 250, 245];
+var coralfinPath = create_fish_path(oFishCoralfin, coralfinPoints);
+paths[? "Coralfin"] = coralfinPath;
+
+// Saltysurge
+var saltysurgePoints = [150, 230, 165, 250, 180, 220, 195, 245, 210, 230, 225, 240, 230, 220, 240, 245, 255, 230, 265, 250];
+var saltysurgePath = create_fish_path(oFishSaltysurge, saltysurgePoints);
+paths[? "Saltysurge"] = saltysurgePath;
+
+// Tidalflicker
+var tidalflickerPoints = [100, 200, 120, 210, 140, 200, 160, 215, 180, 200, 160, 190, 180, 175, 200, 190, 220, 180, 240, 190];
+var tidalflickerPath = create_fish_path(oFishTidalflicker, tidalflickerPoints);
+paths[? "Tidalflicker"] = tidalflickerPath;
+
+
+// Abyssglow
+var abyssglowPoints = [100, 200, 105, 205, 110, 210, 115, 215, 120, 220, 125, 225, 130, 230, 135, 235, 140, 240, 145, 245];
+var abyssglowPath = create_fish_path(oFishAbyssglow, abyssglowPoints);
+paths[? "Abyssglow"] = abyssglowPath;
 
 // Surfdrifter
-var surfDrifterPoints = [181, 246, 185, 240, 190, 245, 195, 240, 200, 245, 205, 240, 210, 245, 215, 240];
-var surfDrifterPath = create_fish_path(surfDrifterPoints);
-	
-	
-	
+var surfdrifterPoints = [50, 150, 100, 200, 150, 250, 200, 300, 250, 350, 300, 400, 350, 450, 400, 500, 450, 550, 500, 600];
+var surfdrifterPath = create_fish_path(oFishSurfdrifter, surfdrifterPoints);
+paths[? "Surfdrifter"] = surfdrifterPath;
+
+// Finfury
+var finfuryPoints = [100, 200, 120, 180, 140, 210, 160, 190, 180, 220, 200, 180, 220, 210, 240, 170, 260, 230, 280, 180];
+var finfuryPath = create_fish_path(oFishFinfury, finfuryPoints);
+paths[? "Finfury"] = finfuryPath;
+
+// Lumipuff
+var lumipuffPoints = [100, 200, 105, 205, 110, 200, 115, 205, 120, 200, 125, 205, 130, 200, 135, 205, 140, 200, 145, 205];
+var lumipuffPath = create_fish_path(oFishLumipuff, lumipuffPoints);
+paths[? "Lumipuff"] = lumipuffPath;
+
+// Seaspike
+var seaspikePoints = [150, 200, 140, 210, 155, 215, 145, 220, 160, 225, 150, 230, 165, 235, 155, 240];
+var seaspikePath = create_fish_path(oFishSeaspike, seaspikePoints);
+paths[? "Seaspike"] = seaspikePath;
+
+// Pearlshimmer
+var pearlshimmerPoints = [100, 250, 110, 240, 120, 250, 130, 240, 140, 250, 150, 240, 160, 250, 170, 240];
+var pearlshimmerPath = create_fish_path(oFishPearlshimmer, pearlshimmerPoints);
+paths[? "Pearlshimmer"] = pearlshimmerPath;
+
+// Surgeknight
+var surgeknightPoints = [200, 200, 210, 210, 220, 200, 230, 210, 240, 200, 250, 210, 260, 200, 270, 210];
+var surgeknightPath = create_fish_path(oFishSurgeknight, surgeknightPoints);
+paths[? "Surgeknight"] = surgeknightPath;
+
+// Silverflicker
+var silverflickerPoints = [300, 250, 310, 260, 305, 255, 320, 260, 315, 255, 330, 260, 325, 255, 340, 260];
+var silverflickerPath = create_fish_path(oFishSilverflicker, silverflickerPoints);
+paths[? "Silverflicker"] = silverflickerPath;
+
+// Stormdrifter
+var stormdrifterPoints = [150, 300, 170, 320, 160, 310, 180, 330, 170, 320, 190, 340, 180, 330, 200, 350];
+var stormdrifterPath = create_fish_path(oFishStormdrifter, stormdrifterPoints);
+paths[? "Stormdrifter"] = stormdrifterPath;
+
+// Inkfish
+var inkfishPoints = [100, 100, 110, 120, 120, 110, 130, 120, 140, 110, 150, 120, 160, 110, 170, 120];
+var inkfishPath = create_fish_path(oFishInkfish, inkfishPoints);
+paths[? "Inkfish"] = inkfishPath;
+
+// Softsquish
+var softsquishPoints = [100, 200, 110, 210, 120, 220, 130, 210,140, 200, 150, 190, 160, 180, 170, 190,180, 200, 170, 210, 160, 220, 150, 210, 140, 200, 130, 190, 120, 180, 110, 190];
+var softsquishPath = create_fish_path(oFishSoftsquish, softsquishPoints);
+paths[? "Softsquish"] = softsquishPath;
+
+// Leafscale
+var leafscalePoints = [250, 400, 240, 410, 230, 400, 220, 410, 210, 400, 200, 410, 190, 400, 180, 410];
+var leafscalePath = create_fish_path(oFishLeafscale, leafscalePoints);
+paths[? "Leafscale"] = leafscalePath;
+
+// Timbertrickle
+var timbertricklePoints = [300, 300, 310, 310, 320, 300, 330, 310, 340, 300, 350, 310, 360, 300, 370, 310];
+var timbertricklePath = create_fish_path(oFishTimbertrickle, timbertricklePoints);
+paths[? "Timbertrickle"] = timbertricklePath;
+
+// Kelpshield
+var kelpshieldPoints = [140, 200, 140, 220, 150, 230, 160, 240,
+    150, 230, 140, 220, 130, 210, 140, 200,
+    140, 210, 140, 220, 140, 230, 140, 240];
+var kelpshieldPath = create_fish_path(oFishKelpshield, kelpshieldPoints);
+paths[? "Kelpshield"] = kelpshieldPath;
+
+// Barkbiter
+var barkbiterPoints = [ 180, 220, 170, 210, 160, 200, 170, 190,
+    180, 180, 190, 170, 200, 160, 190, 150,
+    180, 160, 170, 170, 160, 180, 150, 190];
+var barkbiterPath = create_fish_path(oFishBarkbiter, barkbiterPoints);
+paths[? "Barkbiter"] = barkbiterPath;
+
+// Fernflutter
+var fernflutterPoints = [110, 210, 120, 220, 130, 210, 140, 200,
+    130, 190, 120, 180, 110, 190, 100, 200,
+    90, 210, 100, 220, 110, 230, 120, 240];
+var fernflutterPath = create_fish_path(oFishFernflutter, fernflutterPoints);
+paths[? "Fernflutter"] = fernflutterPath;
+
+// Pinescale
+var pinescalePoints = [10, 200, 20, 210, 10, 220, 20, 230, 10, 240, 20, 250, 10, 260, 20, 270];
+var pinescalePath = create_fish_path(oFishPinescale, pinescalePoints);
+paths[? "Pinescale"] = pinescalePath;
+
+// Roottrickle
+var roottricklePoints = [100, 100, 110, 105, 100, 110, 110, 115, 100, 120, 110, 125, 100, 130, 110, 135];
+var roottricklePath = create_fish_path(oFishRoottrickle, roottricklePoints);
+paths[? "Roottrickle"] = roottricklePath;
+
+// Oakscale
+var oakscalePoints = [200, 200, 210, 205, 200, 210, 190, 205, 200, 200, 210, 195, 200, 190, 190, 195];
+var oakscalePath = create_fish_path(oFishOakscale, oakscalePoints);
+paths[? "Oakscale"] = oakscalePath;
+
+// Dracofin
+var dracofinPoints = [300, 300, 320, 310, 340, 320, 360, 330, 380, 340, 400, 330, 420, 320, 440, 310];
+var dracofinPath = create_fish_path(oFishDracofin, dracofinPoints);
+paths[? "Dracofin"] = dracofinPath;
+
+// Fluffin
+var fluffinPoints = [50, 150, 70, 160, 90, 150, 110, 160, 130, 150, 150, 160, 170, 150, 190, 160];
+var fluffinPath = create_fish_path(oFishFluffin, fluffinPoints);
+paths[? "Fluffin"] = fluffinPath;
+
+// Streamgill
+var streamgillPoints = [250, 100, 260, 90, 270, 100, 280, 90, 290, 100, 300, 90, 310, 100, 320, 90];
+var streamgillPath = create_fish_path(oFishStreamgill, streamgillPoints);
+paths[? "Streamgill"] = streamgillPath;
+
+// Rapidskimmer
+var rapidskimmerPoints = [200, 300, 210, 305, 220, 300, 230, 305, 240, 300, 250, 305, 260, 300, 270, 305];
+var rapidskimmerPath = create_fish_path(oFishRapidskimmer, rapidskimmerPoints);
+paths[? "Rapidskimmer"] = rapidskimmerPath;
+
+// Aqualite
+var aqualitePoints = [100, 50, 120, 55, 140, 50, 160, 55, 180, 50, 200, 55, 220, 50, 240, 55];
+var aqualitePath = create_fish_path(oFishAqualite, aqualitePoints);
+paths[? "Aqualite"] = aqualitePath;
+
+// Bouldermaw
+var bouldermawPoints = [30, 100, 45, 90, 60, 100, 75, 90, 90, 100, 105, 90, 120, 100, 135, 90];
+var bouldermawPath = create_fish_path(oFishBouldermaw, bouldermawPoints);
+paths[? "Bouldermaw"] = bouldermawPath;
+
+// Brookflare
+var brookflarePoints = [150, 200, 170, 180, 190, 190, 210, 170, 230, 180, 250, 160, 270, 170, 290, 150];
+var brookflarePath = create_fish_path(oFishBrookflare, brookflarePoints);
+paths[? "Brookflare"] = brookflarePath;
+
+// Currentswift
+var currentswiftPoints = [300, 300, 320, 290, 340, 300, 360, 290, 380, 300, 400, 290, 420, 300, 440, 290];
+var currentswiftPath = create_fish_path(oFishCurrentswift, currentswiftPoints);
+paths[? "Currentswift"] = currentswiftPath;
+
+
+// Mossfin
+var mossfinPoints = [50, 250, 60, 245, 70, 250, 80, 245, 90, 250, 100, 245, 110, 250, 120, 245];
+var mossfinPath = create_fish_path(oFishMossfin, mossfinPoints);
+paths[? "Mossfin"] = mossfinPath;
+
+// Rivertwirl
+var rivertwirlPoints = [100, 300, 110, 290, 120, 280, 130, 270, 140, 280, 150, 290, 160, 300, 170, 310, 160, 320, 150, 310, 140, 320];
+var rivertwirlPath = create_fish_path(oFishRivertwirl, rivertwirlPoints);
+paths[? "Rivertwirl"] = rivertwirlPath;
+
+// Pebbletrout
+var pebbletroutPoints = [50, 200, 60, 210, 70, 200, 80, 190, 90, 200, 100, 210, 110, 200, 120, 190];
+var pebbletroutPath = create_fish_path(oFishPebbletrout, pebbletroutPoints);
+paths[? "Pebbletrout"] = pebbletroutPath;
+
+// Sunsetgill
+var sunsetgillPoints = [30, 100, 40, 110, 50, 100, 60, 110, 70, 100, 80, 110, 90, 100, 100, 110];
+var sunsetgillPath = create_fish_path(oFishSunsetgill, sunsetgillPoints);
+paths[? "Sunsetgill"] = sunsetgillPath;
+
+// Whirlskimmer
+var whirlskimmerPoints = [300, 250, 310, 240, 320, 230, 330, 240, 340, 250, 350, 260, 340, 270, 330, 260];
+var whirlskimmerPath = create_fish_path(oFishWhirlskimmer, whirlskimmerPoints);
+paths[? "Whirlskimmer"] = whirlskimmerPath;
+
+// Quillure
+var quillurePoints = [50, 100, 60, 105, 70, 100, 80, 95, 90, 100, 100, 105, 110, 100, 120, 95];
+var quillurePath = create_fish_path(oFishQuillure, quillurePoints);
+paths[? "Quillure"] = quillurePath;
+
+// Sappurgeon
+var sappurgeonPoints = [30, 200, 40, 190, 50, 210, 60, 200, 70, 230, 80, 240, 90, 220, 100, 230];
+var sappurgeonPath = create_fish_path(oFishSappurgeon, sappurgeonPoints);
+paths[? "Sappurgeon"] = sappurgeonPath;
+
+// Diamurgeon
+var diamurgeonPoints = [150, 250, 160, 240, 170, 230, 180, 240, 190, 250, 180, 260, 170, 270, 160, 260];
+var diamurgeonPath = create_fish_path(oFishDiamurgeon, diamurgeonPoints);
+paths[? "Diamurgeon"] = diamurgeonPath;
+
+// Ruburgeon
+var ruburgeonPoints = [200, 100, 210, 110, 220, 100, 230, 90, 240, 100, 250, 110, 240, 120, 230, 130, 220, 120];
+var ruburgeonPath = create_fish_path(oFishRuburgeon, ruburgeonPoints);
+paths[? "Ruburgeon"] = ruburgeonPath;
+
+// Echoesolace
+var echoesolacePoints = [100, 300, 120, 280, 140, 300, 160, 320, 180, 300, 200, 280, 220, 300];
+var echoesolacePath = create_fish_path(oFishEchoesolace, echoesolacePoints);
+paths[? "Echoesolace"] = echoesolacePath;
+
+// Flyfin
+var flyfinPoints = [50, 150, 70, 100, 90, 150, 110, 200, 130, 150, 150, 100, 170, 150, 190, 200];
+var flyfinPath = create_fish_path(oFishFlyfin, flyfinPoints);
+paths[? "Flyfin"] = flyfinPath;
+
+// Hellstromming
+var hellstrommingPoints = [200, 200, 210, 190, 220, 200, 230, 210, 240, 220, 250, 230, 260, 220, 270, 210, 280, 200];
+var hellstrommingPath = create_fish_path(oFishHellstromming, hellstrommingPoints);
+paths[? "Hellstromming"] = hellstrommingPath;
 	
 	
 
@@ -342,6 +582,7 @@ for (var i = 0; i <= global.numberoffish; ++i) {
     var fishObjName = "oFish" + string(global.fishNames[i]);
     var fishSpriteName = "sFish" + string(global.fishNames[i]);
     var fishVeganSpriteName = fishSpriteName + "_vegan";
+	//paths[? global.fishNames[i]] = string_lower(global.fishNames[i]) + "Path"
 	
 	global.fisharray[i, 0] = asset_get_index(fishObjName); // Object
 	global.fisharray[i, 1] = asset_get_index(fishSpriteName); // Sprite

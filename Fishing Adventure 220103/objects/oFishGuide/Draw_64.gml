@@ -127,7 +127,7 @@ switch(global.fisharray[i,11])
 	
 	if global.vegan = false
 	{
-	draw_sprite_ext(global.fisharray[i+page,1],0,self.x-70 + sprite_get_width(global.fisharray[i+page,1])/2 + (xx * 2),self.y+105 + (50 * (i)) -yy,1,1,0,global.fishcolor[i+page],alpha)
+	draw_sprite_ext(global.fisharray[i+page,1],0,self.x-70 + sprite_get_width(global.fisharray[i+page,1])/2 + (xx * 2),self.y+110 + (50 * (i)) -yy,1,1,0,global.fishcolor[i+page],alpha)
 	}
 	
 	else
@@ -138,10 +138,10 @@ switch(global.fisharray[i,11])
 	
 	if global.fishcolor[i+page] = c_white
 	{
-	draw_sprite_ext(sRarity,rarityIndex,self.x-134 + (xx * 2),self.y+120 + (50 * (i)) - yy,1,1,0,c_white,alpha)
+	draw_sprite_ext(sRarity,rarityIndex,self.x-134 + (xx * 2),self.y+123 + (50 * (i)) - yy,1,1,0,c_white,alpha)
 	}
 	
-	draw_text_ext_color(self.x-130 + (xx * 2), self.y+115 + (50 * (i)) - yy,string(fishinfotype[i+page]),10,10000,c_black,c_black,c_black,c_black,alpha)
+	draw_text_ext_color(self.x-130 + (xx * 2), self.y+118 + (50 * (i)) - yy,string(fishinfotype[i+page]),10,10000,c_black,c_black,c_black,c_black,alpha)
 	}
 
 if sida = 9

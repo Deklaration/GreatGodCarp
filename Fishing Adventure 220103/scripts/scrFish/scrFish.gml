@@ -669,7 +669,7 @@ draw_self()
 scrDrawSet(fTextbox,c_white,fa_center)
 //draw_text(self.x,self.y,"CR: " + string(catchratio) + " FS: " + string(fightsize) + " FT: " + string(fighttimer))
 
-draw_text(x,y+5,f)
+draw_text(x,y+5,global.fisharray[f,4])
 draw_path(fishPath,x,y,false)
 
 if hspeed < 0

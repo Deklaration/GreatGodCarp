@@ -77,7 +77,8 @@ if global.lastroom = rBeachside
 {
 	for (var i = 0; i < irandom_range(3,6); i += 1)
 	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,oFishLakelight)	//Skapar fisk1
+	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,global.fisharray[irandom_range(2,50),0])	//Skapar fisk1
+	//instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,oFishLakelight)	//Skapar fisk1
 	}
 
 for (var j = i; j < irandom_range(i,8); j += 1)
