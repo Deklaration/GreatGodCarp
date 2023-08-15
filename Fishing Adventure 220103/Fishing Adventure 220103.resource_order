@@ -145,6 +145,7 @@
     {"name":"oDepthVass","order":1,"path":"objects/oDepthVass/oDepthVass.yy",},
     {"name":"sTileSetSandGrass","order":8,"path":"sprites/sTileSetSandGrass/sTileSetSandGrass.yy",},
     {"name":"sFishCoralfin_vegan","order":19,"path":"sprites/sFishCoralfin_vegan/sFishCoralfin_vegan.yy",},
+    {"name":"scrCreateFish","order":33,"path":"scripts/scrCreateFish/scrCreateFish.yy",},
     {"name":"sNPCface2","order":16,"path":"sprites/sNPCface2/sNPCface2.yy",},
     {"name":"rEastBeach","order":2,"path":"rooms/rEastBeach/rEastBeach.yy",},
     {"name":"oFishBouldermaw","order":35,"path":"objects/oFishBouldermaw/oFishBouldermaw.yy",},

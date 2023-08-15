@@ -55,6 +55,9 @@ global.hoursplayed = 00
 //Vegetarian
 global.vegan = false
 
+//Vattendrag
+global.waterType = "ocean"
+
 //Pengar
 global.gold = 0
 
@@ -127,6 +130,9 @@ global.totalFishScore = 0
 global.activerod = 0
 global.roddur = 0
 global.rodthrow = 0
+
+//TUR
+global.rareFishLuck = 1 //Höj för mer tur. Vid vissa ställen, vid speciella vatten, kan denna vara superhög. Ökas med decimaler, eftersom den gångras med 1000. så 1.1 innebär att fiskelyckan är på irandom_range(1,1100), där "> 950" ger en sällsynt fisk. Så MAX MAX under vanliga förhållanden borde vara 1.3 typ.  
 
 /*
 global.rod1 =

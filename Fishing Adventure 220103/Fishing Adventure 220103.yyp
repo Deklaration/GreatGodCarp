@@ -187,6 +187,7 @@
     {"id":{"name":"oDepthVass","path":"objects/oDepthVass/oDepthVass.yy",},},
     {"id":{"name":"sTileSetSandGrass","path":"sprites/sTileSetSandGrass/sTileSetSandGrass.yy",},},
     {"id":{"name":"sFishCoralfin_vegan","path":"sprites/sFishCoralfin_vegan/sFishCoralfin_vegan.yy",},},
+    {"id":{"name":"scrCreateFish","path":"scripts/scrCreateFish/scrCreateFish.yy",},},
     {"id":{"name":"sNPCface2","path":"sprites/sNPCface2/sNPCface2.yy",},},
     {"id":{"name":"rEastBeach","path":"rooms/rEastBeach/rEastBeach.yy",},},
     {"id":{"name":"oFishBouldermaw","path":"objects/oFishBouldermaw/oFishBouldermaw.yy",},},

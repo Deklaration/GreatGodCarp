@@ -72,6 +72,8 @@ oWater.wavespeed = 0
 
 
 //Skapa fiskarna!
+scrCreateFish()
+/*
 
 if global.lastroom = rBeachside
 {

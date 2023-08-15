@@ -23,6 +23,10 @@ for (var u = 0; u < array_length(global.fishNames); u++) {
 }
 
 
+//if (global.fisharray[f,11] > random(global.rareFishLuck)) && global.fisharray[f,11] != 500
+//{
+//	instance_destroy(id)
+//}
 
 
 //fishname = _fishname
@@ -670,6 +674,8 @@ scrDrawSet(fTextbox,c_white,fa_center)
 //draw_text(self.x,self.y,"CR: " + string(catchratio) + " FS: " + string(fightsize) + " FT: " + string(fighttimer))
 
 draw_text(x,y+5,global.fisharray[f,4])
+
+draw_text(x,y-5,global.fisharray[f,11])
 draw_path(fishPath,x,y,false)
 
 if hspeed < 0
