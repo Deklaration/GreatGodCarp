@@ -18,7 +18,12 @@ if i = 3
 {
 	global.cutscene = false
 	scrInventoryAdd(oRods,1)
-	scrInventoryAdd(oBait,1)
+	
+	for (var b = 0; b < 10; ++b) {
+	    scrInventoryAdd(oBait,1)
+	}
+	
+	
 //	scrRodsAdd(oRods,1)
 //	scrBaitAdd(oBait,1)
 global.activerod = 1//"It's a stick"

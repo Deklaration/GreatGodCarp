@@ -72,13 +72,13 @@ function scrFishArraySet(){
 
 var fishRarity = [
     0,  // "" 
-    10, // "Lakelight",
+    5, // "Lakelight",
     1,  // "Muddweller",
     5,  // "Reedripple",
     10, // "Lakegem",
     1,  // "Weedsnout",
     10, // "Echodepth",
-    5,  // "Whisklash",
+    1,  // "Whisklash",
     5,  // "Bubblerise",
     1,  // "Waveshimmer",
     5, // "Coralfin",
@@ -99,7 +99,7 @@ var fishRarity = [
     5,  // "Timbertrickle",
     10, // "Kelpshield",
     1,  // "Barkbiter",
-    10, // "Fernflutter",
+    1, // "Fernflutter",
     5,  // "Pinescale",
     10, // "Roottrickle",
     10, // "Oakscale",
@@ -107,15 +107,15 @@ var fishRarity = [
     50, // "Fluffin",
     1,  // "Streamgill",
     5,  // "Rapidskimmer",
-    10, // "Aqualite",
+    1, // "Aqualite",
     5,  // "Bouldermaw",
     10, // "Brookflare",
     10, // "Currentswift",
     5,  // "Mossfin",
-    5,  // "Rivertwirl",
+    1,  // "Rivertwirl",
     1,  // "Pebbletrout",
     10, // "Sunsetgill",
-    10, // "Whirlskimmer",
+    5, // "Whirlskimmer",
     50, // "Quillure",
     500, // "Sappurgeon",
     500, // "Diamurgeon",
@@ -158,7 +158,7 @@ var fishAquaVistaInfos = [
     "This scary-looking has needle-like scales, blending seamlessly in pine forests.", // Pinescale
     "This Timbertrickle variant is found in water-filled roots of ancient trees.", // Roottrickle
     "This Leafscale variant's oak-leaf pattern provides superior camouflage.", // Oakscale
-    "Mythical forest swimmer. Dragon-like fins allow it to glide with enchantment in mystical woodland streams.", // Dracofin
+    "Mythical swimmer. Dragon-like fins allow it to glide with enchantment in mystical streams.", // Dracofin
     "Dreamy forest drifter. Fins resemble fluff, drifts dreamily through calm, mossy streams in heart of woodlands.", // Fluffin
     "Streamgills have slender bodies that allow them to dart quickly between rocks. Their gills shine like gemstones under the sun.", // Streamgill
     "Known for its ability to dance on the water's surface, Rapidskimmer are often mistaken for water bugs.", // Rapidskimmer
@@ -252,7 +252,7 @@ var fishValue = [
 // Lake fish
 global.lakeFish = [
     oFishLakelight, oFishMuddweller, oFishReedripple, oFishLakegem, oFishWeedsnout,
-    oFishEchodepth, oFishWhisklash, oFishBubblerise
+    oFishEchodepth, oFishWhisklash, oFishBubblerise, oFishDracofin
 ];
 
 // Ocean fish

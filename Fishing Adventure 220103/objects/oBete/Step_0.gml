@@ -163,7 +163,8 @@ if place_meeting(self.x,y-4,oMark)//16
 		}
 	
 		instance_create_depth(x,y,self.depth,oLostBete)
-
+		scrInventoryRemove(oBait,global.activebait)
+		
 		timerafterlosttobottom -=1
 		
 		if timerafterlosttobottom =0

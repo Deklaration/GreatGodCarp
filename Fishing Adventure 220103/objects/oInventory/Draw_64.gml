@@ -2,12 +2,14 @@ if (live_call()) return live_result;
 
 if instance_exists(oFishGuide)
 	{
+		
 		if oFishGuide.sida = -1 && oFishGuide.menuchoice = 0 
 		{
 			for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 			{
 				var xx = x+ (i mod rowLenght) * 28 + 2
 				var yy = y + (i div rowLenght) * 28 + 2
+				
 				
 				
 				if place != i
@@ -113,29 +115,32 @@ if instance_exists(oFishGuide)
 				
 				if discardchoice = 1
 				{
-					draw_text_ext_color(oFishGuide.x+34,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					draw_text_ext_color(oFishGuide.x+36,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+104,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+106,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,oFishGuide.alpha)
+					//draw_text_ext_color(oFishGuide.x+34,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+					//draw_text_ext_color(oFishGuide.x+36,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+104,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+106,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
 				}
 				
 				if discardchoice = 0
 				{
-				draw_text_ext_color(oFishGuide.x+69,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+71,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+104,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+106,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+105,"No",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+70,oFishGuide.y+105,"No",30,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+69,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+71,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+104,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+106,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+105,"No",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
 				}
 				
 				if discardchoice = -1
 				{
-				draw_text_ext_color(oFishGuide.x+104,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+106,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+104,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+106,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+105,"All",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+105,oFishGuide.y+105,"Yes",30,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+104,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+106,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+104,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+106,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
+				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+105,"All",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
 				}
 				
 

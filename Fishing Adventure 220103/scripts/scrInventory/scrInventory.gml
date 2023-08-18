@@ -56,19 +56,6 @@ function scrInventoryAdd(rootObject,itemType) //STACKING
 }
 
 
-/* //NON STACKING - DETTA FUNKAR
-  function scrInventoryAdd(rootObject,itemType)
-{
-	var _slot = scrInventorySearch(rootObject,-1)
-	if (_slot != -1)
-	{
-		with (rootObject) inventory[_slot] = itemType
-		return true
-	}
-	else return false
-}
-
-*/
 
 function scrInventorySwap(objectFrom,slotFrom,objectTo)
 {
@@ -119,16 +106,7 @@ list = ds_list_create()
 for (var d = 0; d < INVENTORY_SLOTS; ++d) {
     ds_list_add(list,0)
 }
-/*
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-ds_list_add(list,0)
-*/
+
 }
 
 
@@ -152,49 +130,7 @@ function scrInventoryNameDesc(argument0)
 			}
 		}
 		
-		//if argument0.inventory[place] = 0
-		//{
-		//	inventorygold = global.fisharray[i+1,0].sellvalue
-		//	inventoryname = global.fisharray[i+1,0].fishname
-		//	inventorydesc = global.fisharray[i+1,0].fishdesc
-		//}
-	/*
-		if argument0.inventory[place] != -1
-		{
-			inventorygold = global.fisharray[i+1,0].sellvalue
-			inventoryname = global.fisharray[i+1,0].fishname
-			inventorydesc = global.fisharray[i+1,0].fishdesc
-		}
-	
-		if argument0.inventory[place] = -1
-		{
-		inventoryname = ""
-		inventorydesc = ""
-		}
-		else if argument0.inventory[place] = 0
-		{
-		inventorygold = 1
-		inventoryname = "Rumblescumbler"
-		inventorydesc = "An incredibly ordinary little fish guy. Not much to look at but who am I to judge.\nWorth " + string(inventorygold) + " gold."
-		}
-		else if argument0.inventory[place] = 1
-		{
-		inventorygold = 2
-		inventoryname = "Pinkie-Pie"
-		inventorydesc = "Cute little shit. \nWorth " + string(inventorygold) + " gold."
-		}
-		else if argument0.inventory[place] = 2
-		{
-		inventorygold = 3
-		inventoryname = "Tall fin"
-		inventorydesc = "Cool enough to be kept as a pet. But it's dead. \nWorth " + string(inventorygold) + " gold."
-		}
-		else
-		{
-		inventoryname = "ERROR"
-		inventorydesc = "ERROR"
-		}
-		*/
+
 }
 
 function scrInventoryNameDescJ() 
@@ -217,39 +153,6 @@ function scrInventoryNameDescJ()
 			}
 		}
 }
-/*
-		if inventory[placej] = -1
-		{
-		inventoryname = ""
-		inventorydesc = ""
-		}
-		else if inventory[placej] = 0
-		{
-		inventorygold = 2
-		inventoryname = "Rumblescumbler"
-		inventorydesc = "An incredibly ordinary little fish guy. Not much to look at but who am I to judge.\nWorth " + string(inventorygold)
-		}
-		else if inventory[placej] = 1
-		{
-		inventorygold = 4
-		inventoryname = "Pinkie-Pie"
-		inventorydesc = "Cute little shit. \nWorth " + string(inventorygold)
-		}
-		else if inventory[placej] = 2
-		{
-		inventorygold = 7
-		inventoryname = "Tall fin"
-		inventorydesc = "Cool enough to be kept as a pet. But it's dead. \nWorth " + string(inventorygold)
-		}
-		else
-		{
-		inventoryname = "ERROR"
-		inventorydesc = "ERROR"
-		}
-
-}
-*/
-//////////////////////////////////////////
 
 function scrBaitSearch(rootObject,itemType)
 {
@@ -274,15 +177,37 @@ function scrBaitRemove(rootObject,itemType)
 	else return false
 }
 
-function scrBaitAdd(rootObject,itemType)
+//function scrBaitAdd(rootObject,itemType)
+//{
+//	var _slot = scrBaitSearch(rootObject,-1)
+//	if (_slot != -1)
+//	{
+//		with (rootObject) bait[_slot] = itemType
+//		return true
+//	}
+//	else return false
+//}
+
+function scrBaitAdd(rootObject,itemType) //STACKING
 {
 	var _slot = scrBaitSearch(rootObject,-1)
+
 	if (_slot != -1)
 	{
-		with (rootObject) bait[_slot] = itemType
+		
+	
+		if ds_list_find_value(rootObject.list,itemType) = 0
+		{
+		with (rootObject) bait[_slot] = itemType 
+		}	
+		
+		_stack = ds_list_find_value(rootObject.list,itemType)
+		ds_list_set(rootObject.list,itemType, _stack +1)
 		return true
 	}
+	
 	else return false
+		
 }
 
 //////////////////////////////////////////

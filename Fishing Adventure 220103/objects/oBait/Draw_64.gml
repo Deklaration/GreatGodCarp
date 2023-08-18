@@ -1,7 +1,9 @@
+if (live_call()) return live_result;
+
 if instance_exists(oFishGuide)
-{
+{	
 		if oFishGuide.sida = -1 && oFishGuide.menuchoice = 1 
-		{
+		{	
 			for (var i = 0; i < 12; i += 1)
 			{
 				var xx = x+ (i mod rowLenght) * 28 + 2
@@ -17,6 +19,8 @@ if instance_exists(oFishGuide)
 				if (inventory[i] != -1)
 				{
 					draw_sprite_ext(sBaitIcon,inventory[i],xx+12,yy+12,1,1,0,c_white,oFishGuide.alpha)
+					draw_set_halign(fa_center)
+					
 					if place = i
 					{
 						draw_sprite_ext(sSlot,1,xx,yy,1,1,0,c_white,oFishGuide.alpha)
@@ -42,6 +46,7 @@ if instance_exists(oFishGuide)
 						draw_text_color(oFishGuide.x+70,oFishGuide.y+185,desc,c_black,c_black,c_black,c_black,oFishGuide.alpha)
 						draw_sprite_ext(sBaitIcon,inventory[i],oFishGuide.x+68,oFishGuide.y+145,4,4,0,c_white,oFishGuide.alpha)
 					}
+					scrTextOutline(xx+23,yy+14,ds_list_find_value(list,inventory[i]),50,oFishGuide.alpha)
 				}
 			}
 		buttonreset = 0
