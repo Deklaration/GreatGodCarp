@@ -1,7 +1,7 @@
 if disable = false
 {
 /// @description Update Sprite Index
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 if skipping = false
 {
 if(dpad_dir != no_direction) && global.midTransition = false

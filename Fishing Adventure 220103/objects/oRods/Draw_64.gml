@@ -1,5 +1,5 @@
-if (live_call()) return live_result;
-show_debug_message(global.activerod)
+//if (live_call()) return live_result;
+//show_debug_message(global.activerod)
 if instance_exists(oFishGuide)
 	{
 		if oFishGuide.sida = -1 && oFishGuide.menuchoice = 1 

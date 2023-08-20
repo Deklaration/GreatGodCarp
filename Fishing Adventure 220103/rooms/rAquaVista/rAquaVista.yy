@@ -1,0 +1,68 @@
+{
+  "resourceType": "GMRoom",
+  "resourceVersion": "1.0",
+  "name": "rAquaVista",
+  "creationCodeFile": "rooms/rAquaVista/RoomCreationCode.gml",
+  "inheritCode": false,
+  "inheritCreationOrder": false,
+  "inheritLayers": false,
+  "instanceCreationOrder": [
+    {"name":"inst_7261BEAE","path":"rooms/rAquaVista/rAquaVista.yy",},
+  ],
+  "isDnd": false,
+  "layers": [
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7261BEAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHouseExit","path":"objects/oHouseExit/oHouseExit.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":472.0,"y":536.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
+-236,-2147483648,3,377,378,379,-57,-2147483648,3,389,390,391,-1741,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsTDRPG_interior","path":"tilesets/tsTDRPG_interior/tsTDRPG_interior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
+1,144,-28,149,1,167,-3,149,1,174,-6,149,1,174,-5,149,1,174,-5,149,1,174,-6,149,2,146,152,-28,157,1,155,-29,157,2,154,152,-28,17,1,155,-29,17,2,154,152,-28,1,1,155,-29,1,2,154,152,-28,9,1,155,-29,9,
+2,154,152,-28,17,1,155,-29,17,2,154,152,-5,1,1,48,-17,49,1,50,-4,1,1,155,-4,1,1,48,-17,49,1,50,-6,1,2,154,152,-5,9,1,56,-17,57,1,58,-4,9,1,155,-4,9,1,56,-17,57,1,58,-6,9,2,
+154,152,-5,17,1,56,-17,57,1,58,-4,17,1,155,-4,17,1,56,-17,57,1,58,-6,17,2,154,152,-5,1,1,56,-17,57,1,58,-4,1,1,155,-4,1,1,56,-17,57,1,58,-6,1,2,154,152,-5,9,1,56,-17,57,1,58,
+-4,9,1,155,-4,9,1,56,-17,57,1,58,-6,9,2,154,152,-5,17,1,56,-17,57,1,58,-4,17,1,155,-4,17,1,56,-17,57,1,58,-6,17,2,154,152,-5,1,1,56,-17,57,1,58,-4,1,1,155,-4,1,1,56,-17,57,
+1,58,-6,1,2,154,152,-5,9,1,56,-17,57,1,58,-4,9,1,155,-4,9,1,56,-17,57,1,58,-6,9,2,154,152,-5,17,1,56,-17,57,1,58,-4,17,1,155,-4,17,1,56,-17,57,1,58,-6,17,2,154,152,-5,1,1,
+56,-17,57,1,58,-4,1,1,155,-4,1,1,56,-17,57,1,58,-6,1,2,154,152,-5,9,1,64,-8,65,1,73,-8,65,1,66,-4,9,1,155,-4,9,1,64,-8,65,1,73,-8,65,1,66,-6,9,2,154,152,-14,17,1,83,-13,
+17,1,155,-13,17,1,83,-15,17,2,154,152,-14,1,1,83,-13,1,1,155,-13,1,1,83,-15,1,2,154,152,-14,9,1,83,-5,9,1,148,-7,149,1,173,-6,149,2,175,150,-5,9,1,83,-15,9,2,154,152,-14,17,1,83,-5,
+17,1,156,-15,157,1,158,-5,17,1,83,-15,17,2,154,152,-14,1,1,83,-27,1,1,83,-15,1,2,154,152,-14,9,1,83,-27,9,1,83,-15,9,2,154,152,-14,17,1,83,-27,17,1,83,-15,17,2,154,152,-14,1,1,83,-27,
+1,1,83,-15,1,2,154,152,-14,9,1,83,-27,9,1,83,-15,9,2,154,152,-14,17,1,83,-27,17,1,83,-15,17,2,154,152,-14,1,1,67,-13,93,1,52,-13,93,1,69,-15,1,2,154,152,-28,9,1,83,-29,9,2,154,152,
+-28,17,1,83,-29,17,2,154,152,-28,1,1,83,-29,1,2,154,152,-28,9,1,83,-29,9,2,154,152,-27,17,-3,8,-28,17,2,154,160,-27,161,-3,16,-28,161,1,162,],"TileDataFormat":1,},"tilesetId":{"name":"tsIndoor","path":"tilesets/tsIndoor/tsIndoor.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+  ],
+  "parent": {
+    "name": "Pisc Island",
+    "path": "folders/Rooms/Pisc Island.yy",
+  },
+  "parentRoom": null,
+  "physicsSettings": {
+    "inheritPhysicsSettings": false,
+    "PhysicsWorld": false,
+    "PhysicsWorldGravityX": 0.0,
+    "PhysicsWorldGravityY": 10.0,
+    "PhysicsWorldPixToMetres": 0.1,
+  },
+  "roomSettings": {
+    "Height": 540,
+    "inheritRoomSettings": false,
+    "persistent": false,
+    "Width": 960,
+  },
+  "sequenceId": null,
+  "views": [
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":270,"inherit":false,"objectId":null,"vborder":32,"visible":true,"vspeed":-1,"wport":1366,"wview":480,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings": {
+    "clearDisplayBuffer": true,
+    "clearViewBackground": false,
+    "enableViews": true,
+    "inheritViewSettings": false,
+  },
+  "volume": 1.0,
+}

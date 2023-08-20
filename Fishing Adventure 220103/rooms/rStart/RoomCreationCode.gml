@@ -163,24 +163,9 @@ instance_create_depth(0,0,-1,oInventory)
 instance_create_depth(0,0,-1,oBait)
 instance_create_depth(0,0,-1,oRods)
 
-//TESTTESTTEST
+//AquaVista
+global.setFishInTank = false
 
-/*
-scrInventoryAdd(oInventory,1)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,0)
-scrInventoryAdd(oInventory,0)
-scrInventoryAdd(oInventory,0)
-scrInventoryAdd(oInventory,0)
-scrInventoryAdd(oInventory,2)
-scrInventoryAdd(oInventory,2)
-*/
-
-///////////////////
 
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
 global.roomsave = rBeachside

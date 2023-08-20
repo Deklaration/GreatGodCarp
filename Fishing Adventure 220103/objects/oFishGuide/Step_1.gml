@@ -1,5 +1,5 @@
 /// @description Ger fiskar rätt text i Fishdex
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 for (var i = 1; i < global.numberoffish+1; ++i) {
    if global.fishinfo[i] != "Not found"

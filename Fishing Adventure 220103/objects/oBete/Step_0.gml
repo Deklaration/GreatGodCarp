@@ -201,7 +201,7 @@ if fiskid.i = 3 && global.fishbait = true
 	}
 }
 
-show_debug_message(global.fishbait)
+//show_debug_message(global.fishbait)
 
 /////////
 

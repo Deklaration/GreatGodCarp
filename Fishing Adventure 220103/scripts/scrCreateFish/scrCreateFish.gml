@@ -172,7 +172,7 @@ if global.waterType = "river"
 
 	if rare = 500
 	{
-		instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),0,global.rareFish[irandom_range(0,array_length(global.rareFish)-1)])	//Skapar sällsynt fisk
+		instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),0,global.rareFish[irandom_range(1,array_length(global.rareFish))])	//Skapar sällsynt fisk
 	}
 
 

@@ -32,6 +32,7 @@ keyboardpreset[4] = "F-avorite"
 keyboardpreset[5] = "Dolphin"
 drawing = irandom_range(0,5)
 
+scrInventoryJump()	
 
 blink[0] = 0 //Nordmaling
 blink[1] = 0 //Umeå

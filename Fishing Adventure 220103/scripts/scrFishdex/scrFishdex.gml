@@ -1,5 +1,5 @@
 function scrFishdex(_sida){
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 //var _sida = sida
 

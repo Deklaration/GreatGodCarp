@@ -1,4 +1,4 @@
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 if instance_exists(oFishGuide)
 	{
@@ -101,12 +101,14 @@ if instance_exists(oFishGuide)
 				}
 				
 				scrDrawSet(fTextbox,c_black,fa_center)
-				draw_text_transformed(oFishGuide.x+70,oFishGuide.y+92,"Release this guy?",textx,texty,0)
+				//draw_text_transformed(oFishGuide.x+70,oFishGuide.y+92,"Release this guy?",textx,texty,0)
+				scrTextOutline(oFishGuide.x+70,oFishGuide.y+92,"Release this guy?",400,oFishGuide.alpha,c_white,c_black)
 				scrDrawSet(fTextbox,c_black,fa_center)
-				draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				
+				scrTextOutline(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,oFishGuide.alpha,c_white,c_black)
+				scrTextOutline(oFishGuide.x+70,oFishGuide.y+105,"No",30,oFishGuide.alpha,c_white,c_black)
+				scrTextOutline(oFishGuide.x+105,oFishGuide.y+105,"All",30,oFishGuide.alpha,c_white,c_black)
+
+
 				if stop_a_button = false
 				{
 					keyboard_clear(global.key_a)
@@ -115,32 +117,17 @@ if instance_exists(oFishGuide)
 				
 				if discardchoice = 1
 				{
-					scrTextOutline(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,oFishGuide.alpha)
-					//draw_text_ext_color(oFishGuide.x+34,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					//draw_text_ext_color(oFishGuide.x+36,oFishGuide.y+105,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+104,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+106,"Yes",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-					//draw_text_ext_color(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+35,oFishGuide.y+105,"Yes",30,oFishGuide.alpha,c_white,c_green)
 				}
 				
 				if discardchoice = 0
 				{
-					scrTextOutline(oFishGuide.x+70,oFishGuide.y+105,"No",30,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+69,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+71,oFishGuide.y+105,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+104,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+106,"No",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+70,oFishGuide.y+105,"No",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+70,oFishGuide.y+105,"No",30,oFishGuide.alpha,c_white,c_green)
 				}
 				
 				if discardchoice = -1
 				{
-					scrTextOutline(oFishGuide.x+105,oFishGuide.y+105,"Yes",30,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+104,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+106,oFishGuide.y+105,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+104,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+106,"All",30,30,c_black,c_black,c_black,c_black,oFishGuide.alpha)
-				//draw_text_ext_color(oFishGuide.x+105,oFishGuide.y+105,"All",30,30,c_white,c_white,c_white,c_white,oFishGuide.alpha)
+					scrTextOutline(oFishGuide.x+105,oFishGuide.y+105,"All",30,oFishGuide.alpha,c_white,c_green)
 				}
 				
 

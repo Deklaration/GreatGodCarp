@@ -8,8 +8,10 @@ rodthrowx = self.x+19
 rodthrowy = self.y+34
 skincolor = global.skincolorbeforefish// make_color_rgb(255,231,172)
 
+noBait = false
 fishingpolex = oProtFishing.x+8
 fishingpoley = oProtFishing.y+26
+noBaitTimer = 60
 
 if global.fiskesida = "right"
 {

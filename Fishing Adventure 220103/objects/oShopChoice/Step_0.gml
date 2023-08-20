@@ -66,7 +66,7 @@ if val = 0
 	
 	
 	
-	show_debug_message(oShop.inventorygold)
+	//show_debug_message(oShop.inventorygold)
 
 	if keyboard_check_pressed(global.key_a) && oShop.howmany = true
 	{

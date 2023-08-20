@@ -1,4 +1,6 @@
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
+
+
 
 if instance_exists(oFishGuide)
 {	
@@ -46,7 +48,9 @@ if instance_exists(oFishGuide)
 						draw_text_color(oFishGuide.x+70,oFishGuide.y+185,desc,c_black,c_black,c_black,c_black,oFishGuide.alpha)
 						draw_sprite_ext(sBaitIcon,inventory[i],oFishGuide.x+68,oFishGuide.y+145,4,4,0,c_white,oFishGuide.alpha)
 					}
-					scrTextOutline(xx+23,yy+14,ds_list_find_value(list,inventory[i]),50,oFishGuide.alpha)
+					scrDrawSet(fTextboxSmall,c_white,fa_center)
+					scrTextOutline(xx+23,yy+14,ds_list_find_value(list,inventory[i]),50,oFishGuide.alpha,c_white,c_black)	
+					
 				}
 			}
 		buttonreset = 0

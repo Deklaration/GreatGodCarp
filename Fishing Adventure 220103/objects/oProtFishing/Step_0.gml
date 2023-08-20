@@ -1,6 +1,9 @@
 if global.paused = false
 {
 
+
+
+
 if kastat = false && image_index = 6
 	{
 		sprite_index = sProtFishing
@@ -26,10 +29,13 @@ if timer < 0
 }
 }
 
-if keyboard_check_pressed(global.key_a)
+if keyboard_check_pressed(global.key_a) && !instance_exists(oFishGuide)
 {
+	if global.activebait > 0
+	{
+	
 	if global.paused = false
-{
+	{
 
 
 if !instance_exists(oCastingWheel) && kastat2 = false
@@ -49,6 +55,12 @@ if instance_exists(oCastingWheel)
 }
 
 }//Pause
+
+	} //Man har bete
+	else
+	{
+	noBait = true	
+	}
 }//key_a
 
 if keyboard_check_pressed(global.key_b) && !instance_exists(oFishGuide)

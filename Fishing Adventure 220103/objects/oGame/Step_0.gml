@@ -23,7 +23,7 @@ if textboxtimer = true
 {
 	textboxtimercountdown -=1
 }
-if textboxtimercountdown <0 && !instance_exists(oText)
+if textboxtimercountdown <0 && !instance_exists(oText) && !instance_exists(oTextSign)
 {
 	global.textbox = false
 	textboxtimer = false
@@ -32,7 +32,7 @@ if textboxtimercountdown <0 && !instance_exists(oText)
 
 if keyboard_check_pressed(global.key_pause) && room != rTitlescreen && global.cutscene = false && global.textbox = false && !instance_exists(oCastingWheel) && global.cantpause = false
 {
-	if !instance_exists(oFishGuide) && !instance_exists(oText)
+	if !instance_exists(oFishGuide) && !instance_exists(oText) && !instance_exists(oTextSign)
 {
 	if room = rFiske
 	{

@@ -1,5 +1,5 @@
 //live()
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 scrNineSliceBoxStretched(sTextbox,x-10,y1,x+178,y2,0)
 scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
@@ -43,19 +43,19 @@ scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
 					{
 						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,1],sprite_get_width(global.fisharray[oInventory.inventory[i]+1,1]) / 2,sprite_get_height(global.fisharray[oInventory.inventory[i]+1,1]) /2)
 						draw_sprite_ext(global.fisharray[oInventory.inventory[i]+1,1],0,xx+12,yy+12,1,1,0,c_white,alpha)
-						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,1],global.fisharray[oInventory.inventory[i]+1,6],global.fisharray[oInventory.inventory[i]+1,7])
+						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,1],global.fisharray[oInventory.inventory[i]+1,7],global.fisharray[oInventory.inventory[i]+1,8])
 					
 					}
 					else
 					{
 						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,2],sprite_get_width(global.fisharray[oInventory.inventory[i]+1,2]) / 2,sprite_get_height(global.fisharray[oInventory.inventory[i]+1,2]) /2)
 						draw_sprite_ext(global.fisharray[oInventory.inventory[i]+1,2],0,xx+12,yy+12,1,1,0,c_white,alpha)
-						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,2],global.fisharray[oInventory.inventory[i]+1,8],global.fisharray[oInventory.inventory[i]+1,9])	
+						sprite_set_offset(global.fisharray[oInventory.inventory[i]+1,2],global.fisharray[oInventory.inventory[i]+1,9],global.fisharray[oInventory.inventory[i]+1,10])	
 					
 						//draw_sprite_ext(sVeganIcon,oInventory.inventory[i],xx,yy,1,1,0,c_white,alpha)
 					}
 						scrDrawSet(fTextboxSmall,c_black,fa_right)
-						scrTextOutline(xx+23,yy+15,ds_list_find_value(oInventory.list,oInventory.inventory[i]),50,alpha)
+						scrTextOutline(xx+23,yy+15,ds_list_find_value(oInventory.list,oInventory.inventory[i]),50,alpha,c_black,c_white)
 				}
 
 			}
@@ -93,17 +93,17 @@ scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
 					{
 						sprite_set_offset(global.fisharray[inventory[j]+1,1],sprite_get_width(global.fisharray[inventory[j]+1,1]) / 2,sprite_get_height(global.fisharray[inventory[j]+1,1]) /2)
 						draw_sprite_ext(global.fisharray[inventory[j]+1,1],0,xx+200+12,yy+12,1,1,0,c_white,alpha)
-						sprite_set_offset(global.fisharray[inventory[j]+1,1],global.fisharray[inventory[j]+1,6],global.fisharray[inventory[j]+1,7])
+						sprite_set_offset(global.fisharray[inventory[j]+1,1],global.fisharray[inventory[j]+1,7],global.fisharray[inventory[j]+1,8])
 						
 					}
 					else
 					{
 						sprite_set_offset(global.fisharray[inventory[j]+1,2],sprite_get_width(global.fisharray[inventory[j]+1,2]) / 2,sprite_get_height(global.fisharray[inventory[j]+1,2]) /2)
 						draw_sprite_ext(global.fisharray[inventory[j]+1,2],0,xx+200+12,yy+12,1,1,0,c_white,alpha)
-						sprite_set_offset(global.fisharray[inventory[j]+1,2],global.fisharray[inventory[j]+1,6],global.fisharray[inventory[live_blank_object]+1,7])
+						sprite_set_offset(global.fisharray[inventory[j]+1,2],global.fisharray[inventory[j]+1,9],global.fisharray[inventory[j]+1,10])
 					}
 						scrDrawSet(fTextboxSmall,c_black,fa_right)
-						scrTextOutline(xx+223,yy+15,ds_list_find_value(list,inventory[j]),50,alpha)
+						scrTextOutline(xx+223,yy+15,ds_list_find_value(list,inventory[j]),50,alpha,c_black,c_white)
 				}
 				
 			}

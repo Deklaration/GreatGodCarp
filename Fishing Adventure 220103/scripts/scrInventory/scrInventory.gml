@@ -19,10 +19,16 @@ function scrInventoryRemove(rootObject,itemType) //STACKING
 		
 		_stack = ds_list_find_value(rootObject.list,itemType)
 		ds_list_set(rootObject.list,itemType, _stack -1)
-		
+
 		if _stack = 1
 		{
 		with (rootObject) inventory[_slot] =-1
+		
+		if rootObject = oBait
+		{
+			global.activebait = 0
+		}
+		
 		}
 		return true
 	}
@@ -175,6 +181,9 @@ function scrBaitRemove(rootObject,itemType)
 		return true
 	}
 	else return false
+	
+	
+	
 }
 
 //function scrBaitAdd(rootObject,itemType)

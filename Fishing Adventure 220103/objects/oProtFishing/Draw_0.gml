@@ -1,3 +1,18 @@
+//if (live_call()) return live_result;
+
+if noBait = true
+{
+	draw_sprite(sNoBait,noBaitTimer/12,x+10,y+14)
+	sprite_index = sProtFishingGotAway
+	noBaitTimer -=1
+}
+if noBaitTimer <0
+{
+	sprite_index = sProtFishing
+	noBait = false
+	noBaitTimer = 60
+}
+
 if sprite_index = sProtFishingCasting
 {
 	global.cantpause = true
