@@ -7,7 +7,7 @@ image_speed = 0
 
 skylt = instance_create_depth(x+28,y+8,self.depth-3,oAkvariumSkylt,{tank : id})
 
-fish = global.oceanFishNumber[_fish]
+fish = global.forestFishNumber[_fish]
 
 if global.setFishInTank = false
 {

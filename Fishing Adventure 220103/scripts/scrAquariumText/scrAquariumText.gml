@@ -5,7 +5,7 @@ function scrAquariumText(_fishnumber){
 	var talking = false
 	var createtext = false
 	
-	if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.sprite_index = sProt_North  && global.textbox = false
+	if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.sprite_index = sProt_North  && global.textbox = false && global.paused = false && !instance_exists(oFishGuide)
 	{
 		talking = true
 		global.textbox = true

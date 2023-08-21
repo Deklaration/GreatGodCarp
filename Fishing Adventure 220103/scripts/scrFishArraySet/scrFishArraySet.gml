@@ -136,7 +136,7 @@ var fishAquaVistaInfos = [
     "The lake's playful companion. Its whisker-like fins playfully dance through the water, bringing smiles to lakeside observers.", // Whisklash
     "Its playful leaps create bubbles that rise to the surface, adding charm to the tranquil waters.", // Bubblerise
     "This fish's metallic scales refract sunlight, causing a dazzling shimmer underwater.", // Waveshimmer
-    "Coral-colored scales, blend seamlessly with vibrant coral reefs in warm ocean waters.", // Coralfin
+    "Coral-colored scales, blend seamlessly with vibrant coral reefs in warm ocean waters. Feeds on bugs that happen to fall into the water.", // Coralfin
     "Able to withstand the harshest saltwater conditions, their scales contain salt crystals.", // Saltysurge
     "This fish can manipulate the tidal currents to disorient predators.", // Tidalflicker
     "Found in the ocean's darkest depths, its bioluminescent glow attracts curious prey.", // Abyssglow
@@ -155,7 +155,7 @@ var fishAquaVistaInfos = [
     "This fish has evolved to blend perfectly into kelp forests, making it a master of hide and seek.", // Kelpshield
     "Known to nibble on tree roots that hang into forest water bodies.", // Barkbiter
     "Its fins resemble fern leaves, providing perfect camouflage in forest ponds.", // Fernflutter
-    "This scary-looking has needle-like scales, blending seamlessly in pine forests.", // Pinescale
+    "This scary-looking fish has needle-like scales, blending seamlessly in pine forests.", // Pinescale
     "This Timbertrickle variant is found in water-filled roots of ancient trees.", // Roottrickle
     "This Leafscale variant's oak-leaf pattern provides superior camouflage.", // Oakscale
     "Mythical swimmer. Dragon-like fins allow it to glide with enchantment in mystical streams.", // Dracofin
@@ -177,17 +177,17 @@ var fishAquaVistaInfos = [
     "Glowing red like fire, its ruby scales are said to hold intense heat.", // Ruburgeon
     "This fish sings an enchanting melody, but is heard only once every hundred years.", // Echoesolace
     "Airborne ocean marvel. Leaping from waves, gliding above water, soars alongside ocean winds with graceful aerial flips.", // Flyfin
-	"Got a huge fanbase, but rarely shows up anymore. It might have moved abroad?" //Hellströmming
+	"Got a huge fanbase, but rarely shows up anymore. It might have moved abroad, feeling like a big fish in a small pond." //Hellströmming
 ];
 
 
 var fishInventoryInfos = [
     "", // ""
-    "Whoa, it's like a mobile lantern! So shiny...", // Lakelight
-    "Uh oh, a fish that loves mud? Mom would go nuts.", // Muddweller
+    "Whoa, it lights up! Must be handy to be your own night light.", // Lakelight
+    "Uh oh, a fish that loves mud? My mom would hate it.", // Muddweller
     "It moves so beautifully, like an underwater dancer! Poetry in motion!", // Reedripple
     "Look at that shine! Who needs treasure when you have this fish?", // Lakegem
-    "What's with the long face, buddy? Or is it a nose?", // Weedsnout
+    "What's with the long face, buddy? Or is it a nose? I'm bad at fish biology...", // Weedsnout
     "Now, this one's a submarine with built-in sonar. Cool and creepy...", // Echodepth
     "I hope someone remembers to feed my cat back home...", // Whisklash
     "Bubbles, bubbles everywhere! It's like a fishy jacuzzi.", // Bubblerise
