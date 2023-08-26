@@ -60,7 +60,7 @@ else if(_axis_dist > analog_deadzone)
 }
 
 
-//Skipping. Det här funkar inte
+//Skipping. 
 
 //////////////
 

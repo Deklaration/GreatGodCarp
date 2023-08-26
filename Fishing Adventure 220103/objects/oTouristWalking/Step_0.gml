@@ -1,0 +1,6 @@
+
+if activate = true
+{
+	scrGeneratorStep()
+}
+

@@ -1,0 +1,4 @@
+if activate = true
+{
+scrGeneratorDraw()
+}

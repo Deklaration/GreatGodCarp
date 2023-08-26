@@ -1,4 +1,4 @@
-/// @description Var man är, rods och turistskaparen
+/// @description Var man är, rods och touristskaparen
 
 if instance_exists(oFishGuide){
 
@@ -22,7 +22,3 @@ if global.activerod = "It's a stick"
 	global.rodpower = global.
 }
 */
-
-//TURIST
-
-scrTuristCreator()

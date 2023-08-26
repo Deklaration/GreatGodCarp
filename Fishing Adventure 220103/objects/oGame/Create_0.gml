@@ -50,6 +50,8 @@ roomarray[rGreatLake] = "Great lake"
 roomarray[rDarkAlley] = "Alley"
 roomarray[rNorthside] = "North Side"
 roomarray[rNorthEast] = "North East"
+roomarray[rAquaVista] = "AquaVista"
+roomarray[rAquaVistaTopFloor] = "2nd floor"
 roomarray[rFiske] = " "
 
 //KEY CODES

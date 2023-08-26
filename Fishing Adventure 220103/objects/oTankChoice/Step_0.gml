@@ -32,6 +32,7 @@ else
 				instance_create_depth(random_range(tank.x-10,tank.x+10),random_range(tank.y-4,tank.y+4),tank.depth-1,oFishInTank,{tank : tank})
 				scrInventoryRemove(oInventory,tank.fish-1)
 				global.fishInTank[tank.fish] +=1
+				global.totalFishScore += global.fisharray[tank.fish,11]
 				tank.talking = false
 				tank.createtext = false
 				instance_destroy(oTankChoice)

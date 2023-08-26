@@ -108,6 +108,7 @@ scrFishArraySet()
 scrRodArraySet()
 scrBaitArraySet()
 
+global.numberOfTourists = 0
 
 
 //FISH INFORMATION
@@ -162,6 +163,7 @@ instance_create_depth(0,0,0,oGame)
 instance_create_depth(0,0,-1,oInventory)
 instance_create_depth(0,0,-1,oBait)
 instance_create_depth(0,0,-1,oRods)
+instance_create_depth(0,0,-1,oTouristCreator)
 
 //AquaVista
 global.setFishInTank = false

@@ -19,7 +19,7 @@
 //show_debug_message(oWater.wavespeed)show_debug_message(" DONE ")
 //}
 
-show_debug_message(global.lastroom)
+//show_debug_message(global.lastroom)
 
 if textboxtimer = true
 {

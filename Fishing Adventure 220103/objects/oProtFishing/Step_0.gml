@@ -1,7 +1,12 @@
 if global.paused = false
 {
 
-
+if sprite_index = sProtFishingGotAway && !instance_exists(oBete) && noBait = false
+{
+		sprite_index = sProtFishing
+		image_speed = 0
+		image_index = 0 	
+}
 
 
 if kastat = false && image_index = 6

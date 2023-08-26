@@ -16,7 +16,6 @@
     {"name":"inst_7AD20680_1","path":"rooms/rPuddleTown_House2/rPuddleTown_House2.yy",},
     {"name":"inst_31497E10","path":"rooms/rPuddleTown_House2/rPuddleTown_House2.yy",},
     {"name":"inst_11967DD","path":"rooms/rPuddleTown_House2/rPuddleTown_House2.yy",},
-    {"name":"inst_A903D87","path":"rooms/rPuddleTown_House2/rPuddleTown_House2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -32,7 +31,6 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3FC52429_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHouseExit","path":"objects/oHouseExit/oHouseExit.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":256.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A903D87","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGenerator_PT_14","path":"objects/oGenerator_PT_14/oGenerator_PT_14.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -48,-2147483648,1,167,-16,-2147483648,-5,182,1,-2147483648,-7,182,1,155,-4,182,-72,-2147483648,-2,0,-5,-2147483648,-2,0,-19,-2147483648,-15,0,1,154,

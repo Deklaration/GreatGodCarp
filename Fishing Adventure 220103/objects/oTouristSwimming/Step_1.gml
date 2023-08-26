@@ -1,0 +1,5 @@
+
+if activate = true
+{
+	scrGeneratorBeginStep()
+}
