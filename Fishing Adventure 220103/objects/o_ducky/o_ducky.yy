@@ -29,10 +29,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "s_ducky",
-    "path": "sprites/s_ducky/s_ducky.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -22,7 +22,7 @@ else
 
 image_index = image
 
-image_blend = global.color[choose(13,14,15,16,17)]
+image_blend = global.color[choose(13,14,15,12)]
 image_speed = 0 
 depth = -15-y
 

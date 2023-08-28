@@ -32,10 +32,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "s_water",
-    "path": "sprites/s_water/s_water.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

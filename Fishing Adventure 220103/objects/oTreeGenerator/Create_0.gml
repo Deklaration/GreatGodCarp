@@ -1,6 +1,6 @@
 image_index = irandom(213)
 
-image_blend = global.color[choose(13,14,15,16,17)]
+image_blend = global.color[choose(13,14,15,12)]
 image_speed = 0 
 depth = -17-y
 color = image_blend

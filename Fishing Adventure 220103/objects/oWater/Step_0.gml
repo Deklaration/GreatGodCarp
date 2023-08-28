@@ -28,6 +28,13 @@ if wavespeed <=1.2
 	wavespeed +=0.1
 }
 
+if instance_exists(oBete)
+{
+	if oBete.water = true
+	{
+		dyliquid_spash(oBete.x,10)
+	}
+}
 
     dyliquid_set_tension(tension);
     dyliquid_set_dampening(dampening);

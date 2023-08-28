@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": {
-    "name": "sNPCtest",
-    "path": "sprites/sNPCtest/sNPCtest.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

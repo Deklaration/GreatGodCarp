@@ -19,6 +19,6 @@ y,
 x+sprite_width, 
 room_height)
 
-col[0] = global.color[19]//make_colour_rgb(52, 152, 240);
-col[1] = global.color[20]//make_colour_rgb(41, 128, 200);
+col[0] = global.color[17]//make_colour_rgb(52, 152, 240);
+col[1] = global.color[16]//make_colour_rgb(41, 128, 200);
 

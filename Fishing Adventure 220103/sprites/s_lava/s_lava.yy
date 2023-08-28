@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "DyLiquid",
-    "path": "folders/Sprites/DyLiquid.yy",
+    "name": "DYLiquid",
+    "path": "folders/Sprites/DYLiquid.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,10 +54,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b0ea576-6119-43d2-a8c9-ba3332763464","path":"sprites/s_lava/s_lava.yy",},},},"Disabled":false,"id":"1517fe77-fe5a-4e05-af0b-e0899310ddd4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b0ea576-6119-43d2-a8c9-ba3332763464","path":"sprites/s_lava/s_lava.yy",},},},"Disabled":false,"id":"0acc8af0-1042-45a4-9d0f-6b6c99e1187a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

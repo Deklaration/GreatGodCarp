@@ -110,6 +110,7 @@
     {"name":"inst_230BB559","path":"rooms/rBeachside/rBeachside.yy",},
     {"name":"inst_380B646C","path":"rooms/rBeachside/rBeachside.yy",},
     {"name":"inst_7D846A57","path":"rooms/rBeachside/rBeachside.yy",},
+    {"name":"inst_7F3EC1EF","path":"rooms/rBeachside/rBeachside.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -225,6 +226,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_230BB559","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSunchair","path":"objects/oSunchair/oSunchair.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_380B646C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTouristSunbathing","path":"objects/oTouristSunbathing/oTouristSunbathing.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":368.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D846A57","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTouristSunbathing","path":"objects/oTouristSunbathing/oTouristSunbathing.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F3EC1EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFishShadow","path":"objects/oFishShadow/oFishShadow.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":528.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees2","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
 -129,-2147483648,2,20,0,-169,-2147483648,1,19,-66,-2147483648,2,18,19,-60,-2147483648,2,20,21,-58,-2147483648,2,32,37,-56,-2147483648,2,20,21,-54,-2147483648,5,18,19,-2147483648,-2147483648,54,-59,-2147483648,1,54,-54,-2147483648,2,18,19,-121,-2147483648,2,20,21,-353,-2147483648,1,19,-839,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsTrees","path":"tilesets/tsTrees/tsTrees.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

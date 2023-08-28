@@ -13,6 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b6048a2-945b-43cd-8132-6c5ec4d0e8d2",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ba41c0ea-ec9d-465d-96ee-8d4b9c4135ec",},
   ],
   "gridX": 0,
@@ -43,7 +44,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba41c0ea-ec9d-465d-96ee-8d4b9c4135ec","path":"sprites/sGrassNoBck/sGrassNoBck.yy",},},},"Disabled":false,"id":"37066e02-33dc-4f19-aee9-775ede617693","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1b6048a2-945b-43cd-8132-6c5ec4d0e8d2","path":"sprites/sGrassNoBck/sGrassNoBck.yy",},},},"Disabled":false,"id":"75d69afc-bab4-4054-95cd-32cd9f72cbc4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba41c0ea-ec9d-465d-96ee-8d4b9c4135ec","path":"sprites/sGrassNoBck/sGrassNoBck.yy",},},},"Disabled":false,"id":"37066e02-33dc-4f19-aee9-775ede617693","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

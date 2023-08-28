@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sElstolpe",
-    "path": "sprites/sElstolpe/sElstolpe.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

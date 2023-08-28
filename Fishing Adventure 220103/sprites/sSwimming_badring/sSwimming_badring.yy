@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"117b8502-d6a5-4a16-b9ce-55837ce2b4d9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78b1e8fd-6728-4a2f-af78-4f4ee1388a40",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"62ae5533-a878-4a1c-a11d-4ec039231fa3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8b794f3f-2d72-4092-b9a7-0b7e714071cc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4353c812-d2d9-4fae-b309-6d1122f6360b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a932dc17-fa76-482d-ae4e-7bcdb78e46f7",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 40,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b50a9789-8eec-4941-b1cd-ef2899cdf290","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3227002a-ebfb-4b21-88ad-2d243139e4e8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -56,9 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"117b8502-d6a5-4a16-b9ce-55837ce2b4d9","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"9fd2da7a-9d10-40bd-8126-6ac5d5747b46","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"78b1e8fd-6728-4a2f-af78-4f4ee1388a40","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"2939740b-0c53-4b51-9c3d-53f027641058","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"62ae5533-a878-4a1c-a11d-4ec039231fa3","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"576ad84c-5212-4016-9ead-12eda7bbe96d","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8b794f3f-2d72-4092-b9a7-0b7e714071cc","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"e26c6fbc-c3cf-42a8-8de6-dfc8e41c1974","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4353c812-d2d9-4fae-b309-6d1122f6360b","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"8588df26-8c6b-4a18-955d-f2bb7b7b1fc7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a932dc17-fa76-482d-ae4e-7bcdb78e46f7","path":"sprites/sSwimming_badring/sSwimming_badring.yy",},},},"Disabled":false,"id":"bbe8a2d7-acef-4ee1-b269-203c51bdafb6","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

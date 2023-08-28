@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Fishing Adventure 220103",
-    "path": "Fishing Adventure 220103.yyp",
+    "name": "Puddle Town",
+    "path": "folders/Objects/Saker och ting/Puddle Town.yy",
   },
   "parentObjectId": {
     "name": "oWall",

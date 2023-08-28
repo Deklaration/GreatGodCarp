@@ -1,7 +1,7 @@
 goal = oBete.fiskid.fightsize
 process = oBete.fiskid.catchratio
 timer = 20
-color = global.color[16]
+color = global.color[12]
 fullbar = sprite_height
 percent = 0
 barprocess = 0

@@ -78,14 +78,14 @@ if timer = starttimer -1
 
 	if h = 2
 	{
-		part_particles_create_colour(o_particles.ps_pull, x, y, o_particles.pt_pull, global.color[12], random_range(3, 6));
+		part_particles_create_colour(o_particles.ps_pull, x, y, o_particles.pt_pull, global.color[10], random_range(3, 6));
 		oPullBarHitMitten.hit = true
 		oPullBarHitMitten.image_index = 1
 	}
 
 	if h = 4
 	{
-		part_particles_create_colour(o_particles.ps_pull, x, y, o_particles.pt_pull, global.color[15], random_range(13, 30));
+		part_particles_create_colour(o_particles.ps_pull, x, y, o_particles.pt_pull, global.color[12], random_range(13, 30));
 		oPullBarHitInne.hit = true
 		oPullBarHitInne.image_index = 1
 	}

@@ -12,10 +12,11 @@ function scrGeneratorRandom() //Ger slumpmässigt utvalda attribut
 		randommouth = irandom_range(1,6)
 		randomnose = irandom_range(1,7)
 		randomshoes = irandom_range(1,3)
-		randomclothescolor = irandom_range(0,25)
-		randomhaircolor = irandom_range(0,25)
-		randomshoescolor = irandom_range(0,25)
-		randomskincolor  = choose(4,8,9,10,11)
+		randomclothescolor = choose(7,9,10,13,15,16,17,18)
+		randomhaircolor = choose(0,3,4,5,6,31)
+		randomshoescolor = choose(7,9,10,13,15,16,17,18)
+		randomskincolor  = choose(2,3,4,5,6,30,31,2,2,30)
+		scrGenerator(randomclothes,randomears,randomeyes,randomhair,randommouth,randomnose,randomshoes,randomskincolor,randomhaircolor,randomskincolor,randomskincolor)
 	}
 	
 	if state = "sunbathing"
@@ -24,7 +25,8 @@ function scrGeneratorRandom() //Ger slumpmässigt utvalda attribut
 		breathingtimer = 120
 		breathing = 0
 		headchange = 0
-		bathingsuitcolor = global.color[choose(12,15,19)]
+		sunchairchoice = irandom_range(0,3)
+		bathingsuitcolor = global.color[irandom_range(7,18)]
 		randomclothes = irandom_range(1,5)
 		randomears = irandom_range(1,5)
 		randomeyes = 4//irandom_range(1,11)
@@ -32,10 +34,10 @@ function scrGeneratorRandom() //Ger slumpmässigt utvalda attribut
 		randommouth = irandom_range(1,6)
 		randomnose = irandom_range(1,7)
 		randomshoes = 0
-		randomclothescolor = irandom_range(0,25)
-		randomhaircolor = irandom_range(0,25)
+		randomclothescolor = choose(7,9,10,13,15,16,17,18)
+		randomhaircolor = choose(0,3,4,5,6,31)
 		randomshoescolor = 0
-		randomskincolor  = choose(4,8,9,10,11)
+		randomskincolor  = choose(2,3,4,5,6,30,31,2,2,30)
 		scrGenerator(0,randomears,randomeyes,randomhair,randommouth,randomnose,1,randomskincolor,randomhaircolor,randomskincolor,randomskincolor)
 	}
 	
@@ -47,12 +49,12 @@ function scrGeneratorRandom() //Ger slumpmässigt utvalda attribut
 		randomhair = irandom_range(1,15)
 		randommouth = irandom_range(1,6)
 		randomnose = irandom_range(1,7)
-		randomhaircolor = irandom_range(0,25)
-		randomskincolor  = choose(4,8,9,10,11)
+		randomhaircolor = choose(0,3,4,5,6,31)
+		randomskincolor  = choose(2,3,4,5,6,30,31,2,2,30)
 		randomclothes = 0
 		randomshoes = 0
 		randomclothescolor = randomskincolor
-		randomshoescolor = irandom_range(0,25)
+		randomshoescolor = 0
 		scrGenerator(0,randomears,randomeyes,randomhair,randommouth,randomnose,0,randomskincolor,randomhaircolor,0,randomskincolor)
 		sprite_index = sNPC_Swimming_base
 		image_speed = 0.2
@@ -179,7 +181,6 @@ if state = "walking"
 {
 scrGenerator(_clothes,_ears,_eyes,_hair,_mouth,_nose,_shoes,_clothescolor,_haircolor,_shoescolor,_skincolor)
 }
-
 
 
 
@@ -437,6 +438,7 @@ function scrGeneratorDrawFishing(){
 
 function scrGeneratorDrawWalking() {
 	
+	draw_text(x,y+10,mouthsprite)
 	
 	draw_sprite_ext(sNPC_Shoes_Base,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 	draw_sprite_ext(shoessprite,dir,x+shakex,y,xscale,1,0,global.color[shoescolor mod array_length(global.color)],1)
@@ -452,7 +454,17 @@ function scrGeneratorDrawWalking() {
 	
 	draw_sprite_ext(sNPC_Head_Base,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 	draw_sprite_ext(clothessprite,dir,x+shakex,y,clothesxscale,1,0,global.color[clothescolor mod array_length(global.color)],1)
+	
+	if mouthsprite != sNPC_Mouth08 && mouthsprite != sNPC_Mouth03
+	{
 	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	}
+	else
+	{
+	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)	
+	}
+	
+	
 	draw_sprite_ext(nosesprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 	draw_sprite_ext(earssprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 
@@ -472,11 +484,31 @@ function scrGeneratorDrawWalking() {
 function scrGeneratorDrawSwimming(){
 
 	draw_sprite_ext(sNPC_Swimming_base,dir,x,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
-	draw_sprite_ext(mouthsprite,dir,x,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	
+	if mouthsprite != sNPC_Mouth08 && mouthsprite != sNPC_Mouth03
+	{
+	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	}
+	else
+	{
+	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)	
+	}
+	
 	draw_sprite_ext(nosesprite,dir,x,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
-	draw_sprite_ext(earssprite,dir,x,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	
+	if hairsprite != sNPC_Hair01
+	{
+	draw_sprite_ext(eyessprite,dir,x+shakex,y,xscale,1,0,c_white,1)
+	draw_sprite_ext(hairsprite,dir,x+shakex,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)
+	}
+	else
+	{
+	draw_sprite_ext(hairsprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	draw_sprite_ext(eyessprite,dir,x+shakex,y,xscale,1,0,c_white,1)
+	}
+	
 	draw_sprite_ext(hairsprite,dir,x,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)
-	draw_sprite_ext(eyessprite,dir,x,y,xscale,1,0,c_green,1)
+	draw_sprite_ext(eyessprite,dir,x,y,xscale,1,0,c_white,1)
 	draw_sprite_ext(sSwimming_badring,badring,x,y,xscale,1,0,c_white,1)
 
 }
@@ -513,7 +545,7 @@ function scrGeneratorDrawSunbathing(){
 	}
 	
 	//image_speed = 0.2
-	draw_sprite_ext(sSunchair,0,x,y+3,1,1,0,global.color[clothescolor+5 mod array_length(global.color)],1)
+	draw_sprite_ext(sSunchair,sunchairchoice,x,y+3,1,1,0,c_white,1)
 	draw_sprite_ext(sNPC_Sunbathing_Body,breathing,x,y,1,1,0,global.color[skincolor mod array_length(global.color)],1)	
 	draw_sprite_ext(sNPC_Sunbathing_Feet,0,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 	
@@ -527,11 +559,29 @@ function scrGeneratorDrawSunbathing(){
 	}
 	
 	draw_sprite_ext(sNPC_Head_Base,dir,x,y+headchange,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
-	draw_sprite_ext(mouthsprite,dir,x,y+headchange,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	
+	if mouthsprite != sNPC_Mouth08 && mouthsprite != sNPC_Mouth03
+	{
+	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	}
+	else
+	{
+	draw_sprite_ext(mouthsprite,dir,x+shakex,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)	
+	}
+	
 	draw_sprite_ext(nosesprite,dir,x,y+headchange,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
 	draw_sprite_ext(earssprite,dir,x,y+headchange,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
-	draw_sprite_ext(hairsprite,dir,x,y+headchange,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)
-	draw_sprite_ext(eyessprite,dir,x,y+headchange,xscale,1,0,c_white,1)
+	
+	if hairsprite != sNPC_Hair01
+	{
+	draw_sprite_ext(eyessprite,dir,x+shakex,y,xscale,1,0,c_white,1)
+	draw_sprite_ext(hairsprite,dir,x+shakex,y,xscale,1,0,global.color[haircolor mod array_length(global.color)],1)
+	}
+	else
+	{
+	draw_sprite_ext(hairsprite,dir,x+shakex,y,xscale,1,0,global.color[skincolor mod array_length(global.color)],1)
+	draw_sprite_ext(eyessprite,dir,x+shakex,y,xscale,1,0,c_white,1)
+	}
 	
 }
 
@@ -653,11 +703,29 @@ function scrGenerator(_clothes,_ears,_eyes,_hair,_mouth,_nose,_shoes,_clothescol
 
 if _mouth = 6
 {
-	skincolor = 7
-	_skincolor = 7
-	haircolor = 11
-	_haircolor = 11
+	skincolor = 2
+	_skincolor = 2
+	haircolor = 0
+	_haircolor = 0
 }
+
+if _skincolor = 6 || _skincolor = 5
+{
+	haircolor = 25
+	_haircolor = 25
+}
+
+if _haircolor = 0
+{
+	skincolor = 2
+	_skincolor = 2
+}
+
+if (_mouth = 3 || _mouth = 6) && _hair > 8
+{
+	_mouth = choose(1,2,4,5)
+}
+
 
 
 
