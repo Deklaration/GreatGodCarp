@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_rock",
+    "path": "sprites/s_rock/s_rock.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

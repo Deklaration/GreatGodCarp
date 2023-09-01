@@ -24,8 +24,8 @@ grass_sprite = sDepthGrass; //Sprite used for the grass
 grass_random_image = true; //Can the grass use any sub-image from the sprite, at random? 
 						   //If false, it'll only use the first one.
 
-grass_animate = true; //Whether to use a wind shader to animate the grass
-grass_pattern = true; //Whether the grass should sway in a pattern
+grass_animate = false; //Whether to use a wind shader to animate the grass
+grass_pattern = false; //Whether the grass should sway in a pattern
 
 //These variables can also be changed later
 grass_wind = 0.06; //Power of the grass swaying

@@ -2,7 +2,7 @@ if instance_exists(oProt)
 {
 oProt.image_speed = 0
 }
-text = scrStringWrap(textmessage,x2Target-x1Target-textplace-15,"\n",true)
+
 
 faceindex = NPC.face
 mouthindex = NPC.mouthmove
@@ -25,8 +25,8 @@ if textplace < 65//205
 
 if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 {
-    var _messageLenght = string_length(text)
-	if textProgress >= _messageLenght
+
+	if typist.get_state = 1 //Här är jag. Ska kunna känna av när animationen från typist kört klart
 	{
 		if instance_exists(oTextQueued)
 		{
@@ -42,16 +42,14 @@ if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 	}
 	else
 	{
-		if (textProgress > 2)
-		{
-			x1 = x1Target
-			x2 = x2Target
-			textplace = 65
-			facescale = 1
-			textProgress = _messageLenght
-		}
+		typist.in(100,0)
 	}
 }
+
+show_debug_message(string(typist.get_state))
+
+typist.function_on_complete(textmessage,done = true)
+
 
 //Rör munnen om texten går
 if textProgress < string_length(text)

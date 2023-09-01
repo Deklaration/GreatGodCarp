@@ -19,7 +19,6 @@ with(oTourist)
 	}
 }
 
-show_debug_message(numTourists)
 
 /*
 

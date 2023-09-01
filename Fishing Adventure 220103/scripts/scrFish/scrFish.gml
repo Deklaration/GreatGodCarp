@@ -670,13 +670,13 @@ o _/       \  /| o              o     ___/|__      o
 function scrFishDraw(){
 
 draw_self()
-scrDrawSet(fTextbox,c_white,fa_center)
+//scrDrawSet(fTextbox,c_white,fa_center)
 //draw_text(self.x,self.y,"CR: " + string(catchratio) + " FS: " + string(fightsize) + " FT: " + string(fighttimer))
 
-draw_text(x,y+5,global.fisharray[f,4])
+//draw_text(x,y+5,global.fisharray[f,4])
 
-draw_text(x,y-5,global.fisharray[f,11])
-draw_path(fishPath,x,y,false)
+//draw_text(x,y-5,global.fisharray[f,11])
+//draw_path(fishPath,x,y,false)
 
 if hspeed < 0
 {

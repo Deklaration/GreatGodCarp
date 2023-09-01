@@ -111,6 +111,7 @@
     {"name":"inst_27289B57","path":"rooms/rGreatLake/rGreatLake.yy",},
     {"name":"inst_ADA9D43","path":"rooms/rGreatLake/rGreatLake.yy",},
     {"name":"inst_2BE8EBA0","path":"rooms/rGreatLake/rGreatLake.yy",},
+    {"name":"inst_5745F8C8","path":"rooms/rGreatLake/rGreatLake.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -223,6 +224,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E2C3D7A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGreatLake_West","path":"objects/oGreatLake_West/oGreatLake_West.yy",},"properties":[],"rotation":0.0,"scaleX":0.28125,"scaleY":15.890625,"x":-7.0,"y":-20.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60DA2E7B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGreatLake_South","path":"objects/oGreatLake_South/oGreatLake_South.yy",},"properties":[],"rotation":0.0,"scaleX":15.40625,"scaleY":0.15625,"x":-8.0,"y":950.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C545DC0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGreatLake_North","path":"objects/oGreatLake_North/oGreatLake_North.yy",},"properties":[],"rotation":0.0,"scaleX":15.421874,"scaleY":0.203125,"x":-19.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5745F8C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGrassCreator","path":"objects/oGrassCreator/oGrassCreator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Footprints","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Brygga","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[

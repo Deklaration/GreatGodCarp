@@ -71,6 +71,7 @@
     {"name":"inst_519E2ABC","path":"rooms/rEastBeach/rEastBeach.yy",},
     {"name":"inst_547332A6","path":"rooms/rEastBeach/rEastBeach.yy",},
     {"name":"inst_BC35455","path":"rooms/rEastBeach/rEastBeach.yy",},
+    {"name":"inst_775E573","path":"rooms/rEastBeach/rEastBeach.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -143,6 +144,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_519E2ABC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTouristWalking","path":"objects/oTouristWalking/oTouristWalking.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_547332A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTouristWalking","path":"objects/oTouristWalking/oTouristWalking.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BC35455","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTouristWalking","path":"objects/oTouristWalking/oTouristWalking.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_775E573","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGrassCreator","path":"objects/oGrassCreator/oGrassCreator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":32.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
 -180,0,1,-2147483648,-59,0,-2,-2147483648,-58,0,-5,-2147483648,-55,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,-54,0,-6,-2147483648,

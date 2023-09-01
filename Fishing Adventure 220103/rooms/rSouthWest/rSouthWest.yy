@@ -53,6 +53,7 @@
     {"name":"inst_3E6B21BE","path":"rooms/rSouthWest/rSouthWest.yy",},
     {"name":"inst_5AC1E149","path":"rooms/rSouthWest/rSouthWest.yy",},
     {"name":"inst_5DA8DD66","path":"rooms/rSouthWest/rSouthWest.yy",},
+    {"name":"inst_7B0DF26F","path":"rooms/rSouthWest/rSouthWest.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -107,6 +108,7 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EE548C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSouthWest_East","path":"objects/oSouthWest_East/oSouthWest_East.yy",},"properties":[],"rotation":0.0,"scaleX":-0.078125,"scaleY":9.078124,"x":960.0,"y":-8.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B0DF26F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGrassCreator","path":"objects/oGrassCreator/oGrassCreator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":60,"TileCompressedData":[
 -7,0,53,84,85,84,85,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,39,40,-9,0,14,20,

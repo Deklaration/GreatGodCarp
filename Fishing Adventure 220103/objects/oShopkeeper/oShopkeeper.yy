@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Puddle Town",
-    "path": "folders/Objects/NPC/Puddle Town.yy",
+    "name": "Beachside",
+    "path": "folders/Objects/NPC/Beachside.yy",
   },
   "parentObjectId": {
     "name": "oWall",

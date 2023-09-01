@@ -24,8 +24,8 @@ if textplace < 10
 
 if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 {
-    var _messageLenght = string_length(text)
-	if textProgress >= _messageLenght
+    var _messageLength = string_length(text)
+	if textProgress >= _messageLength
 	{
 		if instance_exists(oTextQueuedSign)
 		{
@@ -45,7 +45,7 @@ if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 				x2 = x2Target
 				textplace = 10
 				facescale = 1
-				textProgress = _messageLenght
+				textProgress = _messageLength
 			}
 	   }
 	}

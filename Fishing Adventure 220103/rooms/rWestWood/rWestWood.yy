@@ -143,6 +143,7 @@
     {"name":"inst_7A0F4EDE","path":"rooms/rWestWood/rWestWood.yy",},
     {"name":"inst_6A6D9991","path":"rooms/rWestWood/rWestWood.yy",},
     {"name":"inst_4A2A8B10","path":"rooms/rWestWood/rWestWood.yy",},
+    {"name":"inst_52DB7DB3","path":"rooms/rWestWood/rWestWood.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -287,6 +288,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C284997","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWestWood_East","path":"objects/oWestWood_East/oWestWood_East.yy",},"properties":[],"rotation":0.0,"scaleX":0.171875,"scaleY":15.0,"x":949.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_683D3A90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWestWood_South","path":"objects/oWestWood_South/oWestWood_South.yy",},"properties":[],"rotation":0.0,"scaleX":15.03125,"scaleY":0.203125,"x":-2.0,"y":947.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_113ED6A4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWestWood_North","path":"objects/oWestWood_North/oWestWood_North.yy",},"properties":[],"rotation":0.0,"scaleX":15.140625,"scaleY":0.15625,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52DB7DB3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGrassCreator","path":"objects/oGrassCreator/oGrassCreator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":192.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Footprints","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[

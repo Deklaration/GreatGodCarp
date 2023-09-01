@@ -1,6 +1,12 @@
 instance_create_depth(-100,-100,0,oProt)
 randomise()
 
+scribble_anim_wave(1.2,100,0.1)
+scribble_anim_rainbow(0.5,0.004)
+scribble_anim_shake(1,0.5)
+scribble_font_bake_shadow("fTextbox","fTextboxShadow",0,1,c_black,1,1,false)
+scribble_font_set_default("fTextboxShadow")
+
 //Language
 global.language = "English"
 

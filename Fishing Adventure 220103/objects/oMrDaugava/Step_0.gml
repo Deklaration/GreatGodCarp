@@ -1,4 +1,5 @@
 depth =-y;
+if (live_call()) return live_result;
 
 if !instance_exists(oGettingGear)
 {
@@ -59,7 +60,9 @@ if (place_meeting(x,y+1,oProt) && oProt.sprite_index = sProt_North)
 
 
 }
-//FÖRSTA SNACKET, DÅ MAN FÅR SINA GREJER
+
+
+//FÖRSTA SNACKET, INNAN MAN GÅR TILL AQUAVISTA
 if global.gettinggear = false
 {
 
@@ -73,9 +76,6 @@ if talking = true && createtext = false
 	scrNewTextbox(dialog[4],0)
 	scrNewTextbox(dialog[5],0)
 	scrNewTextbox(dialog[6],0)	
-	scrNewTextbox(dialog[7],0)
-	scrNewTextbox(dialog[8],0)
-	scrNewTextbox(dialog[9],0)
 	createtext = true
 }
 

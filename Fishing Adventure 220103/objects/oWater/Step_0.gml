@@ -30,10 +30,15 @@ if wavespeed <=1.2
 
 if instance_exists(oBete)
 {
-	if oBete.water = true
+	if oBete.water = true && splash = false
 	{
-		dyliquid_spash(oBete.x,10)
+		dyliquid_spash(oBete.x,3)
+		splash = true
 	}
+}
+else
+{
+	splash = false
 }
 
     dyliquid_set_tension(tension);

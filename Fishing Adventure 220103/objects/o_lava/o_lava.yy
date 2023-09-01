@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_lava",
+    "path": "sprites/s_lava/s_lava.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
