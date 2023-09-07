@@ -22,10 +22,7 @@ if i = 3
 	for (var b = 0; b < 10; ++b) {
 	    scrInventoryAdd(oBait,1)
 	}
-	
-	
-//	scrRodsAdd(oRods,1)
-//	scrBaitAdd(oBait,1)
+
 global.activerod = 1//"It's a stick"
 global.activebait = 1// "Safety pin"
 	instance_destroy(self)

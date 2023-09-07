@@ -35,6 +35,11 @@ global.color[30] = make_color_rgb(232, 183, 150);
 global.color[31] = make_color_rgb(194, 133, 105);
 global.color[32] = make_color_rgb(89, 207, 113);
 
+for (var i = 0; i < 32; ++i) {
+    scribble_color_set(string("color_") + string(i),global.color[i])
+}
+
+
 /*
 global.color[0] = make_color_rgb(232,232,228)
 global.color[1] = make_color_rgb(216,226,220)

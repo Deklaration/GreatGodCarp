@@ -2,77 +2,57 @@ image_alpha = 1
 talking = false
 createtext = false
 face = sDaugavaPortrait
+faceAngry = sDaugavaPortraitAngry
+faceSad = sDaugavaPortraitSad
+
 mouthmove = sDaugavaMouth
+mouthmoveSad = sDaugavaMouthSad
 pitch = 1
 image_speed = 0
 mask_index = sDaugavaMask
 image_xscale = 1.2
 image_yscale = 1.2
 
+//[gettinggear][#TEXT*{OBJECT}£SPRITE$½SIFFRA PÅ OBJEKTET€,=SKALA~+HUR MÅNGA_]
+
 //ENGLISH
 if global.language = "English"
 {
 //Första samtalet
-dialog[0] = "Oh! A tourist! Oh! A tourist! [sArrow] Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!Oh! A tourist!"
-dialog[1] = "Welcome to [wave][rainbow]Pisc Island[/rainbow][/wave], the fishing paradise!!"
-dialog[2] = "..."
-dialog[3] = "[shake]What?[/shake] You're not a tourist? You just fell from the sky?"
-dialog[4] = "You're a pretty lucky guy to land here on [rainbow]Pisc Island[/rainbow]!"
-dialog[5] = "I don't know if you've noticed, but this island isn't really one it once was... Maybe a lucky guy like you could help us out!"
-dialog[6] = "Follow me, sky guy!"
+dialog[0,0] = "Oh, a turist! Welcome, welcome! We are all so happy you're here!"
+dialog[0,1] = "Welcome to [wave][rainbow]Pisc Island[/rainbow][/wave], the fishing paradise!!"
+dialog[0,2] = "Unfortunately, our world famous aquarium has run into a few... issues. But please, enjoy your stay at [wave][rainbow]Pisc Island[/rainbow][/wave]!"
+dialog[0,3] = "..."
+dialog[0,4] = "[angry][shake]What?[/shake] You're not a tourist? You just fell from the sky?"
+dialog[0,5] = "Hey, you're a pretty lucky guy to land here on [wave][rainbow]Pisc Island[/rainbow][/wave]!"
+dialog[0,6] = "[sad]I don't know if you've noticed, but this island isn't really one it once was..." 
+dialog[0,7] = "Maybe a lucky guy like you could help us out!"
+dialog[0,8] = "Follow me, sky guy!"
 
 //Man pratar med honom inne på AquaVista
-dialog[7] = "Welcome to [c_red]AquaVista! [c_black]This used to be a thriving aquarium, just a few years ago. But now..."
-dialog[8] = "It's all empty! Even though we have "
-dialog[9] = "Let me just hook you up with a fishing rod, bait and our official Fishing guide."
-dialog[10] = "Here, take these with you. I made them myself!"
-dialog[11] = "No need to thank me, I love arts and crafts. Good luck out there!"
-dialog[12] = "Now what? Do you need help fishing? I thought you guys were experts!"
-dialog[13] = "Just go to the water and throw out a line!"
-dialog[14] = "You can change your gear by opening the fishing guide with " + string(oGame.keyboard[global.key_pause]) +"!"
-}
-/*
-//ENGLISH
-if global.language = "English"
-{
-dialog[0] = "Welcome to Puddle Town! The most southern town of Pisc Island!"
-dialog[1] = "I didn't see you at the registration. Do you have your gear?"
-dialog[2] = "What? You fell from the sky?"
-dialog[3] = "I don't really care how you got here. I'm busy with the FISHING COMPETITION. You're in, right?"
-dialog[4] = "The rules are simple, the one who catches the biggest fish within a week is declared the winner and is the Grand fishing master!"
-dialog[5] = "Let me just hook you up with a fishing rod, bait and our official Fishing guide."
-dialog[6] = "..."
-dialog[7] = "I'm terribly sorry, but I guess we're all out of gear. Are you sure you signed up for this?"
-dialog[8] = "Here, take these with you. I made them myself!"
-dialog[9] = "No need to thank me, I love arts and crafts. Good luck out there!"
-dialog[10] = "Now what? Do you need help fishing? I thought you guys were experts!"
-dialog[11] = "Just go to the water and throw out a line!"
-dialog[12] = "You can change your gear by opening the fishing guide with " + string(oGame.keyboard[global.key_pause]) +"!"
-}
+dialog[1,0] = "Welcome to [color_17]AquaVista[color_19]!"
+dialog[1,1] = "[sad]This used to be a thriving aquarium, just a few years ago. But now..."
+dialog[1,2] = "[sad]The fish are all... gone. And I need someone to replace them."
+dialog[1,3] = "Take this rod, I've made it myself![gettinggear][#A FISHING ROD*{oRods}£sRodsIcon$½1€,=0~+1_]"
+dialog[1,4] = "And take these as well, I'm sure they will help you out.[gettinggear][#SOME BAIT*{oBait}£sBaitIcon$½1€,=0~+10_]"
+dialog[1,5] = "Go to the water and throw out a line! See if there's any more luck left in 'ya!"
 
+//Man pratar med honom igen inne på AquaVista, innan man fångat sig en fisk
+dialog[2,0] = "Now what? Do you need help fishing?"
+dialog[2,1] = "Just go to the shore and press " + string(oGame.keyboard[global.key_a]) + " to fish!"
+dialog[2,2] = "Come back and talk to me after your first catch!"
 
+//Efter man fångat sin första fisk.
+dialog[3,0] = "[angry]I can't believe you caught one using that old stick!"
+dialog[3,1] = "We can finally get [color_17]AquaVista[color_19] going again!"
+dialog[3,2] = "Go ahead, [color_10]set it free in its designated pool[color_19]!"
+dialog[3,3] = "I bet the turists will be back in no time!"
+dialog[3,4] = "There's a lot more fish out these. Take this, I'll bet it will come in handy.[gettinggear][#A FISHING GUIDE*{-1}£sFishingGuideIcon$½1€,=0~+1_]"
 
+//Efter man placerat sin första fisk i vattentank
+dialog[4,0] = "[wave]Fantastic[/wave]! It brings me so much joy to see a fish in [color_17]AquaVista[color_19] again."
+dialog[4,1] = "Let the town know! I bet they'll be so excited to see it!"
 
-
-
-
-
-
-
-
-
-if global.language = "Swedish"
-{
-dialog[0] = "Välkommen till Pölköping! Den södraste staden på Piscö!"
-dialog[1] = "Jag såg dig inte på incheckningen. Har du alla grejer?"
-dialog[2] = "What? You fell from the sky?"
-dialog[3] = "I don't really care how you got here. I'm busy with the FISHING COMPETITION. You're in, right?"
-dialog[4] = "The rules are simple, the one who catches the biggest fish within a week is declared the winner and is the Grand fishing master!"
-dialog[5] = "Let me just hook you up with a fishing rod, bait and our official Fishing guide."
-dialog[6] = "..."
-dialog[7] = "I'm terribly sorry, but I guess we're all out of gear. Are you sure you signed up for this?"
-dialog[8] = "Here, take these with you. I made them myself!"
-dialog[9] = "No need to thank me, I love arts and crafts. Good luck out there!"
-dialog[10] = "Now what? Do you need help fishing? I thought you guys were experts!"
-dialog[11] = "Just go to the water and throw out a line!"
+//Pratar igen efter man placerat sin första fisk i vattentank
+dialog[5,0] = "Go on then! Spread the news! Tell everyone that we got a fish at [color_17]AquaVista[color_19] again!"
 }

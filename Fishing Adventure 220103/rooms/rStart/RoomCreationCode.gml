@@ -7,11 +7,14 @@ scribble_anim_shake(1,0.5)
 scribble_font_bake_shadow("fTextbox","fTextboxShadow",0,1,c_black,1,1,false)
 scribble_font_set_default("fTextboxShadow")
 
+
 //Language
 global.language = "English"
 
 //Färgarray
 scrColor();
+
+
 
 //Variabler som sparas mellan fiske och värld
 global.xbeforefish = 430
@@ -84,6 +87,9 @@ global.cutscene4done = false
 global.cutscene5done = false
 global.cutscene6done = false
 global.cutscene7done = false
+
+//Progress
+global.daugava_set = 0
 
 //Kläder
 global.nosewest = sNose1_West

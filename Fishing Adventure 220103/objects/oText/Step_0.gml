@@ -4,8 +4,18 @@ oProt.image_speed = 0
 }
 
 
+typist.sound(talkingSound,20,0.6,1.1,1)
+typist.function_per_char(function(_element, _position, _typist)
+{
+	mouthmovement+=0.3
+})
+
+
 faceindex = NPC.face
+faceindex_angry = NPC.faceAngry
+faceindex_sad = NPC.faceSad
 mouthindex = NPC.mouthmove
+mouthindex_sad = NPC.mouthmoveSad
 
 lerpProgress += (1 - lerpProgress) / 50;
 textProgress += global.textspeed
@@ -18,65 +28,48 @@ if facescale < 1
 	facescale +=0.1
 }
 
-if textplace < 65//205
+if textplace < 65
 {
-	textplace +=5//20.5
+	textplace +=5
 }
 
-if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
+show_debug_message(string("gettinggear") + string(gettinggear))
+show_debug_message(string("gotgear") + string(gotgear))
+
+if gettinggear = false || gotgear = true
 {
-
-	if typist.get_state = 1 //Här är jag. Ska kunna känna av när animationen från typist kört klart
-	{
-		if instance_exists(oTextQueued)
-		{
-			with (oTextQueued) ticket--;
-		}
-		oMusic.intensity = 1
-		oGame.textboxtimer = true
-		if instance_exists(oGeneratorFaceIndex)
-		{
-		instance_destroy(oGeneratorFaceIndex)
-		}
-		instance_destroy()
-	}
-	else
-	{
-		typist.in(100,0)
-	}
-}
-
-show_debug_message(string(typist.get_state))
-
-typist.function_on_complete(textmessage,done = true)
-
-
-//Rör munnen om texten går
-if textProgress < string_length(text)
+	if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 	{
 
-		
-		if talkingtimer > 5
+		if typist.get_state(1)
 		{
-		talkingtimer = 0
-		}
-		talkingtimer +=0.4
-		if mouthmovement <3
-		{
-		mouthmovement +=0.2
+			if instance_exists(oTextQueued)
+			{
+				with (oTextQueued) ticket--;
+			}
+			oMusic.intensity = 1
+			oGame.textboxtimer = true
+			if instance_exists(oGeneratorFaceIndex)
+			{
+			instance_destroy(oGeneratorFaceIndex)
+			}
+			instance_destroy()
 		}
 		else
 		{
-			mouthmovement = 0
+			typist.in(100,0)
 		}
 	}
-	else
-	{
-		mouthmovement = 0
-	}
-	
-	if sw = 0 && generated = true
-	{
-	instance_create_depth(100,100,-100,oGeneratorFaceIndex)
-	sw = 1
-	}
+}
+
+//Ändra ansiktsuttryck
+
+//Arg
+var pos = string_pos("[angry]", textmessage);
+if (pos > 0) {faceindex = faceindex_angry;}
+
+//Ledsen
+var pos = string_pos("[sad]", textmessage);
+if (pos > 0) {faceindex = faceindex_sad; mouthindex = mouthindex_sad}
+
+
