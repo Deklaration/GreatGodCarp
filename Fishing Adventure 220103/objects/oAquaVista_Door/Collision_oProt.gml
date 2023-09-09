@@ -5,4 +5,5 @@
 global.lastroom = room
 global.exitx = x
 global.exity = y +30
-room_goto(rAquaVista)
+scrTransitionsStart(rAquaVista,sqFadeOut,sqFadeIn)
+//room_goto(rAquaVista)

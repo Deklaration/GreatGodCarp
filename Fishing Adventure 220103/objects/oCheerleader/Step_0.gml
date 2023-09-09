@@ -1,6 +1,6 @@
 depth =-y;
 
-//scrTalkToNPC()
+scrTalkToNPC()
 
 if talking = true && createtext = false
 {

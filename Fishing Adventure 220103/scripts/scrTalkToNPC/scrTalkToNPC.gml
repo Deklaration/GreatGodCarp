@@ -1,6 +1,6 @@
 function scrTalkToNPC(){
 
-if global.paused = false {
+if global.paused = false && global.textbox = false{
 
 if (place_meeting(x-1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscale = -1)
 {

@@ -3,11 +3,12 @@
 
 function scrGettingGear(_text,_object,_sprite,_imageindex,_scale,_howmany){
 gettinggear = true
-
-show_debug_message(string("imagespeed") + string(imagespeed))
+if showGear = true
+{
+//show_debug_message(string("imagespeed") + string(imagespeed))
 if typist.get_state(1)
 {
-	show_debug_message(sprite_get_name(_sprite))
+	//show_debug_message(sprite_get_name(_sprite))
 imagespeed +=1
 if imagespeed >= 22
 {
@@ -61,7 +62,7 @@ bottomtexty -=4
 	draw_sprite_ext(_sprite,_imageindex,camera_get_view_width(oCamera.cam) / 2,camera_get_view_height(oCamera.cam) / 2,scale,scale,rot,c_white,alpha)
 	scrTextOutline(camera_get_view_width(oCamera.cam) / 2,toptexty,"YOU GOT",1000,alpha,global.color[19],global.color[25])
 	scrTextOutline(camera_get_view_width(oCamera.cam) / 2,bottomtexty,_text,1000,alpha,global.color[19],global.color[25])
-	
+}	
 
 }
 

@@ -18,6 +18,7 @@ if createtext = false
 if instance_exists(oText)
 {
 	oText.NPC = self
+	oText.showFace = true
 }
 
 if !instance_exists(oText)

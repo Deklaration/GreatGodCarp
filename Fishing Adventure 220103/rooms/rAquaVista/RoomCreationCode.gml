@@ -14,6 +14,11 @@ else
 	global.ybeforefish = 381
 	instance_create_depth(712,381,-1,oProt)
 }
+
+if global.cutscene2 = true
+	{
+	instance_create_depth(712,499,-1,oMrDaugava)	
+	}
 	
 	oceanAquarium[0,0] = 0
 	oceanAquarium[0,1] = 0

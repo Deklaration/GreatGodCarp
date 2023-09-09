@@ -529,6 +529,10 @@ if i = 4
 	{
 	scrInventoryAdd(oInventory,f-1)
 	add = true
+		if global.catchFirstFish = -1
+		{
+			global.catchFirstFish = global.fisharray[f,4]
+		}
 	}
 	instance_destroy(hitid)
 	oProtFishing.sprite_index = sProtFishingCaughtFish

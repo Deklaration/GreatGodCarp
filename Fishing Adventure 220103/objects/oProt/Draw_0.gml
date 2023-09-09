@@ -6,6 +6,6 @@ draw_sprite_ext(sprite_index, image_index, x, y, xscale, 1, rotation, skincolor,
 draw_sprite_ext(clothes,image_index,self.x,self.y,xscale,1,rotation,global.color[clothescolor],1)
 //draw_sprite_ext(sProt_idle_hair,0,self.x,self.y,xscale,1,rotation,c_blue,1)
 draw_sprite_ext(nose,image_index,self.x,self.y,xscale,1,rotation,global.color[nosecolor],1)
-draw_text(x,y+10,depth)
+draw_text(x,y+10,global.catchFirstFish)
 
 }

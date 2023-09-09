@@ -3,6 +3,7 @@
 function scrLastRoom(){
 
 //room_goto(room_last)
-room_goto(global.lastroom)
+scrTransitionsStart(global.lastroom,sqFadeOut,sqFadeIn)
+//room_goto(global.lastroom)
 
 }

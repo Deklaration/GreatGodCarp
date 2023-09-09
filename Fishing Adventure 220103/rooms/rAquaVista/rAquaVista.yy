@@ -7,14 +7,16 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_7261BEAE","path":"rooms/rAquaVista/rAquaVista.yy",},
     {"name":"inst_27F6A7F8","path":"rooms/rAquaVista/rAquaVista.yy",},
+    {"name":"inst_22C8CD01","path":"rooms/rAquaVista/rAquaVista.yy",},
+    {"name":"inst_6B9F75B1","path":"rooms/rAquaVista/rAquaVista.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7261BEAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHouseExit","path":"objects/oHouseExit/oHouseExit.yy",},"properties":[],"rotation":0.0,"scaleX":17.0,"scaleY":1.0,"x":704.0,"y":825.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27F6A7F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oAquaVista_Door_TopFloor","path":"objects/oAquaVista_Door_TopFloor/oAquaVista_Door_TopFloor.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":720.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22C8CD01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oAquaVistaExit","path":"objects/oAquaVistaExit/oAquaVistaExit.yy",},"properties":[],"rotation":0.0,"scaleX":13.75,"scaleY":0.75,"x":721.0,"y":819.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B9F75B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oAquaVistaController","path":"objects/oAquaVistaController/oAquaVistaController.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":544.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":52,"SerialiseWidth":90,"TileCompressedData":[
 -44,1610612841,-46,1073741929,-43,1610612841,1,268435465,-3,9,-43,1073741929,-43,1610612841,1,268435465,-3,9,-43,1073741929,-2,1610612841,-42,268435457,-44,1,-2,1073741929,-2,1610612841,-42,268435465,-44,9,-2,1073741929,-2,1610612841,-42,268435473,-44,17,-2,1073741929,-2,1610612841,-32,268435457,-22,105,-32,1,-2,1073741929,-2,1610612841,-32,268435465,-22,105,-32,9,-2,1073741929,-2,1610612841,-32,268435473,-22,105,-32,17,-2,1073741929,-2,1610612841,-32,268435457,-10,268435561,-12,105,-32,1,-2,1073741929,-2,1610612841,-32,268435465,

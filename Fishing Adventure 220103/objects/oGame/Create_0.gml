@@ -13,9 +13,9 @@ currenttown = ""
 l = 0
 
 ///QUESTS
-oGame.quest[0] = "Get back home!"
-oGame.quest[1] = "Catch the biggest fish"
-oGame.quest[2] = "Visit Waveville"
+oGame.quest[0] = "Place a fish in a tank"
+oGame.quest[1] = "Spread joy"
+oGame.quest[2] = "Fill AquaVista with fish"
 
 //CUTSCENES
 if global.cutscene1done = false

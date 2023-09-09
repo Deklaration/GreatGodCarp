@@ -1,6 +1,7 @@
 talking = false
 createtext = false
 timer = 5
+stop = false
 createdfish = 0
 depth = -y-10
 image_speed = 0

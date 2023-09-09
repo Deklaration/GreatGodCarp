@@ -70,6 +70,7 @@ global.waterType = "ocean"
 //Pengar
 global.gold = 0
 
+
 //Cutscenes
 global.cutscene = false
 global.cutscene1 = false
@@ -81,15 +82,18 @@ global.cutscene6 = false
 global.cutscene7 = false
 
 global.cutscene1done = false
+/*
 global.cutscene2done = false
 global.cutscene3done = false
 global.cutscene4done = false
 global.cutscene5done = false
 global.cutscene6done = false
 global.cutscene7done = false
-
+*/
 //Progress
 global.daugava_set = 0
+global.catchFirstFish = -1
+global.showAquaVistaLight = false
 
 //Kläder
 global.nosewest = sNose1_West

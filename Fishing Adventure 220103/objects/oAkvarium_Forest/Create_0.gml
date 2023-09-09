@@ -3,6 +3,7 @@ createtext = false
 timer = 5
 createdfish = 0
 depth = -y-10
+stop = false
 image_speed = 0
 
 skylt = instance_create_depth(x+28,y+8,self.depth-3,oAkvariumSkylt,{tank : id})

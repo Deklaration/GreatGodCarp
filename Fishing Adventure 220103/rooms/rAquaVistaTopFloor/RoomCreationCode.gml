@@ -1,7 +1,7 @@
 global.directionbeforefish = sProt_North
-global.xbeforefish = 525
-global.ybeforefish = 385
-instance_create_depth(525,385,-1,oProt)
+global.xbeforefish = 463
+global.ybeforefish = 335
+instance_create_depth(463,335,-1,oProt)
 
 	
 	rareAquarium[0,0] = 0

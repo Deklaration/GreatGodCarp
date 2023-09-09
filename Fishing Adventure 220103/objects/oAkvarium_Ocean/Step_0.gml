@@ -39,3 +39,27 @@ if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.
 				}
 		}
 	}
+	
+//Guidar en pil rätt, om man har en fisk
+if scrInventorySearch(oInventory,fish-1) !=-1 && global.showAquaVistaLight = true && stop = false && global.fishInTank[fish] = 0
+		{	
+			for (var i = 0; i < array_length(oAquaVistaController.tankGuide); ++i)
+			{
+			    if (oAquaVistaController.tankGuide[i] == id)
+			    {
+					stop = true
+			    }
+			}
+			if stop = false
+			{
+				for (var i = 0; i < array_length(oAquaVistaController.tankGuide); ++i)
+					{
+					   if (oAquaVistaController.tankGuide[i] == -1)
+					    {
+						array_delete(oAquaVistaController.tankGuide,i,1)
+						}
+					}
+				array_push(oAquaVistaController.tankGuide,id)
+				stop = true
+			}
+		}

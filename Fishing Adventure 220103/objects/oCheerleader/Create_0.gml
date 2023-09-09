@@ -8,9 +8,12 @@ pitch = 0.7
 image_xscale = 1
 image_yscale = 1
 
-if x > oMrDaugava.x
+if instance_exists(oMrDaugava)
 {
-	image_xscale = -1
+	if x > oMrDaugava.x
+	{
+		image_xscale = -1
+	}
 }
 
 dialog[0] = "F - I - S - H!! GO FISH! GO FISH!"

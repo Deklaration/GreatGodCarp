@@ -13,6 +13,12 @@ mask_index = sDaugavaMask
 image_xscale = 1.2
 image_yscale = 1.2
 
+
+//Cutscenes
+walktimer_cutscene2 = 0; //timer på hur MrDaugava går in i AquaVista
+walkRight = 0 //Om MrDaugava kan gå åt höger för att ta sig in till AquaVista
+walkSet = false
+
 //[gettinggear][#TEXT*{OBJECT}£SPRITE$½SIFFRA PÅ OBJEKTET€,=SKALA~+HUR MÅNGA_]
 
 //ENGLISH
@@ -43,11 +49,12 @@ dialog[2,1] = "Just go to the shore and press " + string(oGame.keyboard[global.k
 dialog[2,2] = "Come back and talk to me after your first catch!"
 
 //Efter man fångat sin första fisk.
-dialog[3,0] = "[angry]I can't believe you caught one using that old stick!"
-dialog[3,1] = "We can finally get [color_17]AquaVista[color_19] going again!"
-dialog[3,2] = "Go ahead, [color_10]set it free in its designated pool[color_19]!"
-dialog[3,3] = "I bet the turists will be back in no time!"
-dialog[3,4] = "There's a lot more fish out these. Take this, I'll bet it will come in handy.[gettinggear][#A FISHING GUIDE*{-1}£sFishingGuideIcon$½1€,=0~+1_]"
+dialog[3,0] = "[angry]A " + string(global.catchFirstFish) + "!"
+dialog[3,1] = "[angry]I can't believe you caught one using that old stick!"
+dialog[3,2] = "We can finally get [color_17]AquaVista[color_19] going again!"
+dialog[3,3] = "Go ahead, [color_10]set it free in its designated pool[color_19]!"
+dialog[3,4] = "I bet the turists will be back in no time!"
+dialog[3,5] = "There's a lot more fish out these. Take this, I'll bet it will come in handy."//[gettinggear][#A FISHING GUIDE*{-1}£sFishingGuideIcon$½1€,=0~+1_]"
 
 //Efter man placerat sin första fisk i vattentank
 dialog[4,0] = "[wave]Fantastic[/wave]! It brings me so much joy to see a fish in [color_17]AquaVista[color_19] again."

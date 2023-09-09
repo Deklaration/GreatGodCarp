@@ -9,7 +9,7 @@ draw_set_valign(fa_top)
 
 scribble("[c_white]"+textmessage).wrap(300,300).draw(x1+textplace,y1+9,typist)
 
-if !instance_exists(oGeneratorFaceIndex)
+if !instance_exists(oGeneratorFaceIndex) && showFace = true
 {
 draw_sprite_ext(faceindex,0,x1+15,y1+15,facescale,1,0,c_white,1)
 draw_sprite_ext(mouthindex,mouthmovement,x1+15,y1+15,facescale,1,0,c_white,1)
@@ -42,11 +42,11 @@ if (endPosScale != 0) { var countScale = endPosScale - startPosScale + 1;}
 if (endPosScale != 0) { var countHowMany = endPosHowMany - startPosHowMany + 1;}
 if (pos > 0) && gotgear = false{
 
-	show_debug_message(string("\"") + string_copy(textmessage,startPosText+1,countText-2) + string("\""))
-	show_debug_message(string_copy(textmessage,startPosObject+1,countObject-2))
-	show_debug_message(asset_get_index(string_copy(textmessage,startPosSprite+1,countSprite-2)))
-	show_debug_message(string_copy(textmessage,startPosIndex+1,countIndex-2))
-	show_debug_message(string_copy(textmessage,startPosScale+1,countScale-2))
+	//show_debug_message(string("\"") + string_copy(textmessage,startPosText+1,countText-2) + string("\""))
+	//show_debug_message(string_copy(textmessage,startPosObject+1,countObject-2))
+	//show_debug_message(asset_get_index(string_copy(textmessage,startPosSprite+1,countSprite-2)))
+	//show_debug_message(string_copy(textmessage,startPosIndex+1,countIndex-2))
+	//show_debug_message(string_copy(textmessage,startPosScale+1,countScale-2))
 	
 	
 	scrGettingGear(string_copy(textmessage,startPosText+1,countText-2),
