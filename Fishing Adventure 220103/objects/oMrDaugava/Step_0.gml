@@ -10,7 +10,7 @@ if (place_meeting(x-1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscal
 	if keyboard_check_pressed(global.key_a)
 	{
 		oProt.image_index = 0
-		sprite_index = sDaugavaEast
+		sprite_index = sDaugavaWest
 		talking = true
 		global.textbox = true
 	}
@@ -24,7 +24,7 @@ if (place_meeting(x+1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscal
 		if keyboard_check_pressed(global.key_a)
 	{
 		oProt.image_index = 0
-		sprite_index = sDaugavaWest
+		sprite_index = sDaugavaEast
 		talking = true
 		global.textbox = true
 	}
@@ -63,23 +63,23 @@ scrTalkToDaugava(0,1)
 //Cutscene, där Daugava går in till AquaVista
 if global.daugava_set = 1 && global.cutscene2 = false && global.textbox = false
 {
-	if sprite_index != sDaugavaWest && walkSet = false 
+	if sprite_index != sDaugavaEast && walkSet = false 
 	{ 
 		walkRight = 1;
 		walkSet = true
 	} 
-	if sprite_index = sDaugavaWest && walkSet = false 
+	if sprite_index = sDaugavaEast && walkSet = false 
 	{	walkRight = 2; 
 		walkSet = true
 	}
-	show_debug_message(walkRight)
+	//show_debug_message(walkRight)
 	
 	if walkRight = 1
 	{
 		global.cutscene = true
 		walktimer_cutscene2 +=1
 	 	x+= 1
-		sprite_index = sDaugavaWest
+		sprite_index = sDaugavaEast
 		if oProt.y > y
 		{
 			oProt.sprite_index = sProt_NorthEast
@@ -112,7 +112,7 @@ if global.daugava_set = 1 && global.cutscene2 = false && global.textbox = false
 		sprite_index = sDaugavaNorth
 		if walktimer_cutscene2 >= 40
 		{
-			sprite_index = sDaugavaWest
+			sprite_index = sDaugavaEast
 				if x < 776
 				{
 				y = 448
@@ -169,16 +169,22 @@ if global.daugava_set = 2 && global.catchFirstFish !=-1
 }
 
 //Efter man fångat sin första fisk
-scrTalkToDaugava(3,3)
+scrTalkToDaugava(3,4)
 
-if global.daugava_set = 3
+if global.daugava_set = 4
 {
 	global.showAquaVistaLight = true
+	if global.placedFirstFishInTank = true
+	{
+		global.daugava_set = 5
+	}
 }
+//Man pratar igen efter man fångat sin första fisk
+scrTalkToDaugava(4,4)
 
 //Man har satt sin första fisk i akvarium
-scrTalkToDaugava(4,5)
+scrTalkToDaugava(5,6)
 
 //Man pratar igen efter man satt sin första fisk i akvarium
-scrTalkToDaugava(5,5)
+scrTalkToDaugava(6,6)
 

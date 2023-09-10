@@ -11,4 +11,4 @@ createtext = false
 face = sSittandeKilleBlondPortrait
 mouthmove = sSittandeKilleBlondePortraitMouth
 
-dialog[0] = "Hey! Didn't see you on the boat. Are you a local?"
+dialog[0] = "Sch! Don't scare away the fish! I'm trying to save the island!"

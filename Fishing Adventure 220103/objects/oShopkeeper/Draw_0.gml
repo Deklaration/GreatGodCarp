@@ -1,4 +1,7 @@
+if global.daugava_set > 4
+{
 draw_sprite(sShopkeeper,shopkeeperspeed,x,y)
+}
 draw_self()
 
 timer -=1

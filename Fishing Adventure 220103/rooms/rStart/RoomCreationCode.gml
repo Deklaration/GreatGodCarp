@@ -94,6 +94,10 @@ global.cutscene7done = false
 global.daugava_set = 0
 global.catchFirstFish = -1
 global.showAquaVistaLight = false
+global.placedFirstFishInTank = false
+global.gotFishGuide = false
+global.talkedtoRune = false
+global.talkedtoShop = false
 
 //Kläder
 global.nosewest = sNose1_West

@@ -4,7 +4,7 @@ rowLenght = 4;
 inventory = array_create(INVENTORY_SLOTS, -1)
 inventorystack = array_create(INVENTORY_SLOTS,0)
 p=0
-scrInventoryDSlist()
+scrInventoryDSlist(INVENTORY_SLOTS)
 
 nocolor = c_green
 yescolor = c_red

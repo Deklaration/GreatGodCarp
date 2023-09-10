@@ -40,6 +40,25 @@ function scrSave()
 	playerprefs_set("Gettinggear",global.gettinggear)
 	playerprefs_set("Activebait",global.activebait)
 	
+	playerprefs_set("cutscene",global.cutscene)
+	playerprefs_set("cutscene2",global.cutscene2)
+	playerprefs_set("cutscene3",global.cutscene3)
+	playerprefs_set("cutscene4",global.cutscene4)
+	playerprefs_set("cutscene5",global.cutscene5)
+	playerprefs_set("cutscene6",global.cutscene6)
+	playerprefs_set("cutscene7",global.cutscene7)
+	playerprefs_set("daugava_set",global.daugava_set)
+	playerprefs_set("catchFirstFish",global.catchFirstFish)
+	playerprefs_set("showAquaVistaLight",global.showAquaVistaLight)
+	playerprefs_set("placedFirstFishInTank",global.placedFirstFishInTank)
+	playerprefs_set("gotFishGuide",global.gotFishGuide)
+	playerprefs_set("talkedtoRune",global.talkedtoRune)
+	playerprefs_set("talkedtoShop",global.talkedtoShop)
+	playerprefs_set("numberOfTourists",global.numberOfTourists)
+	playerprefs_set("totalFishScore",global.totalFishScore)
+	playerprefs_set("rareFishLuck",global.rareFishLuck)
+	playerprefs_set("setFishInTank",global.setFishInTank)
+	
 	
 	for (var f = 0; f < global.numberoffish+1; ++f) { //Om man fångat fisken
 	    playerprefs_set("Fishinfo" + string(f),global.fishinfo[f])
@@ -107,6 +126,25 @@ global.savedminutesplayed = global.minutesplayed
 global.savedhoursplayed = global.hoursplayed
 global.gettinggear = playerprefs_get("Gettinggear")
 global.activebait = playerprefs_get("Activebait")
+	
+global.cutscene = playerprefs_get("cutscene")
+global.cutscene2 = playerprefs_get("cutscene2")
+global.cutscene3 = playerprefs_get("cutscene3")
+global.cutscene4 = playerprefs_get("cutscene4")
+global.cutscene5 = playerprefs_get("cutscene5")
+global.cutscene6 = playerprefs_get("cutscene6")
+global.cutscene7 = playerprefs_get("cutscene7")
+global.daugava_set = playerprefs_get("daugava_set")
+global.catchFirstFish = playerprefs_get("catchFirstFish")
+global.showAquaVistaLight = playerprefs_get("showAquaVistaLight")
+global.placedFirstFishInTank = playerprefs_get("placedFirstFishInTank")
+global.gotFishGuide = playerprefs_get("gotFishGuide")
+global.talkedtoRune = playerprefs_get("talkedtoRune")
+global.talkedtoShop = playerprefs_get("talkedtoShop")
+global.numberOfTourists = playerprefs_get("numberOfTourists")
+global.totalFishScore = playerprefs_get("totalFishScore")
+global.rareFishLuck = playerprefs_get("rareFishLuck")
+global.setFishInTank = playerprefs_get("setFishInTank")
 
 
 for (var p = 0; p < global.numberoffish+1; ++p) {

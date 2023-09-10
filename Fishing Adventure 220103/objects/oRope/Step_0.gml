@@ -64,5 +64,5 @@ repeat constraintsIterations
 */
 }
 	//show_debug_message(knotY[1])
-	show_debug_message(knotNum)
+	//show_debug_message(knotNum)
 	//show_debug_message(knotX[1])

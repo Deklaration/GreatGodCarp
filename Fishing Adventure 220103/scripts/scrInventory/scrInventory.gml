@@ -105,11 +105,11 @@ repeat(23)
 
 }
 
-function scrInventoryDSlist(){
+function scrInventoryDSlist(_number){
 	
 list = ds_list_create()
 
-for (var d = 0; d < INVENTORY_SLOTS; ++d) {
+for (var d = 0; d < _number; ++d) {
     ds_list_add(list,0)
 }
 
@@ -172,6 +172,7 @@ function scrBaitSearch(rootObject,itemType)
 	return(-1);
 }
 
+
 function scrBaitRemove(rootObject,itemType)
 {
 	var _slot = scrBaitSearch(rootObject,itemType)
@@ -183,19 +184,8 @@ function scrBaitRemove(rootObject,itemType)
 	else return false
 	
 	
-	
 }
 
-//function scrBaitAdd(rootObject,itemType)
-//{
-//	var _slot = scrBaitSearch(rootObject,-1)
-//	if (_slot != -1)
-//	{
-//		with (rootObject) bait[_slot] = itemType
-//		return true
-//	}
-//	else return false
-//}
 
 function scrBaitAdd(rootObject,itemType) //STACKING
 {
@@ -218,6 +208,9 @@ function scrBaitAdd(rootObject,itemType) //STACKING
 	else return false
 		
 }
+
+
+
 
 //////////////////////////////////////////
 

@@ -35,6 +35,7 @@ else
 				global.totalFishScore += global.fisharray[tank.fish,11]
 				tank.talking = false
 				tank.createtext = false
+				global.placedFirstFishInTank = true
 				
 				for (var i = 0; i < array_length(oAquaVistaController.tankGuide); ++i)
 					{

@@ -56,6 +56,29 @@ if (place_meeting(x,y+1,oProt) && oProt.sprite_index = sProt_North)
 	}
 }
 }
+
+if talking = true && createtext = false
+{
+
+	for (var i = 0; i < array_length(dialog); ++i) {
+	    scrNewTextbox(dialog[i], 0)
+	}
+
+	createtext = true
+}
+
+if talking = true && instance_exists(oText)
+{
+	oText.NPC = self
+}
+
+if !instance_exists(oText)
+{
+	talking = false
+	createtext = false
+}
+
+
 }
 
 

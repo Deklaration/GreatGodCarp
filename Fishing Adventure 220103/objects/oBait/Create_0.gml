@@ -3,7 +3,7 @@ inventory = array_create(12, -1) //bait
 baitStack = array_create(12, 0)
 place = -8
 buttonreset = 1
-scrInventoryDSlist()
+scrInventoryDSlist(global.numberofbaits)
 
 baitname[0] = "Safety pin"
 

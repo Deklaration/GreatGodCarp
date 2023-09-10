@@ -1,5 +1,11 @@
-dialog[0] = "BUY OR SELL! WHAT DO YOU WANT?"
-
+if global.talkedtoShop = true
+{
+dialog[0] = "BUY OR SELL SOMETHING, WILL YA! WHAT DO YOU WANT?"
+}
+else
+{
+dialog[0] = "OOOH, YOU'RE THE NEW KID ON [rainbow][wave]PISC ISLAND[/wave][/rainbow]! I'VE OPENED MY SHOP FOR YOU, AND THE TOURISTS YOU'LL BRING HERE! \nWELCOME, WELCOME, WELCOME!"
+}
 if instance_exists(oShop) 
 	{
 	

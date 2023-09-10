@@ -52,14 +52,24 @@ dialog[2,2] = "Come back and talk to me after your first catch!"
 dialog[3,0] = "[angry]A " + string(global.catchFirstFish) + "!"
 dialog[3,1] = "[angry]I can't believe you caught one using that old stick!"
 dialog[3,2] = "We can finally get [color_17]AquaVista[color_19] going again!"
-dialog[3,3] = "Go ahead, [color_10]set it free in its designated pool[color_19]!"
+dialog[3,3] = "Go ahead, [color_10]set it free in its designated tank[color_19]!"
 dialog[3,4] = "I bet the turists will be back in no time!"
-dialog[3,5] = "There's a lot more fish out these. Take this, I'll bet it will come in handy."//[gettinggear][#A FISHING GUIDE*{-1}£sFishingGuideIcon$½1€,=0~+1_]"
+dialog[3,5] = "There's a lot more fish out these. Take this, I'll bet it will come in handy.[FISHINGGUIDE]"//[gettinggear][#A FISHING GUIDE*{-1}£sFishingGuideIcon$½1€,=0~+1_]"
+dialog[3,6] = "Take a look at it with " + string(oGame.keyboard[global.key_pause]) + "! There's a bunch of stuff in there to help you out!"
+
+//Pratar igen, innan man placerat en fisk i tanken
+dialog[4,0] = "Follow the little arrow thing around you and go to the correct tank to release the fish!"
+dialog[4,1] = "... what is that arrow thing anyway? I wish I had one of those."
+dialog[4,2] = "[angry]Would be great to have one out in the open sea! It would really help with [color_26]navigaton[color_19]!"
+dialog[4,3] = "Just follow the arrow! But I bet you can turn it off using the [color_22]fishing guide[color_19], if you find it annoying."
+dialog[4,4] = "You can do all kinds of stuff with that thing!"
+
+
 
 //Efter man placerat sin första fisk i vattentank
-dialog[4,0] = "[wave]Fantastic[/wave]! It brings me so much joy to see a fish in [color_17]AquaVista[color_19] again."
-dialog[4,1] = "Let the town know! I bet they'll be so excited to see it!"
+dialog[5,0] = "[wave]Fantastic[/wave]! It brings me so much joy to see a fish in [color_17]AquaVista[color_19] again."
+dialog[5,1] = "Let the town know! I bet they'll be so excited to see it!"
 
 //Pratar igen efter man placerat sin första fisk i vattentank
-dialog[5,0] = "Go on then! Spread the news! Tell everyone that we got a fish at [color_17]AquaVista[color_19] again!"
+dialog[6,0] = "Go on then! Spread the news! Tell everyone that we got a fish at [color_17]AquaVista[color_19] again!"
 }

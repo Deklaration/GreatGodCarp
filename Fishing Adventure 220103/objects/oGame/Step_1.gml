@@ -14,6 +14,7 @@ else
 
 }
  
+show_debug_message(global.daugava_set)
 
 /*
 if global.activerod = "It's a stick"

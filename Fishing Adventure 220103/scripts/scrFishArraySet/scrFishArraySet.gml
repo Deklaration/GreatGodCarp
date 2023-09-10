@@ -125,6 +125,10 @@ var fishRarity = [
 	500 // Hellströmming
 ];
 
+//var fishBait = [
+
+//]
+
 var fishAquaVistaInfos = [
     "", // ""
     "The luminescent spots on this fish's body can light up dark lake waters.", // Lakelight
@@ -288,7 +292,7 @@ global.flyingFish = [0,
 
 
 
-/////////////NUMBERS///////////////
+/////////////FISH NUMBERS///////////////
 
 // Lake fish
 global.lakeFishNumber = [ 0,
@@ -614,7 +618,7 @@ paths[? "Hellstromming"] = hellstrommingPath;
 	
 
 
-global.numberoffish = 51 //Ändra detta för varje fisk som existerar
+global.numberoffish = array_length(global.fishNames) -1
 
 
 global.fisharray[0,0] = noone
@@ -639,6 +643,7 @@ for (var i = 0; i <= global.numberoffish; ++i) {
 	global.fisharray[i, 11] = fishRarity[i]; //Rarity
 	global.fisharray[i, 12] = paths[? global.fishNames[i]]; // Path
 	global.fisharray[i, 13] = i; //Fishnumber
+	//global.fisharray[i, 14] = fishBait[i]; //Vilka fiskar som är intresserade av vilket bete
 	
 	
 }

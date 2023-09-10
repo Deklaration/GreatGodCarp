@@ -227,6 +227,11 @@ if !instance_exists(oShopChoice)
 		
 }
 
+if keyboard_check(vk_shift)
+{
+global.gold +=1	
+}
+
 		if keyboard_check_pressed(global.key_b)
 		{
 

@@ -1,6 +1,6 @@
 rowLenght = 6;
 
-scrInventoryDSlist()
+scrInventoryDSlist(global.numberoffish)
 
 inventory = array_create(INVENTORY_SLOTS, -1)
 inventorystack = array_create(INVENTORY_SLOTS,0)
@@ -24,21 +24,12 @@ alpha = 0
 inventorygold = 0
 depth = oText.depth +1
 
-
-
-if room = rPuddleTown
-{
-
+//Det här är fisknumret -1. Första fisken har nummer 0. Det blev bara så. Förlåt.
 scrInventoryAdd(oShop,2)
 scrInventoryAdd(oShop,0)
 scrInventoryAdd(oShop,0)
 scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,1)
-scrInventoryAdd(oShop,1)
-scrInventoryAdd(oShop,1)
-scrInventoryAdd(oShop,1)
-
-}
+scrInventoryAdd(oShop,5)
+scrInventoryAdd(oShop,5)
+scrInventoryAdd(oShop,8)
+scrInventoryAdd(oShop,45)

@@ -4,35 +4,37 @@ function scrBaitArraySet(){
 	
 var baitNames = [
 	"",
-	"Wiggle Worm",
-	"Fart Grub",
-	"Burp Bug",
+	"Safety Pin",
+	"Murk Munch",
+	"Froth Flyer",
 	"Rolly Polly",
-	"Sneezy Fern",
-	"Shimmy Shine",
-	"Splash Splash",
-	"Sunburn Snack",
-	"Snort Star",
-	"Tummy Tickler",
-	"Giggle Guppy",
-	"Silly Skydiver"
+	"Timber Teaser",
+	"Lumin-Lure",
+	"Rapids Rattle",
+	"Solar Snack",
+	"Spiral Spark",
+	"Herb Hopper",
+	"Mystic Morsel",
+	"Sky Surfer"
 ];
 
+
 var baitDescriptions = [
-	"",
-	"Does the worm dance!",
-	"Toots with every cast!",
-	"Bubbles and burps in water!",
-	"Rolls around, so silly!",
-	"Goes ACHOO! in your tackle box!",
-	"Shimmers and shakes!",
-	"Brings the splash party!",
-	"Hot red and sun-kissed!",
-	"Giggles with starry snorts!",
-	"Tickle attack for fishy tummies!",
-	"Laughs underwater!",
-	"Soars like a willy-nilly bird!"
+	"", // Placeholder
+	"It's just a worm on a safety pin.", // Zippy Nibble
+	"This doesn't seem very tasty...", // Murk Munch
+	"Bubbles and burps in water!", // Froth Flyer
+	"Rolls around! Look at it go!", // Rolly Polly
+	"The fish won't see it coming!", // Timber Teaser
+	"Shimmers and shakes!", // Lumin-Lure
+	"This reminds me of my mom.", // Rapids Rattle
+	"Hot red and sun-kissed!", // Solar Snack
+	"For those sparkling fish!", // Spiral Spark
+	"Perfect for vegetarian fish!", // Herb Hopper
+	"This seems too fancy to use as a bait.", // Mystic Morsel
+	"Soars like a willy-nilly bird!" // Sky Surfer
 ];
+
 
 var baitPrices = [
 	0,
@@ -46,31 +48,31 @@ var baitPrices = [
 	7,
 	11,
 	4,
-	15,
+	17,
 	2
 ];
 
 var baitStoreDescriptions = [
     "", // Placeholder
-    "Attracts playful or swift fish", // Wiggle Worm
-    "Attracts fish found in dark or muddy environments", // Fart Grub
-    "Attracts fish that live in bubbling or turbulent waters", // Burp Bug
+    "Attracts playful or swift fish", // Safety Pin
+    "Attracts fish found in dark or muddy environments", //  Murk Munch
+    "Attracts fish that live in bubbling or turbulent waters", // Froth Flyer
     "Attracts fish with unique movements like spinning or gliding", // Rolly Polly
-    "Attracts fish that live in forest waters", // Sneezy Fern
-    "Attracts fish with shimmering or glowing appearances", // Shimmy Shine
-    "Attracts fish that make splashes or live in rapids", // Splash Splash
-    "Attracts fish with a sun or fiery aspect", // Sunburn Snack
-    "Attracts fish with a sparkling or spiraling movement", // Snort Star
-    "Attracts fish that nibble or eat plants", // Tummy Tickler
-    "Attracts fish with enchanting or dreamy characteristics", // Giggle Guppy
-    "Attracts fish that leap or soar" // Silly Skydiver
+    "Attracts fish that live in forest waters", // Timber Teaser
+    "Attracts fish with shimmering or glowing appearances", // Lumin-Lure
+    "Attracts fish that make splashes or live in rapids", // Rapids Rattle
+    "Attracts fish with a sun or fiery aspect", // Solar Snack
+    "Attracts fish with a sparkling or spiraling movement", // Spiral Spark
+    "Attracts fish that nibble or eat plants", // Herb Hopper
+    "Attracts fish with enchanting or dreamy characteristics", // Mystic Morsel
+    "Attracts fish that leap or soar" // Sky Surfer
 ];
 
 // Fish categorized by bait
 var baitFishGroups;
 
 baitFishGroups[0] = [0]
-
+/*
 // Wiggle Worm - Attracts playful or swift fish
 baitFishGroups[1] = ["Lakegem", "Whisklash", "Bubblerise", "Waveshimmer", "Muddweller", "Surfdrifter", "Finfury", "Streamgill", "Rapidskimmer", "Currentswift"];
 
@@ -114,9 +116,47 @@ for (var i = 0; i < array_length(baitNames); i++) {
 	var fishList = baitFishGroups[i];
 	show_debug_message(bait + ": " + string(fishList));
 }
+*/
 
 
-global.numberofbaits = 1 //Ändra detta för varje spö som existerar
+// Wiggle Worm - Attracts playful or swift fish
+baitFishGroups[1] = [oFishLakegem, oFishWhisklash, oFishBubblerise, oFishWaveshimmer, oFishSurfdrifter, oFishFinfury, oFishStreamgill, oFishRapidskimmer, oFishCurrentswift];
+
+// Fart Grub - Attracts fish found in dark or muddy environments
+baitFishGroups[2] = [oFishLakelight, oFishWeedsnout, oFishTidalflicker, oFishMuddweller, oFishEchodepth, oFishAbyssglow, oFishInkfish];
+
+// Burp Bug - Attracts fish that live in bubbling or turbulent waters
+baitFishGroups[3] = [oFishCoralfin, oFishFinfury, oFishLumipuff, oFishSaltysurge, oFishStormdrifter, oFishBouldermaw];
+
+// Rolly Polly - Attracts fish with unique movements like spinning or gliding
+baitFishGroups[4] = [oFishEchodepth, oFishReedripple, oFishSurfdrifter, oFishStormdrifter, oFishWhirlskimmer, oFishFlyfin];
+
+// Sneezy Fern - Attracts fish that live in forest waters
+baitFishGroups[5] = [oFishLeafscale, oFishTimbertrickle, oFishFernflutter, oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishOakscale];
+
+// Shimmy Shine - Attracts fish with shimmering or glowing appearances
+baitFishGroups[6] = [oFishAbyssglow, oFishSeaspike, oFishPearlshimmer, oFishSilverflicker, oFishWaveshimmer, oFishAqualite, oFishSappurgeon, oFishDiamurgeon, oFishRuburgeon];
+
+// Splash Splash - Attracts fish that make splashes or live in rapids
+baitFishGroups[7] = [oFishInkfish, oFishStreamgill, oFishRapidskimmer, oFishBouldermaw, oFishBrookflare, oFishSunsetgill, oFishCurrentswift];
+
+// Sunburn Snack - Attracts fish with a sun or fiery aspect
+baitFishGroups[8] = [oFishSunsetgill, oFishSurgeknight, oFishDiamurgeon, oFishSappurgeon, oFishRuburgeon];
+
+// Snort Star - Attracts fish with a sparkling or spiraling movement
+baitFishGroups[9] = [oFishBrookflare, oFishCurrentswift, oFishMossfin, oFishRivertwirl, oFishQuillure];
+
+// Tummy Tickler - Attracts fish that nibble or eat plants
+baitFishGroups[10] = [oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishRoottrickle];
+
+// Giggle Guppy - Attracts fish with enchanting or dreamy characteristics
+baitFishGroups[11] = [oFishDracofin, oFishFluffin, oFishRuburgeon, oFishEchoesolace];
+
+// Silly Skydiver - Attracts fish that leap or soar
+baitFishGroups[12] = [oFishRoottrickle, oFishOakscale, oFishPebbletrout, oFishQuillure, oFishFlyfin, oFishBubblerise];
+
+
+global.numberofbaits = array_length(baitNames)-1 //Ändra detta för varje bete som existerar
 
 
 global.baitarray[0,0] = noone
@@ -127,5 +167,6 @@ for (var i = 0; i <= global.numberofbaits; ++i) {
 	global.baitarray[i,1] = baitDescriptions[i]
 	global.baitarray[i,2] = baitPrices[i]
 	global.baitarray[i,3] = baitStoreDescriptions[i]
+	global.baitarray[i,4] = baitFishGroups[i]
 }
 }

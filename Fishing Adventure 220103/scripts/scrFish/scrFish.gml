@@ -12,7 +12,9 @@ sightLength = _sightLength
 sightWidth = _sightWidth
 //info = information
 
-var object_name = object_get_name(object_index);
+showAngryFish = false
+notInterestedSubImg = 0
+object_name = object_get_name(object_index);
 var modified_name = string_copy(object_name, 6, string_length(object_name) - 5);
 
 for (var u = 0; u < array_length(global.fishNames); u++) {
@@ -96,14 +98,14 @@ if global.fiskesida = "left"
 
 
 
-instance_create_depth(self.x,self.y,self.depth,oHitFish)
+hitid = instance_create_depth(self.x,self.y,self.depth,oHitFish,{fiskid : id})
+
 timer = 1000
 ingenspeednu = false
 followspeed = 0.5
 angle = 0 
 angleset = false
 timeraftercatch = 120
-hitid = 0
 runaway = false
 up = false
 left = false
@@ -682,6 +684,14 @@ draw_self()
 //draw_text(x,y-5,global.fisharray[f,11])
 //draw_path(fishPath,x,y,false)
 
+if showAngryFish = true && notInterestedSubImg < 10 && global.fishbait = false
+{
+
+	notInterestedSubImg += 0.1
+	draw_sprite(sNotInterested,notInterestedSubImg,x,y-sprite_height)
+
+}
+
 if hspeed < 0
 {
 	image_xscale = 1
@@ -709,9 +719,12 @@ o _/       \  /| o              o     ___/|__      o
 
 function scrFishColoHitFish(){
 
-if hitid = 0 && hitidset = false
-{
-hitid = other.id
-hitidset = true
-}
+//if hitid = 0 && hitidset = false
+//{
+//	if other.idset = false
+//	{
+//		hitid = other.id
+//		hitidset = true
+//	}
+//}
 }

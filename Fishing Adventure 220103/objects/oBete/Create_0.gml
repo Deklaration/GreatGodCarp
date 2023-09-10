@@ -17,6 +17,7 @@ holddownspacetimer = 50
 fiskendrarsig = false
 fiskenoutofroom = false
 timerafterlosttobottom = 1
+depth = -20
 
 baitpower = 1 //Antal sekunder det tar för oPullBarBox att färdas från en sida till den andra. Ju högre, desto enklare.
 

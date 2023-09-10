@@ -1,4 +1,4 @@
-if idset = false && self.depth = other.depth
+/*if idset = false && self.depth = other.depth
 {
 	x = other.x
 	y = other.y

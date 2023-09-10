@@ -1,6 +1,63 @@
 depth =-y;
 
-scrTalkToNPC()
+
+if global.paused = false && global.textbox = false && global.daugava_set > 4
+{
+
+if (place_meeting(x-1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscale = -1)
+{
+	if keyboard_check_pressed(global.key_a)
+	{
+		oProt.image_index = 0
+		image_xscale =-1
+		image_index = 2
+		talking = true
+		global.textbox = true
+	}
+}
+
+
+
+
+if (place_meeting(x+1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscale = 1)
+{
+		if keyboard_check_pressed(global.key_a)
+	{
+		oProt.image_index = 0
+		image_xscale =1
+		image_index = 2
+		talking = true
+		global.textbox = true
+	}
+	
+}
+
+if (place_meeting(x,y-1,oProt) && oProt.sprite_index = sProt_South)
+{
+		if keyboard_check_pressed(global.key_a)
+	{
+		oProt.image_index = 0
+		image_xscale =1
+		image_index = 1
+		talking = true
+		global.textbox = true
+	}
+	
+}
+
+
+if (place_meeting(x,y+1,oProt) && oProt.sprite_index = sProt_North)
+{
+	if keyboard_check_pressed(global.key_a)
+	{
+		oProt.image_index = 0
+		image_xscale =1
+		image_index = 0
+		talking = true
+		global.textbox = true
+	}
+}
+}
 
 if instance_exists(oText)
 {
@@ -14,6 +71,7 @@ exit
 if talking = true && createtext = false && !instance_exists(oShop)
 {
 	scrNewTextbox(dialog[0],0)
+	global.talkedtoShop = true
 	createtext = true
 }
 

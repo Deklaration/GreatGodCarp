@@ -1,21 +1,23 @@
+depth =-y;
+
+
+
+if global.daugava_set = 5 || global.daugava_set = 6
+{
+dialog[0] = "You actually caught a fish?"
+dialog[1] = "I can't believe it! I've been at it for [shake]YEARS[/shake]!"
+dialog[2] = "Even since the fish all..."
+dialog[3] = "Well... disappeared."
+dialog[4] = "Welcome to the island, I guess."
+}
+
+
+
 scrTalkToNPC()
 
-if talking = true && createtext = false
-{
-	scrNewTextbox(dialog[0],0)
-	createtext = true
-}
 
-if talking = true && instance_exists(oText)
-{
-	oText.NPC = self
-}
 
-if !instance_exists(oText)
-{
-	talking = false
-	createtext = false
-}
+
 
 //Linan, betet och spöt
 

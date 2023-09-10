@@ -1,9 +1,11 @@
 
 draw_self()
 
-
+if instance_exists(oBete)
+{
 var ft = oBete.fiskid.fighttimer
 var pt = oBete.fiskid.pullawaytimer
+}
 
 if (pt/ft * 100) > 70
 {
