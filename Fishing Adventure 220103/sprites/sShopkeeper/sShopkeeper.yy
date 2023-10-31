@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"366cc310-06ac-4898-bccd-161297a2bcdb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Shopkeeper",
     "path": "folders/Sprites/NPC/Shopkeeper.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 48,
-    "yorigin": 30,
+    "yorigin": 44,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

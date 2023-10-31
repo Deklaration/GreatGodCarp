@@ -1,6 +1,13 @@
 oMusic.intensity = 3
 talkingSound[0] = soTalking
 
+if instance_exists(oBunnyHouse)
+{
+	if NPC = oBunnyHouse.id//100261
+	{
+	talkingSound[0] = soValnadTalk
+	}
+}
 
 x1 = camera_get_view_width(oCamera.cam) / 2// RESOLUTION_W / 2
 y1 = camera_get_view_height(oCamera.cam) - 75// RESOLUTION_H -200
@@ -16,7 +23,7 @@ x2Target = camera_get_view_width(oCamera.cam) - 25 //RESOLUTION_W -200
 	
 global.textbox = true
 facescale = 0
-NPC = oNothing
+//NPC = oNothing
 mouthindex = NPC.mouthmove
 mouthindex_sad = 0
 mouthmovement = 0

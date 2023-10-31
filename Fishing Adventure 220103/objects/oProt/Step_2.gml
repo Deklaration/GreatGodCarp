@@ -9,3 +9,4 @@ if skipping = true
 	dpad_dir = save_dir
 	skippingtimer -=1
 }
+

@@ -1,6 +1,6 @@
 /// @description Settings
 
-if sida =-1 && menuchoice = 2
+if sida =-2 && menuchoice = 2
 {
 	
 	if changekey = false
@@ -460,7 +460,7 @@ if settingschoice = -1
 
 //SAVING
 
-if sida =-1 && menuchoice = 3
+if sida =-2 && menuchoice = 3
 {
 	
 

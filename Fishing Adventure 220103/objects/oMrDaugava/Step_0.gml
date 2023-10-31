@@ -1,5 +1,5 @@
 depth =-y;
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 
 if global.paused = false && global.textbox = false && global.cutscene = false//Pratar med Daugava

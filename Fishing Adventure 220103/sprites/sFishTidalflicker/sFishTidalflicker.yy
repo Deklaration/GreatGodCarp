@@ -4,7 +4,7 @@
   "name": "sFishTidalflicker",
   "bbox_bottom": 15,
   "bbox_left": 0,
-  "bbox_right": 14,
+  "bbox_right": 15,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 0,
@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"460d5626-0857-4b45-b6f5-4b2acc35b3fb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e184a9ab-f569-43b3-96d4-dbd441056310",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b4f293c-e96b-4ba0-84b2-8dbb5dc17d0b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f4c9d3c-1bb4-4f9c-ae5b-8df67c728009",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b22a5016-bf83-43c5-a458-cda2ca35dc67","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66780ea2-ec56-4f3e-8f7e-1cbb0f33621a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"460d5626-0857-4b45-b6f5-4b2acc35b3fb","path":"sprites/sFishTidalflicker/sFishTidalflicker.yy",},},},"Disabled":false,"id":"a1ee92ed-5247-4ec4-a9c1-f324c179df08","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e184a9ab-f569-43b3-96d4-dbd441056310","path":"sprites/sFishTidalflicker/sFishTidalflicker.yy",},},},"Disabled":false,"id":"51408d2e-a00e-4d00-b002-6b52222edc2c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b4f293c-e96b-4ba0-84b2-8dbb5dc17d0b","path":"sprites/sFishTidalflicker/sFishTidalflicker.yy",},},},"Disabled":false,"id":"39366e8a-b344-4205-bdf1-ad82f49d521d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7f4c9d3c-1bb4-4f9c-ae5b-8df67c728009","path":"sprites/sFishTidalflicker/sFishTidalflicker.yy",},},},"Disabled":false,"id":"4393468c-b354-4d79-a416-0c575f8f67d5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

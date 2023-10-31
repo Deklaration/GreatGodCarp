@@ -14,6 +14,65 @@ function create_fish_path(points)
 
 function scrFishArraySet(){
 	
+	enum enumFish {
+    None,          // 0
+    Lakelight,     // 1
+    Muddweller,    // 2
+    Reedripple,    // 3
+    Lakegem,       // 4
+    Weedsnout,     // 5
+    Echodepth,     // 6
+    Whisklash,     // 7
+    Bubblerise,    // 8
+    Waveshimmer,   // 9
+    Coralfin,      // 10
+    Saltysurge,    // 11
+    Tidalflicker,  // 12
+    Abyssglow,     // 13
+    Surfdrifter,   // 14
+    Finfury,       // 15
+    Lumipuff,      // 16
+    Seaspike,      // 17
+    Pearlshimmer,  // 18
+    Surgeknight,   // 19
+    Silverflicker, // 20
+    Stormdrifter,  // 21
+    Inkfish,       // 22
+    Softsquish,    // 23
+    Leafscale,     // 24
+    Timbertrickle, // 25
+    Kelpshield,    // 26
+    Barkbiter,     // 27
+    Fernflutter,   // 28
+    Pinescale,     // 29
+    Roottrickle,   // 30
+    Oakscale,      // 31
+    Dracofin,      // 32
+    Fluffin,       // 33
+    Streamgill,    // 34
+    Rapidskimmer,  // 35
+    Aqualite,      // 36
+    Bouldermaw,    // 37
+    Brookflare,    // 38
+    Currentswift,  // 39
+    Mossfin,       // 40
+    Rivertwirl,    // 41
+    Pebbletrout,   // 42
+    Sunsetgill,    // 43
+    Whirlskimmer,  // 44
+    Quillure,      // 45
+    Sappurgeon,    // 46
+    Diamurgeon,    // 47
+    Ruburgeon,     // 48
+    Echoesolace,   // 49
+    Flyfin,        // 50
+    Hellstromming  // 51
+}
+
+
+
+
+	
 	global.fishNames = [
 	"",           // 0
     "Lakelight",  // 1
@@ -135,7 +194,7 @@ var fishAquaVistaInfos = [
     "Known for burrowing in lake beds, this fish stirs up mud to hide from predators.", // Muddweller
     "It weaves through reeds with ease, its movements creating beautiful ripples on the lake surface.", // Reedripple
     "Its jewel-like scales are said to bring good fortune to those who find it.", // Lakegem
-    "Known for its elongated snout, it probes through lake weed for tiny creatures.", // Weedsnout
+    "Known for its elongated snout and terrible smell, it probes through lake weed.", // Weedsnout
     "This unique species uses sound waves to navigate the dark depths of lakes.", // Echodepth
     "The lake's playful companion. Its whisker-like fins playfully dance through the water, bringing smiles to lakeside observers.", // Whisklash
     "Its playful leaps create bubbles that rise to the surface, adding charm to the tranquil waters.", // Bubblerise
@@ -191,7 +250,7 @@ var fishInventoryInfos = [
     "Uh oh, a fish that loves mud? My mom would hate it.", // Muddweller
     "It moves so beautifully, like an underwater dancer! Poetry in motion!", // Reedripple
     "Look at that shine! Who needs treasure when you have this fish?", // Lakegem
-    "What's with the long face, buddy? Or is it a nose? I'm bad at fish biology...", // Weedsnout
+    "Ugh, it stinks! How can a fish with a huge nose smell so bad?!", // Weedsnout
     "Now, this one's a submarine with built-in sonar. Cool and creepy...", // Echodepth
     "I hope someone remembers to feed my cat back home...", // Whisklash
     "Bubbles, bubbles everywhere! It's like a fishy jacuzzi.", // Bubblerise
@@ -241,6 +300,19 @@ var fishInventoryInfos = [
 ];
 
 var fishValue = [
+  0, 1, 2, 3, 4, 5, 
+  6, 7, 8, 9, 10,
+  11, 12, 13, 14, 15,
+  16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25,
+  26, 27, 28, 29, 30,
+  31, 32, 33, 34, 35,
+  36, 37, 38, 39, 40,
+  41, 42, 43, 44, 45,
+  46, 47, 48, 49, 50, 51
+];
+
+global.fishNumber = [
   0, 1, 2, 3, 4, 5, 
   6, 7, 8, 9, 10,
   11, 12, 13, 14, 15,
@@ -652,4 +724,121 @@ ds_map_destroy(paths);
 
 
 
+}
+
+
+function getEnumFishIndex(fishName) {
+    switch(fishName) {
+        case "None": return 0;
+        case "Lakelight": return 1;
+        case "Muddweller": return 2;
+        case "Reedripple": return 3;
+        case "Lakegem": return 4;
+        case "Weedsnout": return 5;
+        case "Echodepth": return 6;
+        case "Whisklash": return 7;
+        case "Bubblerise": return 8;
+        case "Waveshimmer": return 9;
+        case "Coralfin": return 10;
+        case "Saltysurge": return 11;
+        case "Tidalflicker": return 12;
+        case "Abyssglow": return 13;
+        case "Surfdrifter": return 14;
+        case "Finfury": return 15;
+        case "Lumipuff": return 16;
+        case "Seaspike": return 17;
+        case "Pearlshimmer": return 18;
+        case "Surgeknight": return 19;
+        case "Silverflicker": return 20;
+        case "Stormdrifter": return 21;
+        case "Inkfish": return 22;
+        case "Softsquish": return 23;
+        case "Leafscale": return 24;
+        case "Timbertrickle": return 25;
+        case "Kelpshield": return 26;
+        case "Barkbiter": return 27;
+        case "Fernflutter": return 28;
+        case "Pinescale": return 29;
+        case "Roottrickle": return 30;
+        case "Oakscale": return 31;
+        case "Dracofin": return 32;
+        case "Fluffin": return 33;
+        case "Streamgill": return 34;
+        case "Rapidskimmer": return 35;
+        case "Aqualite": return 36;
+        case "Bouldermaw": return 37;
+        case "Brookflare": return 38;
+        case "Currentswift": return 39;
+        case "Mossfin": return 40;
+        case "Rivertwirl": return 41;
+        case "Pebbletrout": return 42;
+        case "Sunsetgill": return 43;
+        case "Whirlskimmer": return 44;
+        case "Quillure": return 45;
+        case "Sappurgeon": return 46;
+        case "Diamurgeon": return 47;
+        case "Ruburgeon": return 48;
+        case "Echoesolace": return 49;
+        case "Flyfin": return 50;
+        case "Hellstromming": return 51;
+        default: return -1; // Return -1 if the name isn't found
+    }
+}
+
+function getEnumFishIndexNumberFromObjectName(fishName) {
+    switch(fishName) {
+        case oNothing: return 0;
+        case oFishLakelight: return 1;
+        case oFishMuddweller: return 2;
+        case oFishReedripple: return 3;
+        case oFishLakegem: return 4;
+        case oFishWeedsnout: return 5;
+        case oFishEchodepth: return 6;
+        case oFishWhisklash: return 7;
+        case oFishBubblerise: return 8;
+        case oFishWaveshimmer: return 9;
+        case oFishCoralfin: return 10;
+        case oFishSaltysurge: return 11;
+        case oFishTidalflicker: return 12;
+        case oFishAbyssglow: return 13;
+        case oFishSurfdrifter: return 14;
+        case oFishFinfury: return 15;
+        case oFishLumipuff: return 16;
+        case oFishSeaspike: return 17;
+        case oFishPearlshimmer: return 18;
+        case oFishSurgeknight: return 19;
+        case oFishSilverflicker: return 20;
+        case oFishStormdrifter: return 21;
+        case oFishInkfish: return 22;
+        case oFishSoftsquish: return 23;
+        case oFishLeafscale: return 24;
+        case oFishTimbertrickle: return 25;
+        case oFishKelpshield: return 26;
+        case oFishBarkbiter: return 27;
+        case oFishFernflutter: return 28;
+        case oFishPinescale: return 29;
+        case oFishRoottrickle: return 30;
+        case oFishOakscale: return 31;
+        case oFishDracofin: return 32;
+        case oFishFluffin: return 33;
+        case oFishStreamgill: return 34;
+        case oFishRapidskimmer: return 35;
+        case oFishAqualite: return 36;
+        case oFishBouldermaw: return 37;
+        case oFishBrookflare: return 38;
+        case oFishCurrentswift: return 39;
+        case oFishMossfin: return 40;
+        case oFishRivertwirl: return 41;
+        case oFishPebbletrout: return 42;
+        case oFishSunsetgill: return 43;
+        case oFishWhirlskimmer: return 44;
+        case oFishQuillure: return 45;
+        case oFishSappurgeon: return 46;
+        case oFishDiamurgeon: return 47;
+        case oFishRuburgeon: return 48;
+        case oFishEchoesolace: return 49;
+        case oFishFlyfin: return 50;
+        case oFishHellstromming: return 51;
+        default: return -1; // Return -1 if the name isn't found
+    }
 }

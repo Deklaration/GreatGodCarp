@@ -1,7 +1,4 @@
-if room = rPuddleTown
-{
-	instance_destroy(self)
-}
+
 image_alpha = 1
 image_speed = 0
 talking = false

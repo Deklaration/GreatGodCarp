@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Objects/NPC.yy",
+    "name": "Tourist",
+    "path": "folders/Objects/NPC/Tourist.yy",
   },
   "parentObjectId": {
     "name": "oTourist",

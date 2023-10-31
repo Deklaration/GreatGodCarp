@@ -1,10 +1,11 @@
+if (live_call()) return live_result;
 if instance_exists(oProt)
 {
 oProt.image_speed = 0
 }
 
-
 typist.sound(talkingSound,20,0.6,1.1,1)
+
 typist.function_per_char(function(_element, _position, _typist)
 {
 	mouthmovement+=0.3
@@ -59,7 +60,7 @@ if gettinggear = false || gotgear = true
 		}
 		else
 		{
-			typist.in(100,0)
+			typist.in(5,0)
 		}
 	}
 }
@@ -73,7 +74,7 @@ if gettinggear = true
 		}
 		else
 		{
-			typist.in(100,0)
+			typist.in(5,0)
 			showGear = true
 		}
 	}
@@ -91,3 +92,9 @@ if (pos > 0) {faceindex = faceindex_angry;}
 var pos = string_pos("[sad]", textmessage);
 if (pos > 0) {faceindex = faceindex_sad; mouthindex = mouthindex_sad}
 }
+
+
+//Ja eller nej
+
+var pos = string_pos("[YesNo]", textmessage);
+if (pos > 0) && !instance_exists(oYesNo) {instance_create_depth(0,0,0,oYesNo,{otherObject : NPC})}

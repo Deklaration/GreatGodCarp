@@ -1,9 +1,9 @@
-//if (live_call()) return live_result;
+if (live_call()) return live_result;
 
 draw_self()
 
 
-if sida = 0
+if sida = -1 || sida = 0
 {
 //FÖRSTA SIDAN. KARTA OCH UPPDRAG
 
@@ -29,9 +29,60 @@ draw_text_ext_color(self.x-60, self.y+170,"Options",20,150,optionscolor,optionsc
 draw_text_ext_color(self.x-60, self.y+190,"Save",20,150,savecolor,savecolor,savecolor,savecolor,alpha)
 
 
-draw_text_ext_color(self.x+10, self.y+110,string(oGame.quest[0]),20,150,c_black,c_black,c_black,c_black,alpha)
-draw_text_ext_color(self.x+10, self.y+130,string(oGame.quest[1]),20,150,c_black,c_black,c_black,c_black,alpha)
-draw_text_ext_color(self.x+10, self.y+150,string(oGame.quest[2]),20,150,c_black,c_black,c_black,c_black,alpha)
+// In Draw Event
+for (var i = 0; i < min(max_visible_quests, array_length(oGame.quest) - scroll_offset); ++i) {
+    var quest_index = i + scroll_offset;
+    var y_pos = self.y + 110 + (i * 20);
+    
+    var color = (quest_index == selected_quest_index) ? c_green : c_black;
+    
+    draw_text_ext_color(
+        self.x + 10, y_pos,
+        string(oGame.quest[quest_index]), 
+        20, 130, 
+        color, color, color, color, 
+        alpha
+    );
+}
+
+if array_length(oGame.quest) > max_visible_quests
+{
+	var scroll_percent;
+if (array_length(oGame.quest) <= max_visible_quests) {
+    scroll_percent = 0; // if all quests fit on the screen, the handle is at the top
+} else {
+    scroll_percent = scroll_offset / (array_length(oGame.quest) - max_visible_quests);
+}
+
+// In oGame Draw Event
+var bar_height = 130; // the total height of the scrollbar
+var bar_width = 1; // the width of the scrollbar
+var bar_x = self.x + 133; // X position of the scrollbar
+var bar_y = self.y + 110; // starting Y position of the scrollbar
+
+// Draw the background of the scrollbar
+draw_rectangle_color(bar_x, bar_y, bar_x + bar_width, bar_y + bar_height, global.color[11],global.color[11],global.color[11],global.color[11], false);
+
+// Calculate the height of the scroll handle based on the number of quests
+var handle_height = bar_height * (max_visible_quests / array_length(oGame.quest));
+if (handle_height > bar_height) handle_height = bar_height; // ensure it doesn't exceed the total bar_height
+
+// Calculate the Y position of the handle based on the current scroll_offset
+var handle_y = bar_y + (bar_height - sprite_get_height(sHandle)) * scroll_percent;
+
+if (array_length(oGame.quest) <= max_visible_quests) handle_y = bar_y; // ensure it starts at the top if there are fewer or equal quests to max_visible_quests
+
+// Draw the sprite as the handle
+draw_sprite(sHandle, 0, bar_x +1, handle_y + sprite_get_height(sHandle) / 2);
+
+}
+
+
+//for (var i = 0; i < array_length(oGame.quest); ++i) {
+//    draw_text_ext_color(self.x+10, self.y+110 + (i*20),string(oGame.quest[i]),20,150,c_black,c_black,c_black,c_black,alpha)
+//}
+ 
+
 /*
 if handy > self.y+115
 {
@@ -64,7 +115,7 @@ draw_text_ext_color(self.x-70, self.y+80,"Fishdex",100,10000,c_black,c_black,c_b
 scrDrawSet(fFishdexSmall,c_black,fa_left)
 //scrDrawSet(fTextboxSmall,c_black,fa_left)
 
-draw_text(100,100,sida)
+//draw_text(100,100,sida)
 
 if _sida = 1
 {
@@ -162,14 +213,14 @@ if sida = 9
 }
 
 //Inventory
-if sida = -1 && menuchoice = 0
+if sida = -2 && menuchoice = 0
 {
 	scrDrawSet(fTextbox,c_black,fa_center)
 	draw_text_ext_color(self.x-70, self.y+80,"Inventory",100,10000,c_black,c_black,c_black,c_black,alpha)
 }
 
 //Gear
-if sida = -1 && menuchoice = 1
+if sida = -2 && menuchoice = 1
 {
 	scrDrawSet(fTextbox,c_black,fa_center)
 	draw_text_ext_color(self.x-70, self.y+80,"Rods",100,10000,c_black,c_black,c_black,c_black,alpha)
@@ -177,7 +228,7 @@ if sida = -1 && menuchoice = 1
 }
 
 //Options
-if sida = -1 && menuchoice = 2
+if sida = -2 && menuchoice = 2
 {
 	scrDrawSet(fTextbox,c_black,fa_center)
 	draw_text_ext_color(self.x-70, self.y+80,"Options",100,10000,c_black,c_black,c_black,c_black,alpha)
@@ -223,7 +274,7 @@ if sida = -1 && menuchoice = 2
 }
 
 //Save
-if sida = -1 && menuchoice = 3
+if sida = -2 && menuchoice = 3
 {
 	
 	seconds = string_replace(string_format(global.secondsplayed, 2, 0), " ", "0")

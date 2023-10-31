@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sFishBubblerise",
-    "path": "sprites/sFishBubblerise/sFishBubblerise.yy",
+    "name": "sFishFernflutter",
+    "path": "sprites/sFishFernflutter/sFishFernflutter.yy",
   },
   "spriteMaskId": null,
   "visible": true,

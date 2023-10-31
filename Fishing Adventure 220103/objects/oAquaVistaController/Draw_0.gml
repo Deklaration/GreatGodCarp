@@ -1,5 +1,6 @@
 if (live_call()) return live_result;
-if global.showAquaVistaLight = true
+
+if global.showAquaVistaLight = true && active = true
 {
 	for (var i = 0; i < array_length(tankGuide); ++i)
 	{
@@ -10,7 +11,7 @@ if global.showAquaVistaLight = true
 	    // Skip if the object does not exist
 	    if (!instance_exists(target))
 	    {
-	        continue;
+		continue;
 	    }
 
 	    // Calculate the angle to point the arrow
@@ -41,7 +42,10 @@ if global.showAquaVistaLight = true
 	    alpha = (distanceToTank - 50) / (100 - 50);
 	}
 		alpha = clamp(alpha,0,1);
-
+		if target = -1
+		{
+			alpha = 0
+		}
 	    // Draw the arrow
 	    draw_sprite_ext(sTinyArrow, 1, oProt.x + arrow_x, oProt.y + arrow_y, 1, 1, angle, global.color[i], alpha);
 	    draw_sprite_ext(sTinyArrow, 0, oProt.x + arrow_x, oProt.y + arrow_y, 1, 1, angle, c_white, alpha);

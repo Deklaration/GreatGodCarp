@@ -1,9 +1,11 @@
 rowLenght = 4;
-inventory = array_create(12, -1) //bait
-baitStack = array_create(12, 0)
+
+scrInventoryInitialize(oBait, global.numberofbaits)
+//inventory = array_create(12, -1) //bait
+//baitStack = array_create(12, 0)
 place = -8
 buttonreset = 1
-scrInventoryDSlist(global.numberofbaits)
+//scrInventoryDSlist(global.numberofbaits)
 
 baitname[0] = "Safety pin"
 

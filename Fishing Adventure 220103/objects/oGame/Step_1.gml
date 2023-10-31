@@ -2,7 +2,7 @@
 
 if instance_exists(oFishGuide){
 
-if room = rPuddleTown || (room = rFiske && room_previous(rPuddleTown))
+if room = rTownCenter || (room = rFiske && room_previous(rTownCenter))
 {
 	oFishGuide.blink[0] = oFishGuide.blinky
 	currenttown = "Puddle Town"
@@ -14,7 +14,7 @@ else
 
 }
  
-show_debug_message(global.daugava_set)
+//show_debug_message(global.daugava_set)
 
 /*
 if global.activerod = "It's a stick"

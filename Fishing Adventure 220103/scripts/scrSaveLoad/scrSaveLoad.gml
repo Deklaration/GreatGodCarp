@@ -54,6 +54,8 @@ function scrSave()
 	playerprefs_set("gotFishGuide",global.gotFishGuide)
 	playerprefs_set("talkedtoRune",global.talkedtoRune)
 	playerprefs_set("talkedtoShop",global.talkedtoShop)
+	playerprefs_set("talkedToSkurt",global.talkedToSkurt)
+	playerprefs_set("findRecipe_MurkMunch",global.findRecipe_MurkMunch)
 	playerprefs_set("numberOfTourists",global.numberOfTourists)
 	playerprefs_set("totalFishScore",global.totalFishScore)
 	playerprefs_set("rareFishLuck",global.rareFishLuck)
@@ -70,17 +72,20 @@ function scrSave()
 	
 	for (var i = 0; i < INVENTORY_SLOTS; ++i) { //Inventory
 	    playerprefs_set("Inventory" + string(i),oInventory.inventory[i])
-		playerprefs_set("Stacking" + string(i), ds_list_find_value(oInventory.list,i))
+	    playerprefs_set("InventoryStacking" + string(i),oInventory.stacks[i])
+		//playerprefs_set("Stacking" + string(i), ds_list_find_value(oInventory.list,i))
 	}
 	
-	for (var l = 0; l < 12; ++l) { //Bait
+	for (var l = 0; l < global.numberofbaits; ++l) { //Bait
 	    playerprefs_set("Bait" + string(l),oBait.inventory[l])
-		playerprefs_set("Bait Stacking" + string(l), ds_list_find_value(oBait.list,l))
+		playerprefs_set("BaitStacking" + string(l),oBait.stacks[l])
+		//playerprefs_set("Bait Stacking" + string(l), ds_list_find_value(oBait.list,l))
 	}
 	
-		for (var m = 0; m < 8; ++m) { //Rods
+		for (var m = 0; m < global.numberofrods; ++m) { //Rods
 	    playerprefs_set("Rods" + string(m),oRods.inventory[m])
-		playerprefs_set("Rods Stacking" + string(m), ds_list_find_value(oRods.list,m))
+		playerprefs_set("RodsStacking" + string(m),oRods.stacks[m])
+		//playerprefs_set("Rods Stacking" + string(m), ds_list_find_value(oRods.list,m))
 	}
 
 }
@@ -141,6 +146,8 @@ global.placedFirstFishInTank = playerprefs_get("placedFirstFishInTank")
 global.gotFishGuide = playerprefs_get("gotFishGuide")
 global.talkedtoRune = playerprefs_get("talkedtoRune")
 global.talkedtoShop = playerprefs_get("talkedtoShop")
+global.talkedToSkurt = playerprefs_get("talkedToSkurt")
+global.findRecipe_MurkMunch = playerprefs_get("findRecipe_MurkMunch")
 global.numberOfTourists = playerprefs_get("numberOfTourists")
 global.totalFishScore = playerprefs_get("totalFishScore")
 global.rareFishLuck = playerprefs_get("rareFishLuck")
@@ -156,15 +163,18 @@ global.fishsize[p] = playerprefs_get("Fishsize" + string(p))
 
 for (var j = 0; j < INVENTORY_SLOTS; ++j) {
 oInventory.inventory[j] = playerprefs_get("Inventory" + string(j))
-ds_list_insert(oInventory.list,j,playerprefs_get("Stacking" + string(j)))
+oInventory.stacks[j] = playerprefs_get("InventoryStacking" + string(j))
+//ds_list_insert(oInventory.list,j,playerprefs_get("Stacking" + string(j)))
 }
 for (var n = 0; n < 12; ++n) {
 oBait.inventory[n] = playerprefs_get("Bait" + string(n))
-ds_list_insert(oBait.list,n,playerprefs_get("Bait Stacking" + string(n)))
+oBait.stacks[n] = playerprefs_get("BaitStacking" + string(n))
+//ds_list_insert(oBait.list,n,playerprefs_get("Bait Stacking" + string(n)))
 }
 for (var o = 0; o < 8; ++o) {
 oRods.inventory[o] = playerprefs_get("Rods" + string(o))
-ds_list_insert(oRods.list,o,playerprefs_get("Rods Stacking" + string(o)))
+oRods.stacks[o] = playerprefs_get("RodsStacking" + string(o))
+//ds_list_insert(oRods.list,o,playerprefs_get("Rods Stacking" + string(o)))
 }
 
 }

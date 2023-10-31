@@ -4,7 +4,7 @@
   "name": "sFishSilverflicker",
   "bbox_bottom": 15,
   "bbox_left": 0,
-  "bbox_right": 14,
+  "bbox_right": 15,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 0,
@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"460d5626-0857-4b45-b6f5-4b2acc35b3fb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e184a9ab-f569-43b3-96d4-dbd441056310",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5b23854-3597-4c71-8c7f-eb249afe5073",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de01dec8-e5cc-49b3-a2fd-f74c1008949f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b22a5016-bf83-43c5-a458-cda2ca35dc67","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c4a50780-8f26-48bb-b248-b1b430dd9967","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"460d5626-0857-4b45-b6f5-4b2acc35b3fb","path":"sprites/sFishSilverflicker/sFishSilverflicker.yy",},},},"Disabled":false,"id":"b8626afb-c749-47a6-b5c7-6cdd0f31b86f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e184a9ab-f569-43b3-96d4-dbd441056310","path":"sprites/sFishSilverflicker/sFishSilverflicker.yy",},},},"Disabled":false,"id":"e62ef716-c8df-453d-8d87-c59ceeeafe1f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b5b23854-3597-4c71-8c7f-eb249afe5073","path":"sprites/sFishSilverflicker/sFishSilverflicker.yy",},},},"Disabled":false,"id":"49de7f58-0093-425f-bcbf-aa287bf79ae4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"de01dec8-e5cc-49b3-a2fd-f74c1008949f","path":"sprites/sFishSilverflicker/sFishSilverflicker.yy",},},},"Disabled":false,"id":"116a9cd0-53fb-45d3-96de-84a70feb7df1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -14,6 +14,21 @@ var rodNames = [
     "Cool rod",
     "Good ol' rod"
 ];
+
+enum enumRods {
+    None,         // 0
+    ItsAStick,    // 1
+    OldRod,       // 2
+    KindaOldRod,  // 3
+    ThisIsAHam,   // 4
+    ACandyCane,   // 5
+    OhASuperRod,  // 6
+    CoolRod,      // 7
+    GoodOlRod     // 8
+}
+
+global.rodNumber = [
+0,1,2,3,4,5,6,7,8]
 	
 var rodPower = [ //Påverkar hur länge fisken drar innan den sticker
 	"",
@@ -53,7 +68,7 @@ var rodInventoryInfos = [
 
 
 
-global.numberofrods = 1 //Ändra detta för varje spö som existerar
+global.numberofrods = 8 //Ändra detta för varje spö som existerar
 
 
 global.rodarray[0,0] = noone
@@ -65,4 +80,19 @@ for (var i = 0; i <= global.numberofrods; ++i) {
 	global.rodarray[i,2] = rodInventoryInfos[i]
 	global.rodarray[i,3] = rodThrow[i]
 }
+}
+
+function getEnumRodsIndex(rodName) {
+    switch(rodName) {
+        case enumRods.None : return 0;
+        case enumRods.ItsAStick: return 1;
+        case enumRods.OldRod: return 2;
+        case enumRods.KindaOldRod: return 3;
+        case enumRods.ThisIsAHam: return 4;
+        case enumRods.ACandyCane: return 5;
+        case enumRods.OhASuperRod: return 6;
+        case enumRods.CoolRod: return 7;
+        case enumRods.GoodOlRod: return 8;
+        default: return -1; // Return -1 if the name isn't found
+    }
 }

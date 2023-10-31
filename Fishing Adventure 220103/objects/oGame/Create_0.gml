@@ -13,9 +13,10 @@ currenttown = ""
 l = 0
 
 ///QUESTS
-oGame.quest[0] = "Place a fish in a tank"
-oGame.quest[1] = "Spread joy"
-oGame.quest[2] = "Fill AquaVista with fish"
+oGame.quest[0] = "Fill AquaVista with fish"
+//oGame.quest[1] = "Spread joy"
+//oGame.quest[2] = "Fill AquaVista with fish"
+bunnyHouseTimer = 60*5
 
 //CUTSCENES
 if global.cutscene1done = false
@@ -51,7 +52,10 @@ roomarray[rDarkAlley] = "Alley"
 roomarray[rNorthside] = "North Side"
 roomarray[rNorthEast] = "North East"
 roomarray[rAquaVista] = "AquaVista"
+roomarray[rCoastalCuriosities] = "Coastal Curiosities"
 roomarray[rAquaVistaTopFloor] = "2nd floor"
+roomarray[rCavern] = "Gull Grotto"
+roomarray[rInmostCavern] = "Hidden burial"
 roomarray[rFiske] = " "
 
 //KEY CODES

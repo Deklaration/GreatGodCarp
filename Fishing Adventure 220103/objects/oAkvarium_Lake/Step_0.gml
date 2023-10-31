@@ -13,9 +13,9 @@ if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.
 	{
 		show_debug_message(string(global.fisharray[fish,4]))
 		show_debug_message(fish)
-		show_debug_message(scrInventorySearch(oInventory,fish-1))
+		show_debug_message(scrInventorySearch(oInventory,fish))
 		show_debug_message("hit")
-		if scrInventorySearch(oInventory,fish-1) !=-1 //&& scrInventorySearch(oInventory,fish) !=0
+		if scrInventorySearch(oInventory,fish) !=-1 //&& scrInventorySearch(oInventory,fish) !=0
 		{	
 			show_debug_message("hit2")
 				if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.sprite_index = sProt_North
@@ -41,7 +41,7 @@ if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.
 	}
 	
 //Guidar en pil rätt, om man har en fisk
-if scrInventorySearch(oInventory,fish-1) !=-1 && global.showAquaVistaLight = true && stop = false && global.fishInTank[fish] = 0
+if scrInventorySearch(oInventory,fish) !=-1 && global.showAquaVistaLight = true && stop = false && global.fishInTank[fish] = -1
 		{	
 			for (var i = 0; i < array_length(oAquaVistaController.tankGuide); ++i)
 			{
@@ -63,3 +63,11 @@ if scrInventorySearch(oInventory,fish-1) !=-1 && global.showAquaVistaLight = tru
 				stop = true
 			}
 		}
+		
+if keyboard_check_pressed(vk_control)
+{
+	global.showAquaVistaLight = true
+show_debug_message(string("fish: ") + string(fish))
+show_debug_message(string("Inve serch: ") + string(scrInventorySearch(oInventory,fish)))
+show_debug_message(string("fishintank: ") + string(global.fishInTank[fish]))
+}

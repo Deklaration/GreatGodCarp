@@ -17,6 +17,12 @@ function scrTransitionsStart(_roomTarget, _typeOut, _typeIn)
 		{
 		oProt.image_speed = 0;
 		oProt.image_index = 0;
+		global.directionbeforefish = oProt.sprite_index
+		global.xscalebeforefish = oProt.xscale
+		global.nosebeforefish = oProt.nose
+		global.clothesbeforefish = oProt.clothes
+		global.nosecolorbeforefish = oProt.nosecolor
+		global.clothescolorbeforefish = oProt.clothescolor
 		}
 		
 	if (!global.midTransition)

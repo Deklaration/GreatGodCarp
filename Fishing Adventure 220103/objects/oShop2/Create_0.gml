@@ -1,6 +1,6 @@
 rowLenght = 6;
 
-scrInventoryDSlist()
+//scrInventoryDSlist()
 
 inventory = array_create(INVENTORY_SLOTS, -1)
 inventorystack = array_create(INVENTORY_SLOTS,0)

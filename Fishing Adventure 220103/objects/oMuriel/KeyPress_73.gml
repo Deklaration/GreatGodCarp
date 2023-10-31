@@ -1,0 +1,1 @@
+global.findAGoodShovel = !global.findAGoodShovel

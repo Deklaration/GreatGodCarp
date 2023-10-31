@@ -1,0 +1,1 @@
+scrInventoryAdd(oInventory,enumFish.Weedsnout)

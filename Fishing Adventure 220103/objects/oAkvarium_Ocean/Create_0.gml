@@ -14,14 +14,17 @@ if global.setFishInTank = false
 {
 global.fishInTank[fish] = 0
 }
-
-if createdfish < global.fishInTank[fish]// != 0
+else
 {
-	for (var i = 0; i < global.fishInTank[fish]; ++i) 
-	{
-		instance_create_depth(random_range(x-10,x+10),random_range(y-4,y+4),depth-1,oFishInTank,{tank : id})
-		createdfish +=1
-	}
-}
 
+	if createdfish < global.fishInTank[fish]// != 0
+	{
+		for (var i = 0; i < global.fishInTank[fish]; ++i) 
+		{
+			instance_create_depth(random_range(x-10,x+10),random_range(y-4,y+4),depth-1,oFishInTank,{tank : id})
+			createdfish +=1
+		}
+	}
+
+}
 instance_create_depth(x,y,depth-2,oAkvarium_Ocean_Window,{tank : id})

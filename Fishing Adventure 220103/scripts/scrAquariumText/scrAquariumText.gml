@@ -14,7 +14,7 @@ function scrAquariumText(_fishnumber){
 	
 	if talking = true && createtext = false
 	{
-		scrNewTextboxSign(string("            ") + string(global.fisharray[_fishnumber,4]) + string("\n") + string(global.fisharray[_fishnumber,5]),0)
+		scrNewTextboxSign(string("            ") + string(global.fisharray[_fishnumber,4]) + string("\n") + string(global.fisharray[_fishnumber,5]),2)
 		createtext = true
 	}
 

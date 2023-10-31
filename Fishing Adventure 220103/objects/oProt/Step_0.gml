@@ -1,13 +1,38 @@
-//if (live_call()) return live_result;
+if (live_call()) return live_result;
+h +=1
 
+//show_debug_message(x)
 if disable = false
 {
+	
+//following system
+// Check if the player has moved
+if (x != prev_x || y != prev_y)
+{
+    // Shift the array by one to make room for the new position
+    for (var i = record_count - 1; i > 0; i--)
+    {
+        pos_x[i] = pos_x[i - 1];
+        pos_y[i] = pos_y[i - 1];
+    }
+    
+    // Store the new position
+    pos_x[0] = x;
+    pos_y[0] = y;
+    
+    // Store current position for next step's comparison
+    prev_x = x;
+    prev_y = y;
+}
 
 
+
+
+//show_debug_message(global.lastroom)
 //Kan inte röra sig om någon pratar
 if global.textbox = false && global.paused = false && global.cutscene = false && global.midTransition = false
 {
-
+//show_debug_message("RÖR SIG " + string(h))
 /// @description Movement
 var _dpad_h = gamepad_button_check(0,gp_padr) - gamepad_button_check(0,gp_padl);
 var _dpad_v = gamepad_button_check(0,gp_padd) - gamepad_button_check(0,gp_padu);
@@ -115,6 +140,7 @@ if skippingtimer < 0
 var _hspd = velocity[0];
 var _vspd = velocity[1];
 
+
 if(input_h != 0)
   var _break = 0;
 
@@ -150,4 +176,14 @@ if(scrMoveCol(dpad_dir,vec2_length(velocity),oWall))
 }
 
 }
+
+}
+
+if keyboard_check(vk_alt)
+{
+	show = true
+}
+if show = true
+{
+	show_debug_message(global.ybeforefish)
 }

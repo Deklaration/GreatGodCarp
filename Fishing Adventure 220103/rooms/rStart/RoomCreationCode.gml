@@ -1,18 +1,27 @@
 instance_create_depth(-100,-100,0,oProt)
 randomise()
 
+//Färgarray
+scrColor();
+
 scribble_anim_wave(1.2,100,0.1)
 scribble_anim_rainbow(0.5,0.004)
 scribble_anim_shake(1,0.5)
-scribble_font_bake_shadow("fTextbox","fTextboxShadow",0,1,c_black,1,1,false)
+scribble_anim_wobble(30,0.5)
+scribble_font_bake_shadow("fTextbox","fTextboxShadow",0,1,global.color[25],1,1,false)
+scribble_font_bake_shadow("fTextboxLarge","fTextboxLargeShadow",0,1,global.color[25],1,1,false)
+scribble_font_bake_shadow("fScary","fScaryShadow",0,1,global.color[25],1,1,false)
+scribble_font_bake_shadow("fTextboxHuge","fTextboxHugeShadow",0,1,global.color[25],1,1,false)
+scribble_font_bake_shadow("fFishdex","fFishdexShadow",0,1,global.color[25],1,1,false)
 scribble_font_set_default("fTextboxShadow")
 
 
 //Language
 global.language = "English"
 
-//Färgarray
-scrColor();
+//Inventory
+
+
 
 
 
@@ -90,6 +99,7 @@ global.cutscene5done = false
 global.cutscene6done = false
 global.cutscene7done = false
 */
+
 //Progress
 global.daugava_set = 0
 global.catchFirstFish = -1
@@ -98,7 +108,38 @@ global.placedFirstFishInTank = false
 global.gotFishGuide = false
 global.talkedtoRune = false
 global.talkedtoShop = false
+global.talkedToSkurt = 0
+global.findRecipe_MurkMunch = false
+global.bringWhisklash = false
+global.gotMurkMunchRecipe = false
+global.unlockedMurkMunch = false
+global.findTheLumberjack = false
+global.firstLumberjack = 0
+global.bringMuddwellerToOphelia = false
+global.findAGoodShovel = false
+global.gotAGoodShovel = false
+global.findCoalAndDriftwood = false
+global.gotSign = false
+global.putUpSign = false
+global.enterTheForest = false
+global.sSign = sFishAbyssglow
+global.findTheCarpenter = false
+global.waitForTheBunnyHouse = false
+global.waitedForTheBunnyHouse = false
+global.placedBunnyHouse = false
+global.valnadMovedIn = false
+global.valnadLives = false
+global.youCanJustWalkOverIt = false
+global.gotBark = false
+global.putUpDoor = false
+global.findTheSecretCave = false
+global.foundTheSecretCave = false
+global.cavex = 0
+global.cavey = 0
+global.searchTheCave = false
+global.movedMonument = false
 
+		
 //Kläder
 global.nosewest = sNose1_West
 global.nosesouth = sNose1_South
@@ -124,9 +165,13 @@ global.key_left = vk_left
 global.key_right = vk_right
 global.key_pause = vk_enter
 
+scrItems()
 scrFishArraySet()
 scrRodArraySet()
 scrBaitArraySet()
+
+
+global.fishInTank = array_create(global.numberoffish+1,-1)
 
 global.numberOfTourists = 0
 
@@ -181,6 +226,7 @@ global.rodthrow[4] = 1.6
 
 instance_create_depth(0,0,0,oGame)
 instance_create_depth(0,0,-1,oInventory)
+instance_create_depth(0,0,-1,oKeyInventory)
 instance_create_depth(0,0,-1,oBait)
 instance_create_depth(0,0,-1,oRods)
 instance_create_depth(0,0,-1,oTouristCreator)
@@ -200,6 +246,6 @@ room_goto(rTitlescreen);;
 }
 else
 {
-scrLoad();
+//scrLoad();
 room_goto(rTitlescreen);
 }

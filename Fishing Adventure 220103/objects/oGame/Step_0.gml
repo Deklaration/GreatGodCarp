@@ -7,7 +7,8 @@
 //show_debug_message(string("Inventory gold: ") + string(oShop.inventorygold))
 //}
 
-
+//show_debug_message(global.firstLumberjack)
+//show_debug_message(global.bringWhisklash)
 //if instance_exists(oWater)
 //{
 //show_debug_message("tension: ")
@@ -19,7 +20,21 @@
 //show_debug_message(oWater.wavespeed)show_debug_message(" DONE ")
 //}
 
-//show_debug_message(global.lastroom)
+//show_debug_message(oBait.baitStack)
+
+if global.waitForTheBunnyHouse = true && global.waitedForTheBunnyHouse = false
+{
+	bunnyHouseTimer -= 1/room_speed
+	if bunnyHouseTimer < 0
+	{
+		global.waitedForTheBunnyHouse = true
+	}
+}
+
+if !instance_exists(oText)
+{
+	oGame.textboxtimer = true
+}
 
 if textboxtimer = true
 {

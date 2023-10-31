@@ -1,68 +1,67 @@
-function scrInventorySearch(rootObject,itemType)
-{
-	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
-	{
-		if (rootObject.inventory[i] == itemType)
-		{
-			return(i);
-		}
-	}
-	return(-1);
+// Initialize your inventory and stacks
+function scrInventoryInitialize(rootObject, size) {
+    rootObject.inventory = array_create(size, -1);
+    rootObject.stacks = array_create(size, 0);
+}
+
+// Searches for an itemType in the inventory and returns the index
+function scrInventorySearch(rootObject, itemType) {
+    for (var i = 0; i < array_length(rootObject.inventory); ++i) {
+        if (rootObject.inventory[i] == itemType) {
+            return i;
+        }
+    }
+    return -1;
 }
 
 
-function scrInventoryRemove(rootObject,itemType) //STACKING
-{
-	var _slot = scrInventorySearch(rootObject,itemType)
-	if (_slot != -1)
-	{
-		
-		_stack = ds_list_find_value(rootObject.list,itemType)
-		ds_list_set(rootObject.list,itemType, _stack -1)
-
-		if _stack = 1
-		{
-		with (rootObject) inventory[_slot] =-1
-		
-		if rootObject = oBait
-		{
-			global.activebait = 0
-		}
-		
-		}
-		return true
-	}
-	else return false
-
-
-
+// Searches for an itemType in the inventory and returns the stack
+function scrStackSearch(rootObject, itemType) {
+    for (var i = 0; i < array_length(rootObject.inventory); ++i) {
+        if (rootObject.inventory[i] == itemType) {
+			var itemStack = rootObject.stacks[i]
+            return itemStack;
+        }
+    }
+    return -1;
 }
 
-function scrInventoryAdd(rootObject,itemType) //STACKING
-{
-	var _slot = scrInventorySearch(rootObject,-1)
-
-	if (_slot != -1)
-	{
-		
-	
-		
-		if ds_list_find_value(rootObject.list,itemType) = 0
-		{
-		with (rootObject) inventory[_slot] = itemType 
-		}	
-		
-		_stack = ds_list_find_value(rootObject.list,itemType)
-		ds_list_set(rootObject.list,itemType, _stack +1)
-		return true
-	}
-	
-	else return false
-		
+// Removes an itemType from the inventory
+function scrInventoryRemove(rootObject, itemType) {
+    var index = scrInventorySearch(rootObject, itemType);
+    if (index != -1) {
+        rootObject.stacks[index] -= 1;
+        
+        if (rootObject.stacks[index] <= 0) {
+            rootObject.inventory[index] = -1;
+            rootObject.stacks[index] = 0;
+        }
+        
+        return true;
+    }
+    return false;
 }
 
+// Adds an itemType to the inventory
+function scrInventoryAdd(rootObject, itemType) {
+    var index = scrInventorySearch(rootObject, itemType); // First find existing item to stack
+    
+    if (index != -1) {
+        rootObject.stacks[index] += 1;
+    } else {
+        index = scrInventorySearch(rootObject, -1); // If item type doesn't exist, find first empty slot
+        if (index != -1) {
+            rootObject.inventory[index] = itemType;
+            rootObject.stacks[index] = 1;
+        } else {
+            return false; // Inventory full and item type doesn't already exist in inventory
+        }
+    }
+    
+    return true;
+}
 
-
+// Swaps items between two objects' inventories
 function scrInventorySwap(objectFrom,slotFrom,objectTo)
 {
 	
@@ -75,11 +74,10 @@ function scrInventorySwap(objectFrom,slotFrom,objectTo)
 
 function scrInventoryJump(){
 
-repeat(23)
-{
-	
-				var search = 0
-				var search2 = 0
+	repeat(23)
+	{
+		var search = 0
+		var search2 = 0
 				repeat(23)
 				{
 					repeat(23)
@@ -101,17 +99,7 @@ repeat(23)
 					break
 				}
 
-}
-
-}
-
-function scrInventoryDSlist(_number){
-	
-list = ds_list_create()
-
-for (var d = 0; d < _number; ++d) {
-    ds_list_add(list,0)
-}
+	}	
 
 }
 
@@ -159,93 +147,3 @@ function scrInventoryNameDescJ()
 			}
 		}
 }
-
-function scrBaitSearch(rootObject,itemType)
-{
-	for (var i = 0; i < 12; i += 1)
-	{
-		if (rootObject.bait[i] == itemType)
-		{
-			return(i);
-		}
-	}
-	return(-1);
-}
-
-
-function scrBaitRemove(rootObject,itemType)
-{
-	var _slot = scrBaitSearch(rootObject,itemType)
-	if (_slot != -1)
-	{
-		with (rootObject) bait[_slot] =-1
-		return true
-	}
-	else return false
-	
-	
-}
-
-
-function scrBaitAdd(rootObject,itemType) //STACKING
-{
-	var _slot = scrBaitSearch(rootObject,-1)
-
-	if (_slot != -1)
-	{
-		
-	
-		if ds_list_find_value(rootObject.list,itemType) = 0
-		{
-		with (rootObject) bait[_slot] = itemType 
-		}	
-		
-		_stack = ds_list_find_value(rootObject.list,itemType)
-		ds_list_set(rootObject.list,itemType, _stack +1)
-		return true
-	}
-	
-	else return false
-		
-}
-
-
-
-
-//////////////////////////////////////////
-
-function scrRodsSearch(rootObject,itemType)
-{
-	for (var i = 0; i < 8; i += 1)
-	{
-		if (rootObject.rods[i] == itemType)
-		{
-			return(i);
-		}
-	}
-	return(-1);
-}
-
-function scrRodsRemove(rootObject,itemType)
-{
-	var _slot = scrRodsSearch(rootObject,itemType)
-	if (_slot != -1)
-	{
-		with (rootObject) rods[_slot] =-1
-		return true
-	}
-	else return false
-}
-
-function scrRodsAdd(rootObject,itemType)
-{
-	var _slot = scrRodsSearch(rootObject,-1)
-	if (_slot != -1)
-	{
-		with (rootObject) rods[_slot] = itemType
-		return true
-	}
-	else return false
-}
-
-//////////////////////////////////////////

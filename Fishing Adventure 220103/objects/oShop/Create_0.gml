@@ -1,9 +1,5 @@
 rowLenght = 6;
-
-scrInventoryDSlist(global.numberoffish)
-
-inventory = array_create(INVENTORY_SLOTS, -1)
-inventorystack = array_create(INVENTORY_SLOTS,0)
+scrInventoryInitialize(oShop, INVENTORY_SLOTS)
 place = 0
 placej = -1
 side = "left"
@@ -26,9 +22,9 @@ depth = oText.depth +1
 
 //Det här är fisknumret -1. Första fisken har nummer 0. Det blev bara så. Förlåt.
 scrInventoryAdd(oShop,2)
-scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,0)
-scrInventoryAdd(oShop,0)
+scrInventoryAdd(oShop,1)
+scrInventoryAdd(oShop,1)
+scrInventoryAdd(oShop,1)
 scrInventoryAdd(oShop,5)
 scrInventoryAdd(oShop,5)
 scrInventoryAdd(oShop,8)

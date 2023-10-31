@@ -1,6 +1,6 @@
 if instance_exists(oFishGuide)
 	{
-		if oFishGuide.sida =-1
+		if oFishGuide.sida =-2
 		{
 		x = oFishGuide.x-125
 		y = oFishGuide.y+92

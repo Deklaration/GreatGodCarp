@@ -1,0 +1,1 @@
+array_push(oGame.quest,sentences[irandom_range(0,19)])

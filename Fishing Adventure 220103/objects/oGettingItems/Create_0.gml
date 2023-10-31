@@ -1,0 +1,9 @@
+scale = 0
+rot = 0
+alpha = 2
+alpha2 = 0 
+i = 0
+imagespeed = 0
+toptexty = -30
+bottomtexty = 300
+global.cutscene = true

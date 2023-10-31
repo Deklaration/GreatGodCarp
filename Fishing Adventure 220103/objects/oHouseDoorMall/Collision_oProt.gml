@@ -1,2 +1,4 @@
 global.lastroom = room
-room_goto(rPuddleTown_House1)
+global.exitx = x
+global.exity = y +30
+scrTransitionsStart(rPuddleTown_House1,sqFadeOut,sqFadeIn)

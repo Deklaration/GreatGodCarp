@@ -1,4 +1,4 @@
-if scrInventorySearch(oInventory,fish-1) !=-1 && global.showAquaVistaLight = true
+if scrInventorySearch(oInventory,fish) !=-1 && global.showAquaVistaLight = true
 		{	
 			draw_circle_color(x,y,5,global.color[9],global.color[10],false)
 		}

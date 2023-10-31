@@ -2,13 +2,7 @@
 if newroom = true
 {
 	scrDrawSet(fTextboxLarge,c_white,fa_right)
-	scrTextOutline(475,35,roomarray[room],100,roomalpha,c_white,c_black)
-	//draw_text_ext_color(474,35,roomarray[room],100,100,c_white,c_white,c_white,c_white,roomalpha)
-	//draw_text_ext_color(476,35,roomarray[room],100,100,c_white,c_white,c_white,c_white,roomalpha)
-	//draw_text_ext_color(475,34,roomarray[room],100,100,c_white,c_white,c_white,c_white,roomalpha)
-	//draw_text_ext_color(475,36,roomarray[room],100,100,c_white,c_white,c_white,c_white,roomalpha)
-	//scrDrawSet(fTextboxLarge,c_black,fa_right)
-	//draw_text_ext_color(475,35,roomarray[room],100,100,c_black,c_black,c_black,c_black,roomalpha)
+	scrTextOutline(475,35,roomarray[room],300,roomalpha,c_white,c_black)
 	newroomtimer -=1
 	
 	if newroomtimer < 50
@@ -23,6 +17,7 @@ if newroom = true
 	}
 }
 
+
 /// @description Rita ut GUI
 if room != rTitlescreen
 {
@@ -34,4 +29,21 @@ draw_sprite(sBaitIcon,global.activebait,462,19)
 scrDrawSet(fTextbox,c_black,fa_right)
 scrTextOutline(412,9,"£: " + string(global.gold),100,1,c_black,c_white)
 
+}
+
+
+if instance_exists(oBaitShop)
+{
+	if oBaitShop.shopActive = true
+	{
+		scrNineSliceBoxStretched(sTextbox,15,oBaitShop.y1,465,oBaitShop.y2,1)
+	}
+}
+if instance_exists(oShopkeeper)
+{
+	if oShopkeeper.shopActive = true
+	{
+		scrNineSliceBoxStretched(sTextbox,25,oShopkeeper.y1,213,oShopkeeper.y2,1)
+		scrNineSliceBoxStretched(sTextbox,267,oShopkeeper.y1,455,oShopkeeper.y2,1)
+	}
 }

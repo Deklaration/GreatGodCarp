@@ -1,10 +1,10 @@
 //live()
-//if (live_call()) return live_result;
+if (live_call()) return live_result;
 
 
 
-scrNineSliceBoxStretched(sTextbox,x-10,y1,x+178,y2,0)
-scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
+scrNineSliceBoxStretched(sTextbox,x-10,y1,x+178,y2,1)
+scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,1)
 
 		scrDrawSet(fTextboxLarge,c_black,fa_center)
 		draw_text_color(x+84,y-20,"My stuff",c_black,c_black,c_black,c_black,alpha)
@@ -57,7 +57,7 @@ scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
 						//draw_sprite_ext(sVeganIcon,oInventory.inventory[i],xx,yy,1,1,0,c_white,alpha)
 					}
 						scrDrawSet(fTextboxSmall,c_black,fa_right)
-						scrTextOutline(xx+23,yy+15,ds_list_find_value(oInventory.list,oInventory.inventory[i]),50,alpha,c_black,c_white)
+						//scrTextOutline(xx+23,yy+15,ds_list_find_value(oInventory.list,oInventory.inventory[i]),50,alpha,c_black,c_white)
 				}
 
 			}
@@ -105,7 +105,7 @@ scrNineSliceBoxStretched(sTextbox,x-10+200,y1,x+178+200,y2,0)
 						sprite_set_offset(global.fisharray[inventory[j]+1,2],global.fisharray[inventory[j]+1,9],global.fisharray[inventory[j]+1,10])
 					}
 						scrDrawSet(fTextboxSmall,c_black,fa_right)
-						scrTextOutline(xx+223,yy+15,ds_list_find_value(list,inventory[j]),50,alpha,c_black,c_white)
+						scrTextOutline(xx+223,yy+15,oShop.inventory[j],50,alpha,c_black,c_white)
 				}
 				
 			}

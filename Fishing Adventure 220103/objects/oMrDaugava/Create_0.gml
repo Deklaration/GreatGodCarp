@@ -19,7 +19,9 @@ walktimer_cutscene2 = 0; //timer på hur MrDaugava går in i AquaVista
 walkRight = 0 //Om MrDaugava kan gå åt höger för att ta sig in till AquaVista
 walkSet = false
 
-//[gettinggear][#TEXT*{OBJECT}£SPRITE$½SIFFRA PÅ OBJEKTET€,=SKALA~+HUR MÅNGA_]
+//[gettinggear][#TEXT*{OBJECT}£SPRITE$¤ITEMTYPE|½SIFFRA PÅ OBJEKTET€,=SKALA~+HUR MÅNGA_]
+
+
 
 //ENGLISH
 if global.language = "English"
@@ -39,8 +41,8 @@ dialog[0,8] = "Follow me, sky guy!"
 dialog[1,0] = "Welcome to [color_17]AquaVista[color_19]!"
 dialog[1,1] = "[sad]This used to be a thriving aquarium, just a few years ago. But now..."
 dialog[1,2] = "[sad]The fish are all... gone. And I need someone to replace them."
-dialog[1,3] = "Take this rod, I've made it myself![gettinggear][#A FISHING ROD*{oRods}£sRodsIcon$½1€,=0~+1_]"
-dialog[1,4] = "And take these as well, I'm sure they will help you out.[gettinggear][#SOME BAIT*{oBait}£sBaitIcon$½1€,=0~+10_]"
+dialog[1,3] = "Take this rod, I've made it myself!" + scrGearInDialog("A FISHING ROD",oRods,enumRods.ItsAStick,sRodsIcon,1,0,1,false)//[gettinggear][#A FISHING ROD*{oRods}£sRodsIcon$½1€,=0~+1_]"
+dialog[1,4] = "And take these as well, I'm sure they will help you out." + scrGearInDialog("SOME BAIT",oBait,enumBait.SafetyPin,sBaitIcon,1,0,10,false) //[gettinggear][#SOME BAIT*{oBait}£sBaitIcon$½1€,=0~+10_]"
 dialog[1,5] = "Go to the water and throw out a line! See if there's any more luck left in 'ya!"
 
 //Man pratar med honom igen inne på AquaVista, innan man fångat sig en fisk
@@ -61,7 +63,7 @@ dialog[3,6] = "Take a look at it with " + string(oGame.keyboard[global.key_pause
 dialog[4,0] = "Follow the little arrow thing around you and go to the correct tank to release the fish!"
 dialog[4,1] = "... what is that arrow thing anyway? I wish I had one of those."
 dialog[4,2] = "[angry]Would be great to have one out in the open sea! It would really help with [color_26]navigaton[color_19]!"
-dialog[4,3] = "Just follow the arrow! But I bet you can turn it off using the [color_22]fishing guide[color_19], if you find it annoying."
+dialog[4,3] = "Just follow the arrow! But I bet you can turn it off using the [color_28]fishing guide[color_19], if you find it annoying."
 dialog[4,4] = "You can do all kinds of stuff with that thing!"
 
 

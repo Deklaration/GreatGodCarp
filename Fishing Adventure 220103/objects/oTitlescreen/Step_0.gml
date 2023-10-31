@@ -58,7 +58,16 @@ if keyboard_check_pressed(global.key_a)
 
 if choice = 1 && starttext = "" && settings = false
 {
-	room_goto(global.roomsave)	
+	var first_play = playerprefs_has("oProt.x");
+	if (!first_play) {
+	room_goto(global.roomsave);;
+	}
+	else
+	{
+	scrLoad();
+	room_goto(global.roomsave);
+	}
+		//room_goto(global.roomsave)	
 }
 
 if choice = 2 && starttext = "" && settings = false

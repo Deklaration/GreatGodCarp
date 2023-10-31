@@ -1,4 +1,4 @@
-
+if (live_call()) return live_result;
 if y1 > y1target
 {
 	y1 -=5
@@ -8,6 +8,202 @@ else
 	alpha +=0.1
 }
 
+
+
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+
+if keyboard_check_pressed(global.key_b)
+	{
+		global.textbox = false
+		instance_destroy(self)
+		global.cutscene = false
+		show_debug_message("hallådär")
+	}
+
+if howMany = false
+{
+	if keyboard_check_pressed(global.key_a)
+	{
+		if yes = true
+		{
+			howMany = true
+			scrNewTextbox(oShopkeeper.dialog[8],1)
+		}
+		if yes = false
+		{
+			instance_destroy(self)
+		}
+	}
+}
+
+
+if howMany = true
+{
+			if keyboard_check_pressed(global.key_left)
+			{
+				antal -=1
+			}
+			
+			if keyboard_check_pressed(global.key_right)
+			{
+				antal+=1
+			}
+			
+			if keyboard_check(global.key_left) || keyboard_check(global.key_right)
+			{
+				timer -=1
+			}
+			
+			if timer < 0
+			{
+				if keyboard_check(global.key_left)
+				{
+					antal -=1
+				}
+				
+				if keyboard_check(global.key_right)
+				{
+						antal+=1
+				}
+				
+			}
+			
+			if keyboard_check_released(global.key_left) || keyboard_check_released(global.key_right)
+			{
+				timer = 30
+			}
+			
+			
+			antal = clamp(antal,0,999)
+
+	
+	if keyboard_check_pressed(global.key_a) && wannaBuy = false
+	{
+	wannaBuy = true
+	}
+
+}
+
+if wannaBuy = true
+{
+	if  oShop.inventorygold * antalSave > 0 //Man köper fler än 0 av någotr
+	{
+		
+		if keyboard_check_pressed(global.key_a) 
+		{
+			if yes = true
+				{
+					if global.gold >= oShop.inventorygold * antalSave
+					{
+						//instance_destroy(oText)
+						//scrNewTextbox(dialog[3],0)
+			
+						for (var i = 1; i < antalSave; ++i) {
+						   scrInventoryAdd(oInventory,oShop.place)
+						   global.gold -= oShop.inventorygold
+						}
+			
+						wannaBuy = false
+						created2 = false
+						howMany = false
+						antal = 1
+					}
+					
+					else
+					
+					{
+						//instance_destroy(oText)
+						//scrNewTextbox(dialog[4],0)
+						oShopkeeper.expensive = true
+						wannaBuy = false
+						howMany = false
+						created2 = false
+						antal = 1
+					}
+				}
+				else
+				{
+				instance_destroy(self)
+				wannaBuy = false
+				howMany = false
+				created2 = false
+				antal = 1
+				}
+		}
+	
+	}
+	else
+	{
+		//instance_destroy(oText)
+		//scrNewTextbox(dialog[5],0) //DIALOG SKA VARA TYP "YOU WANT... ZERO OF IT???"
+		wannaBuy = false
+		howMany = false
+		created2 = false
+		antal = 1
+	}
+	
+	
+	if keyboard_check_pressed(global.key_b)
+	{
+		instance_destroy(self)
+		wannaBuy = false
+		created2 = false
+		howMany = false
+		antal = 1
+	}
+}
+	
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 if val = 0 
 {
 	if oShop.question = 1
@@ -17,7 +213,8 @@ if val = 0
 
 	if oShop.placej !=-1
 	{
-	if ds_list_find_value(oShop.list,oShop.inventory[oShop.placej]) = 1 
+	//if ds_list_find_value(oShop.list,oShop.inventory[oShop.placej]) = 1 
+	if oShop.inventory[oShop.placej] = 1 
 	{
 		oShop.many = "1"
 		oShop.howmany = true
@@ -26,7 +223,8 @@ if val = 0
 	
 	if oShop.place !=-1
 	{
-	if ds_list_find_value(oInventory.list,oInventory.inventory[oShop.place]) = 1 
+	//if ds_list_find_value(oInventory.list,oInventory.inventory[oShop.place]) = 1 
+	if oInventory.inventory[oShop.place] = 1 
 	{
 		oShop.many = "1"
 		oShop.howmany = true
@@ -122,7 +320,8 @@ if val = 0
 				  if oInventory.inventory[i] = -1
 				  {	
 					  
-						repeat(ds_list_find_value(oShop.list,oShop.inventory[oShop.placej]))
+						//repeat(ds_list_find_value(oShop.list,oShop.inventory[oShop.placej]))
+						repeat oShop.stacks[oShop.placej]
 						{
 							howmanyisall +=1
 						}
@@ -211,7 +410,8 @@ if val = 0
 			  if oShop.inventory[i] = -1
 			  {
 				
-				repeat(ds_list_find_value(oInventory.list,oInventory.inventory[oShop.place]))
+				//repeat(ds_list_find_value(oInventory.list,oInventory.inventory[oShop.place]))
+				repeat oInventory.stacks[oShop.place]
 				{
 					scrInventoryAdd(oShop,oInventory.inventory[oShop.place])
 					scrInventoryRemove(oInventory,oInventory.inventory[oShop.place])

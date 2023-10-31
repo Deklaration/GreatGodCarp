@@ -1,14 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function scrGettingGear(_text,_object,_sprite,_imageindex,_scale,_howmany){
+function scrGettingGear(_text,_rootObject,_item,_sprite,_imageindex,_scale,_howmany){
 gettinggear = true
 if showGear = true
 {
-//show_debug_message(string("imagespeed") + string(imagespeed))
+
 if typist.get_state(1)
 {
-	//show_debug_message(sprite_get_name(_sprite))
 imagespeed +=1
 if imagespeed >= 22
 {
@@ -41,20 +40,17 @@ if alpha < 0.1
 	bottomtexty = 300
 	gotgear = true
 	for (var b = 0; b < _howmany; ++b) {
-	    scrInventoryAdd(_object,_imageindex)
+	    scrInventoryAdd(_rootObject,_item)
 	}
 	
 }
+//show_message(_sprite)
 
 if bottomtexty > 220 && scale > 1
 {
 toptexty +=4
 bottomtexty -=4
 }
-
-
-
-
 
 
 	scrDrawSet(fTitle,c_black,fa_center)
@@ -129,7 +125,22 @@ bottomtexty -=4
 }
 }
 
+function scrGearInDialog(_text,_rootObject,_item,_sprite,_imageindex,_scale,_howMany,_fish){
+	
+//Text som ska visas, vilket inventory det är (oInventory, oRods, oBait eller någon butik)
+//vilket item det är inkl enum (enumRods.itsastick, enumFish.inkfish)
+//vilken skala det är i när den visas, hur många av föremålet man ska få
+//om det är en fisk eller inte
+	
+var gearstring = string("[gettinggear][#") + string(_text) + string("*{")
++ string(_rootObject) + string("}£") + string(_item) + string("|½") 
++ string(_sprite) + string("^<") + string(_imageindex) + string(">¤") 
++ string(_scale) + string("€=") + string(_howMany) + string("~+") + string(_fish) + string("_")
 
+
+
+return gearstring
+}
 
 function scrGettingGearDrawGUI(_text,_sprite,_spriteindex,_scale){
 
@@ -139,18 +150,4 @@ function scrGettingGearDrawGUI(_text,_sprite,_spriteindex,_scale){
 	scrTextOutline(camera_get_view_width(oCamera.cam) / 2,toptexty,"YOU GOT",1000,alpha,global.color[19],global.color[25])
 	scrTextOutline(camera_get_view_width(oCamera.cam) / 2,bottomtexty,_text,1000,alpha,global.color[19],global.color[25])
 	
-}
-/*
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,toptexty-1,"YOU GOT",1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,bottomtexty-1,_text,1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,toptexty+1,"YOU GOT",1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,bottomtexty+1,_text,1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2 +1,toptexty,"YOU GOT",1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2 +1,bottomtexty,_text,1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2 -1,toptexty,"YOU GOT",1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2 -1,bottomtexty,_text,1000,1000,c_white,c_white,c_white,c_white,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,toptexty,"YOU GOT",1000,1000,c_black,c_black,c_black,c_black,alpha)
-	draw_text_ext_color(camera_get_view_width(oCamera.cam) / 2,bottomtexty,_text,1000,1000,c_black,c_black,c_black,c_black,alpha)
-
-
 }

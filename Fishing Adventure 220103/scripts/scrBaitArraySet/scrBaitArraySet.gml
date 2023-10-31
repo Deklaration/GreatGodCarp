@@ -19,6 +19,28 @@ var baitNames = [
 ];
 
 
+
+enum enumBait {
+    None,         // 0
+    SafetyPin,    // 1
+    MurkMunch,    // 2
+    FrothFlyer,   // 3
+    RollyPolly,   // 4
+    TimberTeaser, // 5
+    LuminLure,    // 6
+    RapidsRattle, // 7
+    SolarSnack,   // 8
+    SpiralSpark,  // 9
+    HerbHopper,   // 10
+    MysticMorsel, // 11
+    SkySurfer     // 12
+}
+
+
+global.baitNumber = [
+0,1,2,3,4,5,6,7,8,9,10,11,12]
+
+
 var baitDescriptions = [
 	"", // Placeholder
 	"It's just a worm on a safety pin.", // Zippy Nibble
@@ -120,40 +142,84 @@ for (var i = 0; i < array_length(baitNames); i++) {
 
 
 // Wiggle Worm - Attracts playful or swift fish
-baitFishGroups[1] = [oFishLakegem, oFishWhisklash, oFishBubblerise, oFishWaveshimmer, oFishSurfdrifter, oFishFinfury, oFishStreamgill, oFishRapidskimmer, oFishCurrentswift];
+global.baitFishGroups[1] = [oFishLakegem, oFishWhisklash, oFishBubblerise, oFishWaveshimmer, oFishSurfdrifter, oFishFinfury, oFishStreamgill, oFishRapidskimmer, oFishCurrentswift];
 
-// Fart Grub - Attracts fish found in dark or muddy environments
-baitFishGroups[2] = [oFishLakelight, oFishWeedsnout, oFishTidalflicker, oFishMuddweller, oFishEchodepth, oFishAbyssglow, oFishInkfish];
+// Murk munch - Attracts fish found in dark or muddy environments
+global.baitFishGroups[2] = [oFishLakelight, oFishWeedsnout, oFishTidalflicker, oFishMuddweller, oFishEchodepth, oFishAbyssglow, oFishInkfish];
 
 // Burp Bug - Attracts fish that live in bubbling or turbulent waters
-baitFishGroups[3] = [oFishCoralfin, oFishFinfury, oFishLumipuff, oFishSaltysurge, oFishStormdrifter, oFishBouldermaw];
+global.baitFishGroups[3] = [oFishCoralfin, oFishFinfury, oFishLumipuff, oFishSaltysurge, oFishStormdrifter, oFishBouldermaw];
 
 // Rolly Polly - Attracts fish with unique movements like spinning or gliding
-baitFishGroups[4] = [oFishEchodepth, oFishReedripple, oFishSurfdrifter, oFishStormdrifter, oFishWhirlskimmer, oFishFlyfin];
+global.baitFishGroups[4] = [oFishEchodepth, oFishReedripple, oFishSurfdrifter, oFishStormdrifter, oFishWhirlskimmer, oFishFlyfin];
 
 // Sneezy Fern - Attracts fish that live in forest waters
-baitFishGroups[5] = [oFishLeafscale, oFishTimbertrickle, oFishFernflutter, oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishOakscale];
+global.baitFishGroups[5] = [oFishLeafscale, oFishTimbertrickle, oFishFernflutter, oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishOakscale];
 
 // Shimmy Shine - Attracts fish with shimmering or glowing appearances
-baitFishGroups[6] = [oFishAbyssglow, oFishSeaspike, oFishPearlshimmer, oFishSilverflicker, oFishWaveshimmer, oFishAqualite, oFishSappurgeon, oFishDiamurgeon, oFishRuburgeon];
+global.baitFishGroups[6] = [oFishAbyssglow, oFishSeaspike, oFishPearlshimmer, oFishSilverflicker, oFishWaveshimmer, oFishAqualite, oFishSappurgeon, oFishDiamurgeon, oFishRuburgeon];
 
 // Splash Splash - Attracts fish that make splashes or live in rapids
-baitFishGroups[7] = [oFishInkfish, oFishStreamgill, oFishRapidskimmer, oFishBouldermaw, oFishBrookflare, oFishSunsetgill, oFishCurrentswift];
+global.baitFishGroups[7] = [oFishInkfish, oFishStreamgill, oFishRapidskimmer, oFishBouldermaw, oFishBrookflare, oFishSunsetgill, oFishCurrentswift];
 
 // Sunburn Snack - Attracts fish with a sun or fiery aspect
-baitFishGroups[8] = [oFishSunsetgill, oFishSurgeknight, oFishDiamurgeon, oFishSappurgeon, oFishRuburgeon];
+global.baitFishGroups[8] = [oFishSunsetgill, oFishSurgeknight, oFishDiamurgeon, oFishSappurgeon, oFishRuburgeon];
 
 // Snort Star - Attracts fish with a sparkling or spiraling movement
-baitFishGroups[9] = [oFishBrookflare, oFishCurrentswift, oFishMossfin, oFishRivertwirl, oFishQuillure];
+global.baitFishGroups[9] = [oFishBrookflare, oFishCurrentswift, oFishMossfin, oFishRivertwirl, oFishQuillure];
 
 // Tummy Tickler - Attracts fish that nibble or eat plants
-baitFishGroups[10] = [oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishRoottrickle];
+global.baitFishGroups[10] = [oFishKelpshield, oFishBarkbiter, oFishPinescale, oFishRoottrickle];
 
 // Giggle Guppy - Attracts fish with enchanting or dreamy characteristics
-baitFishGroups[11] = [oFishDracofin, oFishFluffin, oFishRuburgeon, oFishEchoesolace];
+global.baitFishGroups[11] = [oFishDracofin, oFishFluffin, oFishRuburgeon, oFishEchoesolace];
 
 // Silly Skydiver - Attracts fish that leap or soar
-baitFishGroups[12] = [oFishRoottrickle, oFishOakscale, oFishPebbletrout, oFishQuillure, oFishFlyfin, oFishBubblerise];
+global.baitFishGroups[12] = [oFishRoottrickle, oFishOakscale, oFishPebbletrout, oFishQuillure, oFishFlyfin, oFishBubblerise];
+
+//////////////////////////////////////////////////////////
+
+// Wiggle Worm - Attracts playful or swift fish
+global.baitFishGroupsSprite[1] = [sFishLakegem, sFishWhisklash, sFishBubblerise, sFishWaveshimmer, sFishSurfdrifter, sFishFinfury, sFishStreamgill, sFishRapidskimmer, sFishCurrentswift];
+
+// Fart Grub - Attracts fish found in dark or muddy environments
+global.baitFishGroupsSprite[2] = [sFishLakelight, sFishWeedsnout, sFishTidalflicker, sFishMuddweller, sFishEchodepth, sFishAbyssglow, sFishInkfish];
+
+// Burp Bug - Attracts fish that live in bubbling or turbulent waters
+global.baitFishGroupsSprite[3] = [sFishCoralfin, sFishFinfury, sFishLumipuff, sFishSaltysurge, sFishStormdrifter, sFishBouldermaw];
+
+// Rolly Polly - Attracts fish with unique movements like spinning or gliding
+global.baitFishGroupsSprite[4] = [sFishEchodepth, sFishReedripple, sFishSurfdrifter, sFishStormdrifter, sFishWhirlskimmer, sFishFlyfin];
+
+// Sneezy Fern - Attracts fish that live in forest waters
+global.baitFishGroupsSprite[5] = [sFishLeafscale, sFishTimbertrickle, sFishFernflutter, sFishKelpshield, sFishBarkbiter, sFishPinescale, sFishOakscale];
+
+// Shimmy Shine - Attracts fish with shimmering or glowing appearances
+global.baitFishGroupsSprite[6] = [sFishAbyssglow, sFishSeaspike, sFishPearlshimmer, sFishSilverflicker, sFishWaveshimmer, sFishAqualite, sFishSappurgeon, sFishDiamurgeon, sFishRuburgeon];
+
+// Splash Splash - Attracts fish that make splashes or live in rapids
+global.baitFishGroupsSprite[7] = [sFishInkfish, sFishStreamgill, sFishRapidskimmer, sFishBouldermaw, sFishBrookflare, sFishSunsetgill, sFishCurrentswift];
+
+// Sunburn Snack - Attracts fish with a sun or fiery aspect
+global.baitFishGroupsSprite[8] = [sFishSunsetgill, sFishSurgeknight, sFishDiamurgeon, sFishSappurgeon, sFishRuburgeon];
+
+// Snort Star - Attracts fish with a sparkling or spiraling movement
+global.baitFishGroupsSprite[9] = [sFishBrookflare, sFishCurrentswift, sFishMossfin, sFishRivertwirl, sFishQuillure];
+
+// Tummy Tickler - Attracts fish that nibble or eat plants
+global.baitFishGroupsSprite[10] = [sFishKelpshield, sFishBarkbiter, sFishPinescale, sFishRoottrickle];
+
+// Giggle Guppy - Attracts fish with enchanting or dreamy characteristics
+global.baitFishGroupsSprite[11] = [sFishDracofin, sFishFluffin, sFishRuburgeon, sFishEchoesolace];
+
+// Silly Skydiver - Attracts fish that leap or soar
+global.baitFishGroupsSprite[12] = [sFishRoottrickle, sFishOakscale, sFishPebbletrout, sFishQuillure, sFishFlyfin, sFishBubblerise];
+
+
+
+////////////////////////////////////////////////////////////
+
+
 
 
 global.numberofbaits = array_length(baitNames)-1 //Ändra detta för varje bete som existerar
@@ -167,6 +233,27 @@ for (var i = 0; i <= global.numberofbaits; ++i) {
 	global.baitarray[i,1] = baitDescriptions[i]
 	global.baitarray[i,2] = baitPrices[i]
 	global.baitarray[i,3] = baitStoreDescriptions[i]
-	global.baitarray[i,4] = baitFishGroups[i]
+	global.baitarray[i,4] = global.baitFishGroups[i]
+	global.baitarray[i,5] = global.baitFishGroupsSprite[i]
 }
+}
+
+
+function getEnumBaitIndex(baitName) {
+    switch (baitName) {
+        case enumBait.None:        return 0;
+        case enumBait.SafetyPin:   return 1;
+        case enumBait.MurkMunch:   return 2;
+        case enumBait.FrothFlyer:  return 3;
+        case enumBait.RollyPolly:  return 4;
+        case enumBait.TimberTeaser: return 5;
+        case enumBait.LuminLure:   return 6;
+        case enumBait.RapidsRattle: return 7;
+        case enumBait.SolarSnack:  return 8;
+        case enumBait.SpiralSpark: return 9;
+        case enumBait.HerbHopper:  return 10;
+        case enumBait.MysticMorsel: return 11;
+        case enumBait.SkySurfer:   return 12;
+        default:                   return -1;  // Return -1 if the baitName is not found
+    }
 }

@@ -1,4 +1,4 @@
-sida = 0
+sida = -1
 open = false
 flipright = false
 flipleft = false 
@@ -64,3 +64,33 @@ cancelcolor = c_black
 pausecolor = c_black
 reset2color = c_black
 
+// In oGame Create Event
+saveQuestPlace = 0
+selected_quest_index = -1;  // The index of the currently selected quest
+scroll_offset = 0;  // How many quests are scrolled past at the top of the list
+max_visible_quests = 7;  // Maximum number of quests to display at once
+
+
+
+sentences = [
+    "This is a short sentence.",
+    "Here's another one that's.",
+    "Life is beautiful.",
+    "The early bird might get the worm, but the second mouse gets the cheese.",
+    "Why did the chicken cross the road?",
+    "Reading is to the mind what exercise is to the body.",
+    "Actions speak louder than words.",
+    "She sells sea shells by the sea shore.",
+    "The quick brown fox jumps over the lazy dog.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "This sentence is false.",
+    "Just because you can doesn't mean you should.",
+    "All that glitters is not gold.",
+    "Don't cry over spilled milk.",
+    "I think, therefore I am.",
+    "The only constant in life is change.",
+    "Time waits for no one.",
+    "Knowledge is power.",
+    "Beauty lies in the eyes of the beholder.",
+    "To be or not to be, that is the question."
+];

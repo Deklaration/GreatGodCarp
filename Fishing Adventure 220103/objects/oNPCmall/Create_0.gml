@@ -1,7 +1,7 @@
 image_alpha = 1
 talking = false
 createtext = false
-face = sNPCface2
+//face = sNPCface2
 mouthmove = sRunePortraitMouth
 
 dialog[0] = "First textbox"

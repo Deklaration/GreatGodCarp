@@ -1,0 +1,1 @@
+scrTransitionsStart(rInmostCavern,sqFadeOut,sqFadeIn)

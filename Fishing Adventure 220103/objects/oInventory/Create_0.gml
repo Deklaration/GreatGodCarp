@@ -1,10 +1,11 @@
 #macro INVENTORY_SLOTS 24
 rowLenght = 4;
 
-inventory = array_create(INVENTORY_SLOTS, -1)
-inventorystack = array_create(INVENTORY_SLOTS,0)
+scrInventoryInitialize(oInventory, INVENTORY_SLOTS)
+//inventory = array_create(INVENTORY_SLOTS, -1)
+//inventorystack = array_create(INVENTORY_SLOTS,0)
 p=0
-scrInventoryDSlist(INVENTORY_SLOTS)
+//scrInventoryDSlist(INVENTORY_SLOTS)
 
 nocolor = c_green
 yescolor = c_red

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Fishing Adventure 220103",
-    "path": "Fishing Adventure 220103.yyp",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

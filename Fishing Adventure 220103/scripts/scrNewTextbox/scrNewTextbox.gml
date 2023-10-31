@@ -16,7 +16,7 @@ var _obj;
 	_obj = oText
 	}
 	
-	with instance_create_layer(0,0,"Instances",_obj)
+	with instance_create_layer(0,0,"Instances",_obj,{NPC : id} )
 	{
 		textmessage = argument[0]
 		if instance_exists(other)

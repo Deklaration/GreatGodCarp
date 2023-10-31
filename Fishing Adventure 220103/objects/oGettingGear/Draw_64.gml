@@ -27,3 +27,8 @@ global.activerod = 1//"It's a stick"
 global.activebait = 1// "Safety pin"
 	instance_destroy(self)
 }
+
+if i = "coal"
+{
+	scrGettingGearDrawGUI("SOME COAL!",sItemsIcon,4,scale+0)
+}

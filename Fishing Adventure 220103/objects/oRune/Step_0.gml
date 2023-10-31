@@ -26,3 +26,11 @@ if talking = true
 {
 	global.talkedtoRune = true
 }
+
+if global.findTheSecretCave = true && global.foundTheSecretCave = false
+{
+dialog[0] = "The secret cave? Yeah, I've heard about it."
+dialog[1] = "Never been much of a secret really. The thing is…"
+dialog[2] = "The entry is always moving around…"
+dialog[3] = "It seems to follow the seagulls. I've heard that when a lot of seagulls are gathered at the same place, the entrance to Gull Grutto…"
+}

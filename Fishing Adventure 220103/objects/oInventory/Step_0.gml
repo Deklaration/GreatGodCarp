@@ -1,7 +1,7 @@
 ///@description Placepicker - inget mer
 if instance_exists(oFishGuide)
 	{
-		if oFishGuide.sida =-1 && discard = false
+		if oFishGuide.sida =-2 && discard = false
 		{
 			
 		x = oFishGuide.x-125

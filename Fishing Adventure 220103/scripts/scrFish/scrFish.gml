@@ -73,6 +73,8 @@ i=0
 //j = irandom_range(0,5)
 add = false
 
+sprite_index = global.fisharray[f,1]
+
 
 fishPath = global.fisharray[f,12]
 pathSpeedMin = random_range(0.9,1.1)
@@ -529,7 +531,7 @@ if i = 4
 	
 	if add = false
 	{
-	scrInventoryAdd(oInventory,f-1)
+	scrInventoryAdd(oInventory,f)
 	add = true
 		if global.catchFirstFish = -1
 		{
