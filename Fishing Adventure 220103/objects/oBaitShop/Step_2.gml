@@ -1,14 +1,6 @@
 if (live_call()) return live_result;
 
-//if shopActive = true
-//{
-//	depth = -1000
-//	oProt.depth = -1001
-//}
-//else
-//{
-//	depth = -y
-//}
+
 if talking = true && global.talkedToSkurt = 2 && global.findRecipe_MurkMunch = false
 {
 	shopActive = false

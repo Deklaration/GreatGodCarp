@@ -1,5 +1,6 @@
 depth =-y//-19;
 if (live_call()) return live_result;
+
 scrTalkToNPC()
 //show_debug_message(image_xscale)
 if room = rBeachside
@@ -233,7 +234,10 @@ if room = rCavern && trident = false
 		scrYesNoEnd()
 	}
 	}
-	if global.searchTheCave = true
+
+}
+
+	if global.searchTheCave = true && global.searchedTheCave = false && global.cutscene = false && moveMonument = false && (global.movedMonument = false || room = rInmostCavern)
 	{
 		
 		record_pos = 20;
@@ -246,10 +250,13 @@ y = oProt.pos_y[record_pos];
 
 
 	}
-}
+
+
 
 if room = rCavern && trident = true
 {
+	
+		
 		if notagain = false
 		{
 		scrYesNoStart()
@@ -266,6 +273,7 @@ if room = rCavern && trident = true
 		trident = false
 		show_debug_message("NEGATGIVE")
 		notagain = false
+		global.cutscene = false
 		dialog[0] = "Huh. Such a negative energy."
 		scrYesNoEnd()
 		}
@@ -283,7 +291,8 @@ if room = rCavern && trident = true
 				dialog[1] = "Such a bad voice."
 				dialog[2] = "I'll move this monument to the side. Wanna help by singning a new song?"
 				dialog[3] = "Bwahahaha![moveMonument]"
-				scrYesNoEnd()			
+				scrYesNoEnd()		
+				yes = -1
 			}
 		}
 
@@ -301,6 +310,7 @@ if room = rCavern && trident = true
 
 	if moveMonument = true
 	{
+		global.cutscene = true
 		if x < oStoneMonument.x +25
 		{
 			x+=1
@@ -328,6 +338,7 @@ if room = rCavern && trident = true
 				instance_destroy(oText)
 				moveMonument = false
 				global.movedMonument = true
+				global.cutscene = false
 				notagain = false
 				trident = false
 				}
@@ -336,3 +347,50 @@ if room = rCavern && trident = true
 	
 	}
 }
+
+
+
+if room = rInmostCavern && global.searchedTheCave = false
+{
+	sprite_set_offset(sprite_index, sprite_width/2, sprite_height);
+	mask_index = sNothing
+	if instance_exists(oInmostCaveController)
+	{
+		if oInmostCaveController.cutscene = true
+		{
+
+				if x< oProt.x +30
+				{
+				x+=1	
+				}
+				if y> oProt.y
+				{
+					y-=1
+				}
+				else
+				{
+					scrYesNoStart()
+					dialog[0] = "Wow... it's the skeleton... But where's the Carp's tear?"
+					dialog[1] = "The mural showed them burying it with the fish, it must be here!"
+					dialog[2] = "Unless... Someone has already found it..."
+					dialog[3] = "It might have been centuries ago, maybe even longer. Or ten minutes ago. Who knows?"
+					dialog[4] = "I'll stay here for a while to examine the bones. But you, little choir boy..."
+					dialog[5] = "You should go out and find the artifacts... I believe in you."
+					dialog[6] = "One in the forest, one on an island and one that's missing..."
+					dialog[7] = "Good luck, have fun![DONE]"
+					scrYesNoEnd()
+				}
+			
+		}
+	}
+	
+}
+
+if room = rInmostCavern && global.searchedTheCave = true
+{
+	mask_index = sOphelia
+	scrNewDialog()
+	dialog[0] = "You should go out and find the artifacts... I believe in you."
+	dialog[1] = "One in the forest, one on an island and one that's missing..."
+}
+

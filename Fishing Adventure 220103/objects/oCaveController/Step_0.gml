@@ -1,3 +1,5 @@
+if (live_call()) return live_result;
+
 if place_meeting(x,y,oProt) && global.searchTheCave = false
 {
 	cutscene = true

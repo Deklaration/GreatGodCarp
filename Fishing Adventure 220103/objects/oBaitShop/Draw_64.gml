@@ -4,11 +4,6 @@ if shopActive = true
 {
 	
 
-
-//scrNineSliceBoxStretched(sTextbox,15,y1,465,y2,1)
-//scribble("this isn't showing up").draw(240,95)
-//draw_text(240,110,"but this is")
-//show_debug_message(oBait.stacks)
 		if y1 > y1target
 		{
 		y1 -=20

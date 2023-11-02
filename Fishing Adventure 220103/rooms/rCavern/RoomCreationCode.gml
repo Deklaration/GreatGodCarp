@@ -1,8 +1,6 @@
 	if global.lastroom = rBeachside
 	{
 	global.directionbeforefish = sProt_North
-	
-	
 	global.xbeforefish = 712
 	global.ybeforefish = 800
 	}
@@ -14,6 +12,7 @@
 	}
 	
 	instance_create_depth(global.xbeforefish,global.ybeforefish,-1,oProt)
-
+if !instance_exists(oIlluminationCave)
+{
 	instance_create_depth(global.xbeforefish,global.ybeforefish,-1,oIlluminationCave)
-	
+}	

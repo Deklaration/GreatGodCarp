@@ -9,12 +9,14 @@
   "instanceCreationOrder": [
     {"name":"inst_63482BFA","path":"rooms/rInmostCavern/rInmostCavern.yy",},
     {"name":"inst_94BB2D4","path":"rooms/rInmostCavern/rInmostCavern.yy",},
+    {"name":"inst_4BFD96B4","path":"rooms/rInmostCavern/rInmostCavern.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63482BFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCaveSkeleton","path":"objects/oCaveSkeleton/oCaveSkeleton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_94BB2D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oInmostCavernExit","path":"objects/oInmostCavernExit/oInmostCavernExit.yy",},"properties":[],"rotation":0.0,"scaleX":9.0,"scaleY":1.0,"x":232.0,"y":264.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4BFD96B4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oInmostCaveController","path":"objects/oInmostCaveController/oInmostCaveController.yy",},"properties":[],"rotation":0.0,"scaleX":13.200001,"scaleY":1.0,"x":240.0,"y":192.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 -343,-2147483648,3,408,409,410,-27,-2147483648,3,432,433,434,-134,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsTDRPG_interior","path":"tilesets/tsTDRPG_interior/tsTDRPG_interior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

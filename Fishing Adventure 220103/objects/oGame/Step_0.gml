@@ -7,8 +7,8 @@
 //show_debug_message(string("Inventory gold: ") + string(oShop.inventorygold))
 //}
 
-//show_debug_message(global.firstLumberjack)
-//show_debug_message(global.bringWhisklash)
+//show_debug_message(string("lastroom: " + string(global.lastroom)))
+//show_debug_message(room)
 //if instance_exists(oWater)
 //{
 //show_debug_message("tension: ")

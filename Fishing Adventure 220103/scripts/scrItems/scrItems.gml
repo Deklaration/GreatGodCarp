@@ -9,6 +9,7 @@ Bunnyhouse, //2
 Bark, //3
 Coal, //4
 Driftwood, //5
+Sail,//6
 TOTAL //För att kunna få antal
 }
 

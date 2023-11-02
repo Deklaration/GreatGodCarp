@@ -138,6 +138,13 @@ global.cavex = 0
 global.cavey = 0
 global.searchTheCave = false
 global.movedMonument = false
+global.searchedTheCave = false
+global.findSail = false
+global.findTar = false
+global.findAnchor = false
+global.gotTar = false
+global.gotAnchor = false
+global.gotSail = false
 
 		
 //Kläder

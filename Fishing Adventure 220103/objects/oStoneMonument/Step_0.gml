@@ -5,7 +5,10 @@ scrTalkToObject()
 
 if talking = true
 {
+	if instance_exists(oOphelia)
+	{
 	oOphelia.trident = true
+	}
 	talking = false
 }
 }

@@ -21,6 +21,7 @@ audio = false
 turn = 1
 doneSingingTimer = 30
 move = 100
+nottimer = 10
 
 my_path = path_add();
  dialog[0] = "Oh my! A tourist! I can't believe it! Finally, one of you have returned!"

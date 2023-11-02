@@ -22,6 +22,7 @@ if state = "hello"
 {
 	if position_meeting(x,y,oProt)
 	{
+		global.lastroom = room
 		global.cavex = x
 		global.cavey = y+16
 		scrTransitionsStart(rCavern,sqFadeOut,sqFadeIn)
