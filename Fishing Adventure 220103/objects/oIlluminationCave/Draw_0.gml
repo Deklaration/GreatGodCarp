@@ -1,6 +1,6 @@
 if (live_call()) return live_result;
 draw_set_alpha(0.93)
-if (scrInventorySearch(oInventory, enumFish.Lakelight) !=-1) 
+if (scrInventorySearch(oInventory, enumFish.Lakelight) !=-1) || (scrInventorySearch(oInventory, enumFish.Abyssglow) !=-1)
 {
 	draw_sprite(sIlluminatedCave,0,oProt.x,oProt.y)
 }

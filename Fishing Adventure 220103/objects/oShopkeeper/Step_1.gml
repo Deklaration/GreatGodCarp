@@ -339,7 +339,7 @@ if howMany = true
 			}
 			if keyboard_check(global.key_left) || keyboard_check(global.key_right)
 			{
-				antalTimer -=1
+				antalTimer -=d(1)
 			}
 			if antalTimer < 0
 			{

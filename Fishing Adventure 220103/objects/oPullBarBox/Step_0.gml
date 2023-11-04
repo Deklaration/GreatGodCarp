@@ -50,7 +50,7 @@ if keyboard_check_pressed(global.key_a) && image_index = 0
 
 if image_index != 0
 {
-	timer -=1
+	timer -=d(1)
 	if timer <0
 	{
 		oBete.fiskid.fishpower = 0

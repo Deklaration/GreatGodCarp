@@ -64,7 +64,7 @@ if howMany = true
 			
 			if keyboard_check(global.key_left) || keyboard_check(global.key_right)
 			{
-				timer -=1
+				timer -=d(1)
 			}
 			
 			if timer < 0

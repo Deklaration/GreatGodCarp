@@ -136,8 +136,11 @@ for (var row = 0; row < 4; ++row) {
 					scribble(string(antal)).wrap(300,300).blend(c_white,alpha).align(fa_center,fa_middle).starting_format("fFishdexShadow",global.color[19]).draw(240,239)
 				}
 
-				if wannaBuy = true
+				if wannaBuy = true && global.baitarray[place,2] * antalSave > 0
 				{
+					
+					//b_button = global.key_b
+					global.key_b = noone
 					antal = antalSave
 					if keyboard_check(global.key_left)
 					{

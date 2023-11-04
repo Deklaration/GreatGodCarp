@@ -8,17 +8,35 @@ if(dpad_dir != no_direction) && global.midTransition = false
 {
   image_speed = 0.5;
   xscale=1;
-  switch(round_n(dpad_dir,45))
+  if global.guineapig = false
   {
-    case 180: xscale = 1; sprite_index = sProt_West; nose = global.nosewest; clothes = global.clotheswest; break; 
-    case 225: xscale = 1; sprite_index = sProt_SouthWest; nose = global.nosesouthwest; clothes = global.clothessouthwest; break;
-    case 135: xscale = 1; sprite_index = sProt_NorthEast; nose = sNothing; clothes = global.clothesnorthwest; break;
-    case 360: 
-    case 0:   xscale = -1; sprite_index = sProt_West;  nose = global.nosewest; clothes = global.clotheswest; break; 
-    case 315: xscale = -1; sprite_index = sProt_SouthWest;  nose = global.nosesouthwest; clothes = global.clothessouthwest; break;
-    case 45:  xscale = -1; sprite_index = sProt_NorthEast;  nose = sNothing; clothes = global.clothesnorthwest; break;
-    case 90:  xscale = 1; sprite_index = sProt_North;  nose = sNothing; clothes = global.clothesnorth; break;
-    case 270: xscale = 1; sprite_index = sProt_South; nose = global.nosesouth; clothes = global.clothessouth; break;
+	  switch(round_n(dpad_dir,45))
+	  {
+	    case 180: xscale = 1; sprite_index = sProt_West; nose = global.nosewest; clothes = global.clotheswest; break; 
+	    case 225: xscale = 1; sprite_index = sProt_SouthWest; nose = global.nosesouthwest; clothes = global.clothessouthwest; break;
+	    case 135: xscale = 1; sprite_index = sProt_NorthEast; nose = sNothing; clothes = global.clothesnorthwest; break;
+	    case 360: 
+	    case 0:   xscale = -1; sprite_index = sProt_West;  nose = global.nosewest; clothes = global.clotheswest; break; 
+	    case 315: xscale = -1; sprite_index = sProt_SouthWest;  nose = global.nosesouthwest; clothes = global.clothessouthwest; break;
+	    case 45:  xscale = -1; sprite_index = sProt_NorthEast;  nose = sNothing; clothes = global.clothesnorthwest; break;
+	    case 90:  xscale = 1; sprite_index = sProt_North;  nose = sNothing; clothes = global.clothesnorth; break;
+	    case 270: xscale = 1; sprite_index = sProt_South; nose = global.nosesouth; clothes = global.clothessouth; break;
+	  }
+  }
+  if global.guineapig = true
+  {
+	  switch(round_n(dpad_dir,45))
+	  {
+	    case 180: xscale = 1; sprite_index = sGuinea_West; nose = sNothing; clothes = sNothing; break; 
+	    case 225: xscale = 1; sprite_index = sGuinea_SouthWest; nose = sNothing; clothes = sNothing; break;
+	    case 135: xscale = 1; sprite_index = sGuinea_NorthEast; nose = sNothing; clothes = sNothing; break;
+	    case 360: 
+	    case 0:   xscale = -1; sprite_index = sGuinea_West;  nose = sNothing; clothes = sNothing; break; 
+	    case 315: xscale = -1; sprite_index = sGuinea_SouthWest;  nose = sNothing; clothes = sNothing; break;
+	    case 45:  xscale = -1; sprite_index = sGuinea_NorthEast;  nose = sNothing; clothes = sNothing; break;
+	    case 90:  xscale = 1; sprite_index = sGuinea_North;  nose = sNothing; clothes = sNothing; break;
+	    case 270: xscale = 1; sprite_index = sGuinea_South; nose = sNothing; clothes = sNothing; break;
+	  }
   }
 }
 else

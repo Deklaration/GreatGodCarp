@@ -74,7 +74,7 @@ if talking = true && createtext = false && global.bringWhisklash = true && scrSt
 
 }
 
-if talking = true && global.bringWhisklash = true && yes !=-1 && global.gotMurkMunchRecipe = false
+if talking = true && global.bringWhisklash = true && yes !=-1 && global.gotMurkMunchRecipe = false && global.findTar = false
 {
 if yes = false
 		{
@@ -128,7 +128,114 @@ if !instance_exists(oText)
 	//show_debug_message("DEADHALLÅ")
 }
 
-//show_debug_message(string("talking:  ") + string(talking))
-//show_debug_message(string("yes: ") + string(yes))
-//show_debug_message(string("cutscene: ") + string(global.cutscene))
-//show_debug_message(string("textbox: ") + string(global.textbox))
+
+
+if global.findTar = true && global.gotTar = false
+{
+	scrNewDialog()	
+	dialog[0] = "A bit of fish eye, tar and a little drop of poison..."
+	dialog[1] = "Hey! It's the fish killer!"
+	dialog[2] = "Didn't think you'd dare to show up here again! Gyahaha!"
+	dialog[3] = "What's that? You want some of my precious tar?"
+	dialog[4] = "Fine! Absolutely! AbsoTARly!! Just rob an old woman of her tar! That's how you like it, huh?"
+	dialog[5] = "I'm not just gonna GIVE you some tar, I hope you know that. You're gonna have to do something."
+	dialog[6] = "You'll have to be my little guinea pig..."
+	dialog[7] = "Here! Taste some medicine, little tourist boy! Go on, have some![YesNo]"
+
+	if yes = false
+	{
+	scrYesNoStart()
+	createtext = false
+	dialog[0] = "You'll never make progress in life with that attitude."
+	dialog[1] = "Seize the day, and whatnot."
+	scrYesNoEnd()
+	}
+	if yes = true
+	{
+	scrYesNoStart()
+	createtext = false
+	dialog[0] = "Hahaha! GREAT! No one has tasted my potions for AGES!"
+	dialog[1] = "Open up, tourist boy![GUINEATRANSFORM]"
+	scrYesNoEnd()
+	}
+}
+
+if instance_exists(oText)
+{
+	var transform = string_pos("GUINEATRANSFORM", oText.textmessage);
+	if (transform > 0) 
+	{transformation = true}
+	var getTar = string_pos("getTar", oText.textmessage);
+	if (getTar > 0) 
+	{
+		if global.gotTar = false
+		{
+		instance_create_depth(x,y,0,oGettingItems,{item:enumItem.Tar,parent:noone})
+		}
+		global.gotTar = true
+		}
+}
+if transformation = true
+{
+	global.cutscene = true
+		show_debug_message("DRINK")
+		drinkTimer -=d(1)
+		if drinkTimer <0
+		{
+			show_debug_message("TRANSFORM")	
+			transformTimer -=d(1)
+				
+			if transformTimer <0
+			{
+				scrYesNoStart()
+				createtext = false
+				if global.gotTar = false
+				{
+				dialog[0] = "Wonderful!! Look at you, little piggy boy!"
+				dialog[1] = "I guess you can't carry any tar with those little feet."
+				dialog[2] = "Don't worry! The effect isn't permanent. You'll get your tar once you're human again."
+				dialog[3] = "See ya'!"
+				}
+				else
+				{
+				dialog[0] = "Beware of birds, and don't let the world 'burrow' you!"
+				dialog[1] = "Gyahahahaha!"
+				}
+				scrYesNoEnd()
+				oProt.sprite_index = sGuinea_South
+				global.guineapig = true
+				global.cutscene = false
+				global.unlockedGuineapig = true
+				transformation = false
+			}
+		}
+	}
+	
+if global.unlockedGuineapig = true && global.gotTar = false
+{
+scrNewDialog()
+dialog[0] = "Well, look at you. Back again. Guess you want some tar now, right?"
+dialog[1] = "Sure, have some. And talk to me if you'd ever want to tranform again![getTar]"
+}
+
+if global.unlockedGuineapig = true && global.gotTar = true
+{
+	scrNewDialog()
+	dialog[0] = "Hey, look who's back!"
+	dialog[1] = "You want to be a little guinea pig again?[YesNo]"
+
+	if yes = false
+	{
+	scrYesNoStart()
+	createtext = false
+	dialog[0] = "Fine! Be a boring human! I don't care!"
+	scrYesNoEnd()
+	}
+	if yes = true
+	{
+	scrYesNoStart()
+	createtext = false
+	dialog[0] = "Open up, tourist boy![GUINEATRANSFORM]"
+	scrYesNoEnd()
+	}
+}

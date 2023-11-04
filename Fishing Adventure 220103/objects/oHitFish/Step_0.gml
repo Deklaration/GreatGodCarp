@@ -7,7 +7,7 @@ if instance_exists(fiskid)
 		image_index = fiskid.sightLength
 	}
 
-timer -=1
+timer -=d(1)
 if timer <0 && !instance_exists(fiskid)
 {
 	instance_destroy(self)

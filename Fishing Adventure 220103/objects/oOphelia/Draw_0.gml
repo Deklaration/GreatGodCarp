@@ -8,7 +8,7 @@ if nottimer <0
 instance_create_depth(oProt.x+5, oProt.y-25, 0,oNoter)
 nottimer = 10
 }
-nottimer -=1
+nottimer -=d(1)
 global.cutscene = true
 oProt.image_alpha = 0
 oProt.disable = true

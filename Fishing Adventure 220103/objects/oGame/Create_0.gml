@@ -17,6 +17,7 @@ oGame.quest[0] = "Fill AquaVista with fish"
 //oGame.quest[1] = "Spread joy"
 //oGame.quest[2] = "Fill AquaVista with fish"
 bunnyHouseTimer = 60*5
+guineapigtimer = 60
 
 //CUTSCENES
 if global.cutscene1done = false
@@ -48,7 +49,7 @@ roomarray[rEastBeach] = "East beach"
 roomarray[rTownCenter] = "Puddle Town"
 roomarray[rWestWood] = "West wood"
 roomarray[rGreatLake] = "Great lake"
-roomarray[rDarkAlley] = "Alley"
+roomarray[rDarkAlley] = "Murmurwood"
 roomarray[rNorthside] = "North Side"
 roomarray[rNorthEast] = "North East"
 roomarray[rAquaVista] = "AquaVista"
@@ -56,6 +57,8 @@ roomarray[rCoastalCuriosities] = "Coastal Curiosities"
 roomarray[rAquaVistaTopFloor] = "2nd floor"
 roomarray[rCavern] = "Gull Grotto"
 roomarray[rInmostCavern] = "Hidden burial"
+roomarray[rForestMaze] = "Leafyrinth"
+roomarray[rClearing] = "???"
 roomarray[rFiske] = " "
 
 //KEY CODES

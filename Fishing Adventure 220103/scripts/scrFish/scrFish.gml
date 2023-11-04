@@ -349,7 +349,7 @@ if global.paused = false
 				self.y += followspeed /2
 			}
 	
-			timer -=1
+			timer -=d(1)
 	
 			if timer <0
 			{
@@ -406,7 +406,7 @@ if global.paused = false
 
 
 	
-			timer -=1
+			timer -=d(1)
 			if place_meeting(x,y,oBete) 
 			{
 				keyboard_key_release(global.key_a)

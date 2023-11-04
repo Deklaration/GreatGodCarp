@@ -89,7 +89,7 @@ else if(_axis_dist > analog_deadzone)
 
 //////////////
 
-if keyboard_check_pressed(vk_shift)
+if keyboard_check_pressed(vk_shift) && global.guineapig = false
 {
 	if save_sprite = 0
 	{
@@ -186,4 +186,10 @@ if keyboard_check(vk_alt)
 if show = true
 {
 	show_debug_message(global.ybeforefish)
+}
+
+if global.cutscene = true
+{
+	velocity[0] = 0
+	velocity[1] = 0
 }

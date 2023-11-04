@@ -1,1 +1,0 @@
-oGame.bunnyHouseTimer -=10

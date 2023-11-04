@@ -1,8 +1,16 @@
 image_alpha = 1
 talking = false
 createtext = false
-//face = sNPCface2
+
+
+face = sShopkeeperPortrait
+showFace = true
 mouthmove = sRunePortraitMouth
+faceAngry = sShopkeeperPortrait
+faceSad = sRunePortrait
+mouthmove = sRunePortraitMouth
+mouthmoveSad = sRunePortraitMouth
+
 yes = -1
 timer = room_speed *2
 placeSign = false

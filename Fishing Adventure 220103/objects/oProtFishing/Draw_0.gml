@@ -4,7 +4,7 @@ if noBait = true
 {
 	draw_sprite(sNoBait,noBaitTimer/12,x+10,y+14)
 	sprite_index = sProtFishingGotAway
-	noBaitTimer -=1
+	noBaitTimer -=d(1)
 }
 if noBaitTimer <0
 {

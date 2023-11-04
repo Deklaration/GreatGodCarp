@@ -4,6 +4,7 @@ talking = false
 createtext = false
 mouth = sRunePortraitMouth
 face = sRunePortrait
+mouthmove = noone
 pitch = 0.7
 image_xscale = 1
 image_yscale = 1

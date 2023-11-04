@@ -20,11 +20,22 @@
 //show_debug_message(oWater.wavespeed)show_debug_message(" DONE ")
 //}
 
-//show_debug_message(oBait.baitStack)
+//show_debug_message(guineapigtimer)
+
+
+if global.guineapig = true
+{
+	guineapigtimer -=d(1)/room_speed
+	if guineapigtimer <0
+	{
+	global.guineapig = false
+	guineapigtimer = 60
+	}
+}
 
 if global.waitForTheBunnyHouse = true && global.waitedForTheBunnyHouse = false
 {
-	bunnyHouseTimer -= 1/room_speed
+	bunnyHouseTimer -= d(1)/room_speed
 	if bunnyHouseTimer < 0
 	{
 		global.waitedForTheBunnyHouse = true
@@ -38,7 +49,7 @@ if !instance_exists(oText)
 
 if textboxtimer = true
 {
-	textboxtimercountdown -=1
+	textboxtimercountdown -=d(1)
 }
 if textboxtimercountdown <0 && !instance_exists(oText) && !instance_exists(oTextSign)
 {
@@ -63,7 +74,7 @@ if keyboard_check_pressed(global.key_pause) && room != rTitlescreen && global.cu
 }
 
 //Time played
-second -=1
+second -=d(1)
 if second = 0
 {
 	global.secondsplayed += 1

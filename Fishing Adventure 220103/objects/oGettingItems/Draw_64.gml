@@ -24,4 +24,22 @@ if item = enumItem.Bark
 	scrGettingGearDrawGUI("REALLY NICE BARK!",sItemsIcon,3,scale+0)
 }
 
+if item = enumItem.Sail
+{	
+	instance_destroy(parent)
+	scrGettingGearDrawGUI("A SAIL, WOW!",sItemsIcon,6,scale+0)
+}
+
+if item = enumItem.Tar
+{	
+	instance_destroy(parent)
+	scrGettingGearDrawGUI("A BUCKET OF TAR!",sItemsIcon,7,scale+0)
+}
+
+if item = enumItem.Anchor
+{	
+	instance_destroy(parent)
+	scrGettingGearDrawGUI("AN ANCHOR!",sItemsIcon,8,scale+0)
+}
+
 //draw_text(x,y+10,parent)

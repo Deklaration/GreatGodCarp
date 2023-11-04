@@ -2,7 +2,7 @@
 //show_debug_message(scrInventorySearch(oInventory,fish))
 if (live_call()) return live_result;
 
-timer -=1
+timer -=d(1)
 
 if timer < 0
 {

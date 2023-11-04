@@ -7,6 +7,6 @@ if global.cutscene1 = false
 if skipping = true
 {
 	dpad_dir = save_dir
-	skippingtimer -=1
+	skippingtimer -=d(1)
 }
 

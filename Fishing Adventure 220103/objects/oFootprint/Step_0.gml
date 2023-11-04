@@ -1,5 +1,5 @@
 //depth = oProt.depth +1
-timer -=1
+timer -=d(1)
 
 if timer < 0
 {

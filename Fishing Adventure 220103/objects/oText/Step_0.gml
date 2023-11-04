@@ -4,6 +4,7 @@ if instance_exists(oProt)
 oProt.image_speed = 0
 }
 
+
 typist.sound(talkingSound,20,0.6,1.1,1)
 
 typist.function_per_char(function(_element, _position, _typist)
@@ -39,12 +40,23 @@ if textplace < 65
 //show_debug_message(string("gettinggear") + string(gettinggear))
 //show_debug_message(string("gotgear") + string(gotgear))
 
+if textTimerActive = true
+{
+	textTimer -=d(1)
+}
+
+if typist.get_state(1)
+{
+	textTimerActive = true
+	textTimer -=d(1)
+}
+
 if gettinggear = false || gotgear = true
 {
 	if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 	{
 
-		if typist.get_state(1)
+		if typist.get_state(1) && textTimer <0
 		{
 			if instance_exists(oTextQueued)
 			{
@@ -56,11 +68,12 @@ if gettinggear = false || gotgear = true
 			{
 			instance_destroy(oGeneratorFaceIndex)
 			}
-			instance_destroy()
+			instance_destroy(self)
 		}
 		else
 		{
 			typist.in(5,0)
+			textTimerActive = true
 		}
 	}
 }
@@ -68,7 +81,7 @@ if gettinggear = true
 {
 	if keyboard_check_pressed(global.key_a) || keyboard_check_pressed(global.key_b)
 	{
-		if typist.get_state(1)
+		if typist.get_state(1) && textTimer <0
 		{
 			showGear = true
 		}
@@ -76,6 +89,7 @@ if gettinggear = true
 		{
 			typist.in(5,0)
 			showGear = true
+			textTimerActive = true
 		}
 	}
 }

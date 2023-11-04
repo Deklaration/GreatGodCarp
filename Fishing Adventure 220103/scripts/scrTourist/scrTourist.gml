@@ -113,7 +113,7 @@ function scrTouristBeginStep()
 		{
 			if keyboard_check(vk_anykey) && !instance_exists(oText)
 			{
-				coltimer -=1
+				coltimer -=d(1)
 			}
 			else
 			{

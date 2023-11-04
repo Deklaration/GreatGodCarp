@@ -1,4 +1,5 @@
 instance_create_depth(-100,-100,0,oProt)
+delta_init()
 randomise()
 
 //Färgarray
@@ -145,6 +146,8 @@ global.findAnchor = false
 global.gotTar = false
 global.gotAnchor = false
 global.gotSail = false
+global.guineapig = false
+global.unlockedGuineapig = false
 
 		
 //Kläder

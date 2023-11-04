@@ -1,5 +1,6 @@
 /// @description
 //Alpha test enable
+/*
 gpu_set_alphatestenable(true);
 if (bugfix) gpu_set_ztestenable(true);
 

@@ -76,7 +76,7 @@ if (place_meeting(x,y+1,oProt) && oProt.sprite_index = sProt_North)
 if talking = true
 {
 	global.cutscene = true
-	timer -=1
+	timer -=d(1)
 }
 
 if timer < 0

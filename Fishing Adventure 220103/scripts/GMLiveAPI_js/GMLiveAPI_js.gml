@@ -1,4 +1,5 @@
 // You can comment out this whole file if you don't use HTML5
+/*
 function live_preinit_js_dummy() {}
 if(live_enabled)
 function live_preinit_js_func_0(l_ind) {

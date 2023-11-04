@@ -1,8 +1,13 @@
 function scrTalkToNPC() {
+	
+
+	
     // First, check if any dialog or cutscene is currently active
     if (global.paused || global.cutscene || global.textbox || oProt.disable || instance_exists(oText)) {
         return;
     }
+
+
 
     // If no text is displayed and the player character is nearby
     var prot_talk_key = keyboard_check_pressed(global.key_a);
@@ -53,7 +58,7 @@ function scrTalkToNPC() {
 
     // Handle existing dialog
     if (talking && instance_exists(oText)) {
-        oText.NPC = self;
+        //oText.NPC = self;
     }
 
     // Clean up after dialog

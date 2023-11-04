@@ -201,7 +201,7 @@ function scrGeneratorBeginStep()
 		{
 			if keyboard_check(vk_anykey) && !instance_exists(oText)
 			{
-				coltimer -=1
+				coltimer -=d(1)
 			}
 			else
 			{
@@ -533,7 +533,7 @@ function scrGeneratorDrawSunbathing(){
 	
 	if hardbreathing = true
 	{
-	breathingtimer-=1
+	breathingtimer-=d(1)
 	if breathingtimer <0
 	{
 		breathing = 1

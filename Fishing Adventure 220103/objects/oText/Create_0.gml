@@ -3,9 +3,16 @@ talkingSound[0] = soTalking
 
 if instance_exists(oBunnyHouse)
 {
-	if NPC = oBunnyHouse.id//100261
+	if NPC = oBunnyHouse.id
 	{
 	talkingSound[0] = soValnadTalk
+	}
+}
+if instance_exists(oJinx)
+{
+	if NPC = oJinx.id
+	{
+	talkingSound[0] = soJinxTalk
 	}
 }
 
@@ -24,7 +31,8 @@ x2Target = camera_get_view_width(oCamera.cam) - 25 //RESOLUTION_W -200
 global.textbox = true
 facescale = 0
 //NPC = oNothing
-mouthindex = NPC.mouthmove
+
+//mouthindex = NPC.mouthmove
 mouthindex_sad = 0
 mouthmovement = 0
 faceindex = 0
@@ -39,6 +47,8 @@ tw = 0
 done = false
 gettinggear = false
 gotgear = false
+textTimerActive = false
+textTimer = 30
 
 lerpProgress = 0
 textProgress = 0

@@ -2,6 +2,14 @@ if (live_call()) return live_result;
 
 //show_debug_message(global.talkedToSkurt)
 
+if wannaBuy = false
+{
+	global.key_b = b_button
+}
+
+//show_debug_message(global.key_b)
+//show_debug_message(b_button)
+
 if global.paused = false && global.textbox = false{ //Pratar med
 
 if (place_meeting(x-1,y,oProt) && oProt.sprite_index = sProt_West && oProt.xscale = -1)
@@ -146,7 +154,7 @@ if keyboard_check_pressed(global.key_b) && howMany = false
 			}
 			if keyboard_check(global.key_left) || keyboard_check(global.key_right)
 			{
-				timer -=1
+				timer -=d(1)
 				fishalphaset = 2
 				fishalpha = 0
 			}

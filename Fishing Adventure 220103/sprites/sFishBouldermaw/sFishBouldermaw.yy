@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "sFishBouldermaw",
   "bbox_bottom": 15,
-  "bbox_left": 1,
+  "bbox_left": 0,
   "bbox_right": 15,
   "bbox_top": 0,
   "bboxMode": 0,
@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae881198-d0b4-4141-9f82-6918c93dc19b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4dd50d16-779f-4323-a44b-c624f7807cbd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d26682b7-3b8b-44c3-a5bb-739be860d9d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14023129-fafb-48a9-ae78-2e6d7ca81fa3",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ae881198-d0b4-4141-9f82-6918c93dc19b","path":"sprites/sFishBouldermaw/sFishBouldermaw.yy",},},},"Disabled":false,"id":"3eb45153-c82b-439c-b11d-d68407ec9fcb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4dd50d16-779f-4323-a44b-c624f7807cbd","path":"sprites/sFishBouldermaw/sFishBouldermaw.yy",},},},"Disabled":false,"id":"a8bfb3c4-30eb-4666-b437-af8f81c507dd","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d26682b7-3b8b-44c3-a5bb-739be860d9d5","path":"sprites/sFishBouldermaw/sFishBouldermaw.yy",},},},"Disabled":false,"id":"c0444e39-49a7-4491-9934-1b8c0171f1ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14023129-fafb-48a9-ae78-2e6d7ca81fa3","path":"sprites/sFishBouldermaw/sFishBouldermaw.yy",},},},"Disabled":false,"id":"9fbb46ae-883b-4d0c-8843-be932d597b85","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

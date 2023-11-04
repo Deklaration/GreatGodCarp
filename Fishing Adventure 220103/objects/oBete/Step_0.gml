@@ -130,7 +130,7 @@ if instance_exists(fiskid)
 //Ändrar tillbaka spriten på oProt så hen inte är ledsen hela tiden
 if fiskenoutofroom = true
 {
-	fishgotawayspritetimer -=1
+	fishgotawayspritetimer -=d(1)
 	if fishgotawayspritetimer <0
 	{
 		oProtFishing.sprite_index = sProtFishing
@@ -165,7 +165,7 @@ if place_meeting(self.x,y-4,oMark)//16
 		instance_create_depth(x,y,self.depth,oLostBete)
 		scrInventoryRemove(oBait,global.activebait)
 		
-		timerafterlosttobottom -=1
+		timerafterlosttobottom -=d(1)
 		
 		if timerafterlosttobottom =0
 		{
@@ -222,7 +222,7 @@ if global.fishbait = false
  			losttobottomminusline = vspeed 
 		}
 	
-		holddownspacetimer -=1	
+		holddownspacetimer -=d(1)	
 	
 		if self.y > oProtFishing.y && top = false && holddownspacetimer >= 0
 		{

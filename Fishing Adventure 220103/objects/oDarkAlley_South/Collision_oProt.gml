@@ -1,3 +1,3 @@
 global.ybeforefish = 30
-global.xbeforefish = oProt.x
+global.xbeforefish = 758
 scrTransitionsStart(rWestWood,sqFadeOut,sqFadeIn)

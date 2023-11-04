@@ -19,7 +19,7 @@ if x - sprite_width/2 < (tank.x - 35) || x + sprite_width/2 > (tank.x + 35)
 if goBackToTheMiddle = true
 {
 	move_towards_point(tank.x,y,0.2)
-	timer -=1
+	timer -=d(1)
 		if timer <0
 		{
 			goBackToTheMiddle = false

@@ -3,7 +3,7 @@ if newroom = true
 {
 	scrDrawSet(fTextboxLarge,c_white,fa_right)
 	scrTextOutline(475,35,roomarray[room],300,roomalpha,c_white,c_black)
-	newroomtimer -=1
+	newroomtimer -=d(1)
 	
 	if newroomtimer < 50
 	{

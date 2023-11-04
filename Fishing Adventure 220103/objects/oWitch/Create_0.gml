@@ -4,7 +4,10 @@ createtext = false
 image_speed = 0.02
 //face = sNPCface2
 mouthmove = sRunePortraitMouth
-
+drinkTimer = 60
+transformTimer = 120
+transformation = false
+				
 yes = -1
 
 if global.findRecipe_MurkMunch = true

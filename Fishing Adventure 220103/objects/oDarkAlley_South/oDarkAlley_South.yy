@@ -33,5 +33,5 @@
     "path": "sprites/sTextbox/sTextbox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

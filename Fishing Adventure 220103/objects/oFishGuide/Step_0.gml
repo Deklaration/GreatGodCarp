@@ -13,7 +13,7 @@ if image_index = 3
 
 if cantsave = true
 {
-	cantsavetimer -=1
+	cantsavetimer -=d(1)
 }
 if cantsavetimer <0
 {
@@ -53,7 +53,7 @@ if flipright = true
 	alpha =0
 if image_index < 6
 	{
-			timer -=1
+			timer -=d(1)
 			
 			if timer < 0
 			{
@@ -100,7 +100,7 @@ if flipleft = true
 {
 if image_index > 3
 	{
-			timer -=1
+			timer -=d(1)
 			
 			if timer < 0
 			{
@@ -117,7 +117,7 @@ else
 
 
 //Rätt stad blinkar på kartan
-blinktimer -=1
+blinktimer -=d(1)
 if blinktimer < 0
 {
 	if blinky = 1
@@ -139,7 +139,7 @@ y-=60
 
 if y <= 20 && image_index < 3 && open = false
 {
-	timer -=1
+	timer -=d(1)
 	if timer < 0
 	{
 	image_index +=1

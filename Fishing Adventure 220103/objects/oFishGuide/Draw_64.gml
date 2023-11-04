@@ -277,7 +277,7 @@ if sida = -2 && menuchoice = 2
 if sida = -2 && menuchoice = 3
 {
 	
-	seconds = string_replace(string_format(global.secondsplayed, 2, 0), " ", "0")
+	seconds_var = string_replace(string_format(global.secondsplayed, 2, 0), " ", "0")
 	minutes = string_replace(string_format(global.minutesplayed, 2, 0), " ", "0")
 	savedseconds = string_replace(string_format(global.savedsecondsplayed, 2, 0), " ", "0")
 	savedminutes = string_replace(string_format(global.savedminutesplayed, 2, 0), " ", "0")
@@ -287,7 +287,7 @@ if sida = -2 && menuchoice = 3
 	scrDrawSet(fTextbox,c_black,fa_center)
 	draw_text_ext_color(self.x-70, self.y+80,"Save",100,10000,c_black,c_black,c_black,c_black,alpha)
 	scrDrawSet(fTextbox,c_black,fa_left)
-	draw_text_ext_color(self.x-130, self.y+120,"Time played: " + string(global.hoursplayed) + ":" + string(minutes) + ":" + string(seconds),100,10000,c_black,c_black,c_black,c_black,alpha)
+	draw_text_ext_color(self.x-130, self.y+120,"Time played: " + string(global.hoursplayed) + ":" + string(minutes) + ":" + string(seconds_var),100,10000,c_black,c_black,c_black,c_black,alpha)
 	draw_text_ext_color(self.x-130, self.y+150,"Time played in latest\n saved data: " + string(global.savedhoursplayed) + ":" + string(savedminutes) + ":" + string(savedseconds),20,10000,c_black,c_black,c_black,c_black,alpha)
 	scrDrawSet(fTextbox,c_black,fa_center)
 	if cantsave =  false

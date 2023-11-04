@@ -9,6 +9,7 @@ shopActive = false
 global.gold = 100
 yes = false
 place = 1
+b_button = global.key_b
 talking = false
 createtext = false
 mouthmove = sRunePortraitMouth

@@ -1,6 +1,12 @@
 depth =-y//-19;
 if (live_call()) return live_result;
 
+	if instance_exists(oText) && showFace = true && talking = true
+	{
+	oText.NPC = self
+	oText.showFace = true
+	}
+
 scrTalkToNPC()
 //show_debug_message(image_xscale)
 if room = rBeachside
@@ -112,7 +118,7 @@ if placeSign = true
 {
 	global.cutscene = true
 	sprite_index = sOpheliaSign
-	timer -=1
+	timer -=d(1)
 	if timer <0
 	{
 	sprite_index = sOphelia
@@ -150,7 +156,7 @@ if placeDoor = true && global.putUpDoor = false
 {
 	global.cutscene = true
 	sprite_index = sOpheliaSign
-	timer -=1
+	timer -=d(1)
 	if timer <0
 	{
 	sprite_index = sOphelia

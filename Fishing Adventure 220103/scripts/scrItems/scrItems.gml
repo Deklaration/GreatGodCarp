@@ -10,6 +10,8 @@ Bark, //3
 Coal, //4
 Driftwood, //5
 Sail,//6
+Tar,//7
+Anchor,//8
 TOTAL //För att kunna få antal
 }
 
