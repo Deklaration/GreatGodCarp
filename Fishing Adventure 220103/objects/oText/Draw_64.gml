@@ -16,7 +16,7 @@ draw_sprite_ext(mouthindex,mouthmovement,x1+15,y1+15,facescale,1,0,c_white,1)
 }
 }
 
-show_debug_message(showFace)
+//show_debug_message(showFace)
 
 
 //Få saker

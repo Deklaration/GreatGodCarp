@@ -1,8 +1,8 @@
+if (live_call()) return live_result;
 depth =-y;
 
 scrTalkToNPC()
-
-if x != 745
+if x != 745 && room = rDarkAlley
 {
 if distance_to_object(oProt) < 40
 {
@@ -36,13 +36,13 @@ if image_alpha <0
 }
 }
 
-if yes = true
+if room = rClearing
 {
 	dialog[0] = "You found it... Look at the stones."
 	dialog[1] = "They must be the foundation stones of a house, though I could be wrong."
 	dialog[2] = "Who lived here? Nobody can say."
 	dialog[3] = "The names are somewhere in an archive that no one ever opens. The oral tradition is dead, and with it the memories."
-	dialog[4] = "Record it and forget."
+	dialog[4] = "Record and forget."
 	dialog[5] = "The cottage hums with voices, it's the center of the world. But the inhabitants die or move away, the record comes to an end."
 	dialog[6] = "Abandoned for many years. And the cottage becomes a sphinx. At last, everything's gone except the anchor and stones."
 	dialog[7] = "The anchor is not only chained to a tree, but to the present day. The key might still be somewhere around here."

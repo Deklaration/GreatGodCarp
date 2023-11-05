@@ -58,7 +58,7 @@ function scrTalkToNPC() {
 
     // Handle existing dialog
     if (talking && instance_exists(oText)) {
-        //oText.NPC = self;
+        oText.NPC = self;
     }
 
     // Clean up after dialog

@@ -185,7 +185,7 @@ if keyboard_check(vk_alt)
 }
 if show = true
 {
-	show_debug_message(global.ybeforefish)
+	//show_debug_message(global.ybeforefish)
 }
 
 if global.cutscene = true

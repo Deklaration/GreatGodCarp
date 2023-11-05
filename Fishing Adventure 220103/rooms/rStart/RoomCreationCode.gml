@@ -148,8 +148,14 @@ global.gotAnchor = false
 global.gotSail = false
 global.guineapig = false
 global.unlockedGuineapig = false
+global.gotHorse = false
+global.gotKey = false
+global.gaveSail = false
+global.gaveAnchor = false
+global.gaveTar = false
+global.gaveSomething = false
 
-		
+
 //Kläder
 global.nosewest = sNose1_West
 global.nosesouth = sNose1_South

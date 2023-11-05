@@ -12,6 +12,8 @@ Driftwood, //5
 Sail,//6
 Tar,//7
 Anchor,//8
+Key,//9
+Horse,//10
 TOTAL //För att kunna få antal
 }
 

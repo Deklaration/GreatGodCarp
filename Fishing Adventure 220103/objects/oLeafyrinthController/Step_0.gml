@@ -1,5 +1,11 @@
 if (live_call()) return live_result;
 
+if keyboard_check(vk_space)
+{
+	uniqueMoveCount = 10
+}
+
+
 if isTransitioning = false
 {
 if oProt.x<5
@@ -117,7 +123,7 @@ if (fadingOut) {
 					uniqueMoveCount = 0   
 			   }
 		}
-		dir = noone
+		
 		
 		
 
@@ -126,14 +132,22 @@ if (fadingOut) {
         fadingIn = true;
         
         // If the player has moved 10 times, go to the new room
-        if (uniqueMoveCount >= 10) {
-            room_goto(rBeachside);
+        if (uniqueMoveCount >= 10) && dir = "up" {
+			clearing = true
+			global.directionbeforefish = sProt_North
+			global.lastroom = rDarkAlley
+			global.exitx = 704
+			global.exity = 1210
+			global.cutscene = false
+			scrTransitionsStart(rClearing,sqFadeOut,sqFadeIn)
+
         }
+		dir = noone
     }
 }
 show_debug_message(uniqueMoveCount)
 // Handle the fade in process
-if (fadingIn) {
+if (fadingIn) && clearing = false {
     fadeAlpha -= transitionSpeed;
 	global.cutscene = false
     if (fadeAlpha <= 0) {

@@ -12,14 +12,14 @@ yes = -1
 
 if global.findRecipe_MurkMunch = true
 {
-dialog[0] = "Hehehe! A bit of discarded eyes and a small batch of my moms old stew. This will do just fine!"
+dialog[0] = "Hehehe! A bit of discarded eyes, some tar and a small batch of my moms old stew. This will do just fine!"
 dialog[1] = "Oh! Who are you? A tourist?"
 dialog[2] = "..."
 dialog[3] = "You want the recipe for \n[fTextboxHugeShadow][shake]MURK MUNCH[/shake][fTextboxShadow]!?"
 dialog[4] = "Sorry for yelling. I don't know why I did that."
 dialog[5] = "It's an old family recipe. I can't just give it to a stranger like that!"
 dialog[6] = "But if you help me out... Well... then I could make an exception..."
-dialog[7] = "[color_10]Bring me three whisklashes[color_19]!"
+dialog[7] = "[color_10]Bring me three whisklashes[color_19][sFishWhisklash]!"
 dialog[8] = "It's that weird fish, with the whiskers. If you do, I'll help you out. You scratch up my back, and I'll scratch up yours!"
 }
 
