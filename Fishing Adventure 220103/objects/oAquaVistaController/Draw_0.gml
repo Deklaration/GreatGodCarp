@@ -1,10 +1,10 @@
 if (live_call()) return live_result;
 
-if global.showAquaVistaLight = true && active = true
+if global.showAquaVistaLight = true && active = true && room = rAquaVista
 {
 	for (var i = 0; i < array_length(tankGuide); ++i)
 	{
-	
+	//show_debug_message("hej")
 	    // Get the object instance from the array
 	    var target = tankGuide[i];
 

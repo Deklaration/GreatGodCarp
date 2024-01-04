@@ -5,6 +5,15 @@ createtext = false
 mouthmove = sRunePortraitMouth
 gaveSomething = false
 hint = "I would ask the tailor about getting a sail."
+buildboat = false
+pushBoatIndex = 0
+boatPushTimer = 60
+
+if global.boatBuilder = true
+{
+	x = 281
+	y = 209-14
+}
 
 if global.findSail = false
 {

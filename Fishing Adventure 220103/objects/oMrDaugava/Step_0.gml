@@ -155,6 +155,7 @@ scrTalkToDaugava(1,2)
 
 if global.daugava_set = 2 && global.gettinggear = false //Equippar gear
 {
+	global.baitshopUnlock = true
 	global.gettinggear = true
 	global.activerod = 1
 	global.activebait = 1

@@ -1,5 +1,5 @@
 //global.time += 0.9
-
+global.frame_count += 1;
 //if instance_exists(oShop) && instance_exists(oInventory)
 //{
 //show_debug_message(string("many: ") + string(oShop.many))

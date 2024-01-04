@@ -1,4 +1,4 @@
-if disable = false && global.guineapig = false
+if disable = false && global.guineapig = false && global.sailing = false
 {
 //draw_sprite_ext(mask_index, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, .25);
 //scrDrawShadow(90 + global.time,2,1,c_black,0.2)
@@ -14,3 +14,6 @@ if global.guineapig = true
 {
 draw_sprite_ext(sprite_index,image_index,x,y,xscale,1,rotation,skincolor,image_alpha)	
 }
+
+//draw_text(x,y+20,x)
+//draw_text(x,y+40,y)

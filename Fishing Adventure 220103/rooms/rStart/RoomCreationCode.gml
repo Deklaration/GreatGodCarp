@@ -27,7 +27,7 @@ global.language = "English"
 
 
 //Variabler som sparas mellan fiske och värld
-global.xbeforefish = 430
+global.xbeforefish = 560
 global.ybeforefish = -230 * 1
 global.directionbeforefish = sProt_South
 global.nosebeforefish = sNose1_South
@@ -55,13 +55,15 @@ global.fiskesida = noone
 global.groundstanding = noone
 global.lastroom = noone
 global.paused = false
+global.cutscenebox = false
 
 //Music
 global.musicvolume = 100
 global.mastervolume = 100
 global.pitch = 1
+
 instance_create_depth(0,0,0,oMusic)
-oMusic.intensity = 0
+oMusic.intensity = 1
 
 //Time played
 global.savedsecondsplayed = 00
@@ -70,6 +72,7 @@ global.savedhoursplayed = 00
 global.secondsplayed = 00
 global.minutesplayed = 00
 global.hoursplayed = 00
+global.frame_count = 0 
 
 //Vegetarian
 global.vegan = false
@@ -154,7 +157,11 @@ global.gaveSail = false
 global.gaveAnchor = false
 global.gaveTar = false
 global.gaveSomething = false
-
+global.boatBuilder = false
+global.shipSet = false
+global.sailing = false
+global.baitshopUnlock = false
+global.rAquaVistaTopFloorRoomID = -1
 
 //Kläder
 global.nosewest = sNose1_West
@@ -252,7 +259,7 @@ global.setFishInTank = false
 
 
 surface_resize(application_surface,RESOLUTION_W,RESOLUTION_H)
-global.roomsave = rBeachside
+global.roomsave = rTownCenter
 
 
 //Om man inte har en sparfil så försöker inte spelet ladda en

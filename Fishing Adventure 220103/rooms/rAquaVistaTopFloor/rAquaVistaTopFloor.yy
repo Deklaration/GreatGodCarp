@@ -7,12 +7,12 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_7261BEAE_1","path":"rooms/rAquaVistaTopFloor/rAquaVistaTopFloor.yy",},
+    {"name":"inst_52C2570F","path":"rooms/rAquaVistaTopFloor/rAquaVistaTopFloor.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7261BEAE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHouseExit","path":"objects/oHouseExit/oHouseExit.yy",},"properties":[],"rotation":0.0,"scaleX":17.0,"scaleY":1.0,"x":466.0,"y":374.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52C2570F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oAquaVistaTopFloorExit","path":"objects/oAquaVistaTopFloorExit/oAquaVistaTopFloorExit.yy",},"properties":[],"rotation":0.0,"scaleX":19.875,"scaleY":1.0,"x":464.5,"y":372.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7C0A95E","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sAkvariumStort","path":"sprites/sAkvariumStort/sAkvariumStort.yy",},"x":192.0,"y":96.0,},

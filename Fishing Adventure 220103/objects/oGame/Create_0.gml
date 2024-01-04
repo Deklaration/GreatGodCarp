@@ -24,6 +24,7 @@ if global.cutscene1done = false
 {
 	global.cutscene1 = true
 }
+cutscenebox = -5
 
 second = 60
 
@@ -38,6 +39,8 @@ language[5] = "German"
 //SHOW CORRECT ACTIVE IMAGE
 rodimage = 0
 baitimage = 0
+
+
 
 //Room text
 newroom = false
@@ -58,7 +61,9 @@ roomarray[rAquaVistaTopFloor] = "2nd floor"
 roomarray[rCavern] = "Gull Grotto"
 roomarray[rInmostCavern] = "Hidden burial"
 roomarray[rForestMaze] = "Leafyrinth"
+roomarray[rOcean] = "Big blue"
 roomarray[rClearing] = "???"
+roomarray[rBoatBuilder] = ""
 roomarray[rFiske] = " "
 
 //KEY CODES

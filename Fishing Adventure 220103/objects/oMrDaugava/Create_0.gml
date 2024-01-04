@@ -70,8 +70,8 @@ dialog[4,4] = "You can do all kinds of stuff with that thing!"
 
 //Efter man placerat sin första fisk i vattentank
 dialog[5,0] = "[wave]Fantastic[/wave]! It brings me so much joy to see a fish in [color_17]AquaVista[color_19] again."
-dialog[5,1] = "Let the town know! I bet they'll be so excited to see it!"
+dialog[5,1] = "[angry]But I'll bet you can catch even more fish with better bait. [color_10]Visit the bait shop at the beach![color_19] I'm sure Skurt will help you out."
 
 //Pratar igen efter man placerat sin första fisk i vattentank
-dialog[6,0] = "Go on then! Spread the news! Tell everyone that we got a fish at [color_17]AquaVista[color_19] again!"
+dialog[6,0] = "Go on then! Get more fish! Make [color_17]AquaVista[color_19] thrive!"
 }

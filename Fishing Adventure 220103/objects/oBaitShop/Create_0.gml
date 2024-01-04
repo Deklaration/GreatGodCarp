@@ -1,4 +1,9 @@
 //if (live_call()) return live_result;
+if global.baitshopUnlock = false
+{
+instance_create_depth(x,y,depth,oBaitshopClosed)
+instance_destroy(self)
+}
 dialog[0] = "Grub grub for fishies tub tub"
 dialog[1] = "Wanna buy? [shake]How many[/shake]?"
 dialog[2] = "Mmmm, that's (THIS IS ERROR) money! Let's buy, right?"
@@ -6,6 +11,8 @@ dialog[3] = "[wave]Thaaank![/wave]"
 dialog[4] = "[shake]TOO POOR TOO POOR![/shake]"
 dialog[5] = "[shake]HEY ARE YOU PULLING MY CASE?![/shake]"
 shopActive = false
+image_index = 2
+image_speed = 0
 global.gold = 100
 yes = false
 place = 1

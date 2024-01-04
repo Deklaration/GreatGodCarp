@@ -1,5 +1,7 @@
 /// @description Uppdatera kameran
-
+if disable = false
+{
+	
 if global.cutscene1done = false
 {
 	x = follow.x
@@ -25,6 +27,8 @@ if instance_exists(follow)
 x += (xTo - x) / 15;
 y += (yTo - y) / 15;
 
+view_width_half = camera_get_view_width(cam) / 2;
+view_height_half = camera_get_view_height(cam) / 2;
 
 //Keep camera center inside room
 x = clamp(x,view_width_half,room_width-view_width_half);
@@ -47,4 +51,5 @@ if followprot = false
 		y = follow.y
 		followprot = true
 	}
+}
 }

@@ -14,18 +14,43 @@ music[n] = audio_play_in_sync_group(groupDynamicMusic,*name of the music file he
 Then, you'll have to lower the gain to 0 
 audio_sound_gain(music[n],0,0);
 */
+
+
 groupDynamicMusic = audio_create_sync_group(true);
 music[0] = noone
-music[1] = soPuddletown1
-music[2] = soPuddletown2
-music[3] = soPuddletown3
 
-audio_play_in_sync_group(groupDynamicMusic,soPuddletown1);
-audio_play_in_sync_group(groupDynamicMusic,soPuddletown2);
-audio_play_in_sync_group(groupDynamicMusic,soPuddletown3);
-audio_sound_gain(soPuddletown1,0,0);
-audio_sound_gain(soPuddletown2,0,0);
-audio_sound_gain(soPuddletown3,0,0);
+
+music[1] = soPiscIsland
+music[2] = soPiscIsland
+music[3] = soPiscIsland
+
+
+audio_play_in_sync_group(groupDynamicMusic,soPiscIsland);
+audio_play_in_sync_group(groupDynamicMusic,soPiscIsland);
+audio_play_in_sync_group(groupDynamicMusic,soPiscIsland);
+audio_sound_gain(soPiscIsland,0,0);
+audio_sound_gain(soPiscIsland,0,0);
+audio_sound_gain(soPiscIsland,0,0);
+
+//Här har jag bara bytt ut till piscisland. byt tillbaka om du vill, framtidspetter
+
+//music[1] = soPuddletown1
+//music[2] = soPuddletown2
+//music[3] = soPuddletown3
+
+
+//audio_play_in_sync_group(groupDynamicMusic,soPuddletown1);
+//audio_play_in_sync_group(groupDynamicMusic,soPuddletown2);
+//audio_play_in_sync_group(groupDynamicMusic,soPuddletown3);
+//audio_sound_gain(soPuddletown1,0,0);
+//audio_sound_gain(soPuddletown2,0,0);
+//audio_sound_gain(soPuddletown3,0,0);
+
+
+
+
+
+
 
 //audio_start_sync_group(groupDynamicMusic);
 

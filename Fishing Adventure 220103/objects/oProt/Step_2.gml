@@ -10,3 +10,8 @@ if skipping = true
 	skippingtimer -=d(1)
 }
 
+if global.sailing = true
+{
+	x = oBoat.x
+	y = oBoat.y
+}

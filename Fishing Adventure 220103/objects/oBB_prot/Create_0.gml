@@ -1,0 +1,15 @@
+image_speed = 0
+cheer = 0
+points = 0
+acceptable_range = 5
+freeze = false
+freezeTimer = 60
+color = c_white
+goAgain = 0
+text = ""
+xscale = 0
+yscale = 0
+audio = false
+goBackTimer = 250
+alpha = 0 
+yPos = 0

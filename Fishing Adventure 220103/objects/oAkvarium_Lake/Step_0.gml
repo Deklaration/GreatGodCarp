@@ -27,8 +27,11 @@ if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.
 	
 				if talking = true && createtext = false
 				{
+					var sprite = "sFish" + string(global.fishNames[fish]);
+					show_debug_message(sprite)
 					scrNewTextboxSign(string("Place a ") + string(global.fisharray[fish,4]) + string(" in the tank?"),0)
-					instance_create_depth(x,y,-1,oTankChoice,{tank : id})
+					//scrNewTextboxSign(string("Place a ") + string(global.fisharray[fish,4]) + string("[sFishWhisklash,0] in the tank?"),0)
+					instance_create_depth(x,y,-1,oTankYesNo,{tank : id})
 					createtext = true
 				}
 
@@ -40,9 +43,12 @@ if place_meeting(x,y+20,oProt) && keyboard_check_pressed(global.key_a) && oProt.
 		}
 	}
 	
+
+//show_debug_message(global.fishInTank[fish])
 //Guidar en pil rätt, om man har en fisk
-if scrInventorySearch(oInventory,fish) !=-1 && global.showAquaVistaLight = true && stop = false && global.fishInTank[fish] = -1
+if scrInventorySearch(oInventory,fish) !=-1 && global.showAquaVistaLight = true && stop = false && (global.fishInTank[fish] = -1 || global.fishInTank[fish] = 0)
 		{	
+			show_debug_message("Hej")
 			for (var i = 0; i < array_length(oAquaVistaController.tankGuide); ++i)
 			{
 			    if (oAquaVistaController.tankGuide[i] == id)
@@ -63,6 +69,7 @@ if scrInventorySearch(oInventory,fish) !=-1 && global.showAquaVistaLight = true 
 				stop = true
 			}
 		}
+
 		
 if keyboard_check_pressed(vk_control)
 {

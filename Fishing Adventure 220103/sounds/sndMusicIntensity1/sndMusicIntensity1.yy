@@ -10,7 +10,7 @@
   "bitRate": 320,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 32.005,
+  "duration": 32.0,
   "parent": {
     "name": "Dynamic Music System",
     "path": "folders/Sounds/Dynamic Music System.yy",

@@ -222,6 +222,11 @@ var repetition = string_pos("repetition", oText.textmessage);
 	scrNewDialog()
 	dialog[0] = string(hint) + string("[repetition]")
 	}
+var BUILDBOAT = string_pos("BUILDBOAT", oText.textmessage);
+	if (BUILDBOAT > 0) 
+	{
+	buildboat = true
+	}
 }
 
 

@@ -1,6 +1,5 @@
 
-
-if global.lastroom != 17
+if global.lastroom != global.rAquaVistaTopFloorRoomID
 {
 	global.directionbeforefish = sProt_North
 	global.xbeforefish = 712

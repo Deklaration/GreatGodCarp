@@ -1,3 +1,24 @@
+//Ritar ut aspect ratio-lådor
+if global.cutscenebox = true
+{
+	if cutscenebox < 30
+	{
+	cutscenebox +=1
+	}
+}
+else
+{
+	if cutscenebox >-5
+	{
+	cutscenebox -=2
+	}
+}
+	draw_set_color(global.color[25])
+	draw_rectangle(0,-5,480,cutscenebox,false)
+	draw_rectangle(0,270-cutscenebox,480,275,false)
+	draw_set_color(global.color[19])
+
+//slut på aspect ratio-lådor
 
 if newroom = true
 {

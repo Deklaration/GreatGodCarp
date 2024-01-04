@@ -57,4 +57,5 @@ if global.cutscene1 = true
 {
 	scrCutscene1()
 }
+
 }

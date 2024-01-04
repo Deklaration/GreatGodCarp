@@ -8,8 +8,8 @@ draw_set_valign(fa_top)
 
 var _print = string_copy(text,1,textProgress) //message
 
-draw_text(x1 + textplace, y1+9, _print)
+draw_text_scribble(x1 + textplace, y1+9, _print)
 draw_set_color(c_white)
-draw_text(x1 + textplace, y1+8, _print)
+draw_text_scribble(x1 + textplace, y1+8, _print)
 
 }

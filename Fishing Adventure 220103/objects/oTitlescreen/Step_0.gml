@@ -67,6 +67,11 @@ if choice = 1 && starttext = "" && settings = false
 	scrLoad();
 	room_goto(global.roomsave);
 	}
+	if audio_is_playing(soTitle)
+{
+	show_debug_message("Stäng av musiken")
+audio_stop_sound(soTitle)	
+}
 		//room_goto(global.roomsave)	
 }
 

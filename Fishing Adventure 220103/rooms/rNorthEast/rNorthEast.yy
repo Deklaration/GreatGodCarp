@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rNorthEast",
-  "creationCodeFile": "${project_dir}/rooms/rNorthEast/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rNorthEast/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

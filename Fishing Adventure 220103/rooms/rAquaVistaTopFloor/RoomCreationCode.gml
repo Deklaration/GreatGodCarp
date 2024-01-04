@@ -15,8 +15,10 @@ instance_create_depth(463,335,-1,oProt)
 
 for (var i = 1; i < 4; ++i) { //array_length(global.oceanFish)-1
     
-instance_create_depth(rareAquarium[i,0],rareAquarium[i,1],0,oAkvarium_Ocean,{_fish : i})
+//instance_create_depth(rareAquarium[i,0],rareAquarium[i,1],0,oAkvarium_Ocean,{_fish : i})
 	
 
 }
 
+global.rAquaVistaTopFloorRoomID = room
+global.lastroom = room

@@ -7,6 +7,7 @@ view_height_half = camera_get_view_height(cam) / 2;
 xTo = xstart;
 yTo = ystart;
 followprot = false
+disable = false
 
 shakelenght = 0;
 shakemagnitude = 0;

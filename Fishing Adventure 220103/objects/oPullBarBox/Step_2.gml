@@ -7,8 +7,6 @@ else
 	if instance_exists(oBete)
 	{
 		x = sine_wave(current_time / 1000, oBete.baitpower, 18,oPull.x) //Den här ska förändras baserat på fisken
-		//x = sine_wave(current_time / (oBete.fiskid.fighttimer), oBete.baitpower, 18,oPull.x) //Den här ska förändras baserat på fisken
-		//x = sine_wave(current_time / (oBete.fiskid.fighttimer), 1, oBete.fiskid.fightsize,oPull.x) //Den här ska förändras baserat på fisken
 	}
 y = oPull.y
 }

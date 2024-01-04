@@ -43,7 +43,7 @@ global.baitNumber = [
 
 var baitDescriptions = [
 	"", // Placeholder
-	"It's just a worm on a safety pin.", // Zippy Nibble
+	"It's a worm on a safety pin. He's pretty cute.", // Zippy Nibble
 	"This doesn't seem very tasty...", // Murk Munch
 	"Bubbles and burps in water!", // Froth Flyer
 	"Rolls around! Look at it go!", // Rolly Polly
