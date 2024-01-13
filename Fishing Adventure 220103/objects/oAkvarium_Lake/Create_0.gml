@@ -7,7 +7,7 @@ depth = -y-10
 image_speed = 0
 
 
-skylt = instance_create_depth(x+28,y+8,self.depth-3,oAkvariumSkylt,{tank : id})
+skylt = instance_create_depth(x+28,y+7,self.depth-3,oAkvariumSkylt,{tank : id})
 
 fish = global.lakeFishNumber[_fish]
 

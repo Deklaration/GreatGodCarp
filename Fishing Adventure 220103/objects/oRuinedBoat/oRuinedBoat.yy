@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sRuinedBoat",
-    "path": "sprites/sRuinedBoat/sRuinedBoat.yy",
+    "name": "sBB_boat",
+    "path": "sprites/sBB_boat/sBB_boat.yy",
   },
   "spriteMaskId": null,
   "visible": true,

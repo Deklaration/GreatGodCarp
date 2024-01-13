@@ -245,7 +245,23 @@
 -451,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsBrygga","path":"tilesets/tsBrygga/tsBrygga.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[
 -3600,0,],"TileDataFormat":1,},"tilesetId":{"name":"tsTrees","path":"tilesets/tsTrees/tsTrees.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Water","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[
+-44,6,1,25,-15,26,-44,6,3,31,32,23,-13,26,-46,6,2,31,23,-12,26,-30,6,4,19,20,20,21,-12,6,2,19,29,-12,26,-25,6,10,19,20,20,21,19,29,26,26,28,21,-7,6,1,19,-3,20,1,29,-13,26,-24,6,
+6,19,29,26,26,28,29,-4,26,1,27,-7,6,1,25,-17,26,-22,6,3,19,20,29,-9,26,1,28,-7,20,1,29,-17,26,-22,6,1,25,-37,26,-22,6,1,25,-37,26,-21,2,2,3,25,-37,26,-21,8,2,9,25,-37,26,-4,
+14,3,5,8,4,-14,14,2,15,25,-37,26,-4,6,3,7,8,9,-15,6,1,25,-37,26,-4,6,3,7,8,9,-15,6,1,25,-37,26,-4,6,3,7,8,9,-15,6,1,25,-37,26,-4,6,3,7,8,9,-9,6,7,19,20,20,
+21,6,6,25,-37,26,-4,6,3,7,8,9,-7,6,9,19,20,29,26,26,27,6,6,25,-37,26,-4,6,3,7,8,9,-6,6,2,19,29,-4,26,4,28,20,20,29,-37,26,-4,6,3,7,8,9,-5,6,2,19,29,-46,26,-4,
+6,3,7,8,9,-5,6,1,25,-47,26,-4,6,3,7,8,9,-5,6,1,25,-47,26,-4,6,3,7,8,9,-5,6,2,31,23,-46,26,-4,6,3,7,8,9,-6,6,2,31,23,-26,26,1,22,-3,32,1,23,-14,26,-4,6,3,
+7,8,9,-7,6,2,31,23,-24,26,2,22,33,-3,6,1,25,-14,26,-4,6,3,7,8,9,-8,6,2,31,23,-23,26,1,27,-4,6,1,25,-14,26,-4,6,3,7,8,9,-9,6,1,25,-22,26,2,22,33,-4,6,1,25,-14,
+26,-4,6,3,7,8,9,-9,6,1,25,-20,26,3,22,32,33,-5,6,1,25,-14,26,-4,6,3,7,8,9,-9,6,1,25,-19,26,2,22,33,-7,6,1,25,-14,26,-4,6,3,7,8,9,-9,6,1,25,-18,26,2,22,33,-8,
+6,2,31,23,-13,26,-4,6,3,7,8,9,-9,6,1,25,-18,26,1,27,-10,6,1,25,-13,26,-4,6,3,7,8,9,-9,6,1,25,-18,26,1,27,-10,6,1,25,-13,26,-4,6,3,7,8,9,-9,6,1,25,-18,26,1,27,
+-9,6,2,19,29,-13,26,-4,6,3,7,8,9,-9,6,1,25,-18,26,1,27,-8,6,2,19,29,-14,26,-4,2,3,11,8,10,-8,2,2,3,25,-18,26,1,27,-8,6,1,25,-15,26,-15,8,2,9,25,-18,26,1,27,-8,6,
+1,25,-15,26,-15,14,2,15,25,-18,26,1,27,-8,6,1,25,-15,26,-16,6,1,25,-18,26,1,27,-7,6,2,19,29,-15,26,-14,6,3,19,20,29,-18,26,1,27,-6,6,2,19,29,-16,26,-14,6,1,25,-20,26,1,27,-6,
+6,1,25,-17,26,-14,6,1,25,-20,26,1,27,-4,6,3,19,20,29,-17,26,-5,20,1,21,-6,6,3,19,20,29,-20,26,1,28,-4,20,1,29,-24,26,2,28,21,-5,6,1,25,-53,26,7,27,6,6,19,20,20,29,-53,26,
+4,28,21,19,29,-57,26,2,28,29,-64,26,1,22,-6,32,1,23,-52,26,1,27,-6,6,2,31,23,-40,26,1,22,-10,32,1,33,-7,6,1,25,-39,26,2,22,33,-18,6,2,31,23,-37,26,2,32,33,-5,6,1,1,-14,2,
+1,3,-37,26,-7,6,1,7,-14,8,1,9,-37,26,-7,6,3,7,8,4,-12,14,1,15,-37,26,-7,6,3,7,8,9,-12,6,1,25,-37,26,-7,6,3,7,8,9,-12,6,4,31,32,32,23,-34,26,-7,6,3,7,8,9,-15,
+6,2,31,23,-33,26,-7,6,3,7,8,9,-16,6,1,31,-6,32,1,23,-26,26,-7,6,3,7,8,9,-23,6,2,31,23,-25,26,-7,6,3,7,8,9,-24,6,1,25,-25,26,-7,6,3,7,8,9,-24,6,1,25,-25,26,-7,
+6,3,7,8,9,-24,6,1,25,-25,26,],"TileDataFormat":1,},"tilesetId":{"name":"tsSand2","path":"tilesets/tsSand2/tsSand2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Water","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[
 -22,0,2,3,28,-6,6,-23,0,1,2,-6,6,-12,0,1,1,-4,5,1,9,-3,0,3,1,5,29,-6,6,-11,
 0,2,1,29,-4,6,1,24,-3,5,1,29,-8,6,-11,0,1,29,-18,6,-11,0,1,2,-18,6,-11,0,1,2,
 -18,6,-11,0,1,2,-18,6,-7,0,5,1,5,9,0,2,-18,6,-6,0,6,1,29,6,24,5,29,-18,6,-6,
@@ -257,14 +273,14 @@
 6,24,9,0,1,5,29,-25,6,4,24,5,29,23,-3,7,1,28,-19,6,1,23,-5,7,1,11,-3,0,1,3,
 -19,6,1,11,-10,0,-19,6,-11,0,-19,6,-11,0,3,3,7,28,-16,6,-13,0,1,3,-3,7,1,28,-12,6,
 -17,0,1,2,-12,6,-17,0,1,2,-12,6,],"TileDataFormat":1,},"tilesetId":{"name":"tsWaterGrass","path":"tilesets/tsWaterGrass/tsWaterGrass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[
 -88,17,-2,0,-28,17,2,0,17,-11,5,1,9,-14,17,-3,0,1,17,-3,7,2,29,24,-6,7,2,26,12,-10,
 17,-5,0,2,17,0,-3,17,2,2,10,-18,17,-2,0,1,17,-3,0,-4,17,2,2,10,-18,17,-2,0,-2,17,
 1,0,-5,17,2,2,10,-28,17,2,2,10,-28,17,2,2,10,-28,17,2,2,10,-28,17,2,2,10,-25,17,-3,
 5,2,30,10,-25,17,-3,7,2,29,10,-28,17,2,2,10,-28,17,2,2,25,-3,5,1,9,-24,17,1,3,-4,
 7,1,11,-207,17,1,1,-4,5,1,0,-23,17,3,1,30,24,-3,7,1,0,-22,17,4,1,30,24,11,-22,17,
 -4,5,3,30,24,11,-23,17,-5,7,1,11,-54,17,],"TileDataFormat":1,},"tilesetId":{"name":"tsSandGrass","path":"tilesets/tsSandGrass/tsSandGrass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
     "name": "Pisc Island",

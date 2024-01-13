@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sAkvariumSkylt",
-  "bbox_bottom": 9,
+  "bbox_bottom": 8,
   "bbox_left": 0,
-  "bbox_right": 20,
+  "bbox_right": 13,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d30cf64-0710-4d75-861d-0703f3f56f86",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34d11b6c-5921-4887-ac30-a3c64cc83ed5",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 10,
+  "height": 9,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"83a4f741-681a-455e-93dd-747318ad181a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e902ca97-b4b2-4515-8910-67d47f283868","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0d30cf64-0710-4d75-861d-0703f3f56f86","path":"sprites/sAkvariumSkylt/sAkvariumSkylt.yy",},},},"Disabled":false,"id":"696bb5d4-e7c3-41a4-8ff6-5603c586199c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34d11b6c-5921-4887-ac30-a3c64cc83ed5","path":"sprites/sAkvariumSkylt/sAkvariumSkylt.yy",},},},"Disabled":false,"id":"b66aa5df-95df-4854-8e5a-f6df7528a183","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 10,
-    "yorigin": 5,
+    "xorigin": 7,
+    "yorigin": 4,
   },
   "swatchColours": [
     4278190335,
@@ -149,5 +149,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 21,
+  "width": 14,
 }

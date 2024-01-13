@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sBird",
-    "path": "sprites/sBird/sBird.yy",
+    "name": "sBird2",
+    "path": "sprites/sBird2/sBird2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,10 +1,14 @@
 if (live_call()) return live_result;
 depth =-y
-
 scrTalkToObject()
 
 if talking = true
 {
+	if setsail = false
+	{
+		image_index =  0
+		setsail = true
+	}
 	oProt.disable = true
 	sprite_index = sSetSail
 	image_speed = 0.04

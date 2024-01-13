@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sCaveSkeleton",
-  "bbox_bottom": 161,
-  "bbox_left": 1,
-  "bbox_right": 248,
-  "bbox_top": 27,
+  "bbox_bottom": 143,
+  "bbox_left": 30,
+  "bbox_right": 242,
+  "bbox_top": 21,
   "bboxMode": 0,
   "collisionKind": 0,
   "collisionTolerance": 0,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50d27124-f8b1-4345-8001-98b0d0c677be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b47f75d-71e3-4bab-8d05-311ed5a0c234",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"50d27124-f8b1-4345-8001-98b0d0c677be","path":"sprites/sCaveSkeleton/sCaveSkeleton.yy",},},},"Disabled":false,"id":"e7f4ec6a-c7d4-4c3a-a4c8-818cdaf34064","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b47f75d-71e3-4bab-8d05-311ed5a0c234","path":"sprites/sCaveSkeleton/sCaveSkeleton.yy",},},},"Disabled":false,"id":"81fdf3fd-2a3b-40d3-a1ee-020bee8f5ac1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

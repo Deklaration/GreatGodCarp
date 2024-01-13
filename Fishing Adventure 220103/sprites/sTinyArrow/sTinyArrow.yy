@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60b64f9c-8ced-4f60-810a-3a7caaa0a35c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e785da74-204e-49fb-83c2-afebb0f17d4a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"44224e83-eaa2-40ab-ad49-d1b549bb1460",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"786c3582-bd7b-4daf-b309-f31c75b6c332",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"60b64f9c-8ced-4f60-810a-3a7caaa0a35c","path":"sprites/sTinyArrow/sTinyArrow.yy",},},},"Disabled":false,"id":"7fc3a38f-575a-431a-9b6e-6e5ae4a12bcb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e785da74-204e-49fb-83c2-afebb0f17d4a","path":"sprites/sTinyArrow/sTinyArrow.yy",},},},"Disabled":false,"id":"d116bd87-a4e4-42b2-978b-8c1a9e2ed31b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"44224e83-eaa2-40ab-ad49-d1b549bb1460","path":"sprites/sTinyArrow/sTinyArrow.yy",},},},"Disabled":false,"id":"ea48694c-7e1b-444e-9960-4a9a7c947a2d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"786c3582-bd7b-4daf-b309-f31c75b6c332","path":"sprites/sTinyArrow/sTinyArrow.yy",},},},"Disabled":false,"id":"b85dde28-274d-4559-afac-19f7a36533b4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

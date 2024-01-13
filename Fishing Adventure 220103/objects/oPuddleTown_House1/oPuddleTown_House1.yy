@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sHousetest",
-    "path": "sprites/sHousetest/sHousetest.yy",
+    "name": "sHousetest3",
+    "path": "sprites/sHousetest3/sHousetest3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

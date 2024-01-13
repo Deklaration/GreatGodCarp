@@ -99,23 +99,23 @@ if keyboard_check_pressed(vk_shift) && global.guineapig = false
 	
 	if save_sprite = sProt_North
 	{
-		sprite_index = sProt_North_Skip
+		//sprite_index = sProt_North_Skip
 	}
 	if save_sprite = sProt_NorthEast
 	{
-		sprite_index = sProt_NorthEast_Skip
+		//sprite_index = sProt_NorthEast_Skip
 	}
 	if save_sprite = sProt_South
 	{
-		sprite_index = sProt_South_Skip
+		//sprite_index = sProt_South_Skip
 	}
 	if save_sprite = sProt_SouthWest
 	{
-		sprite_index = sProt_SouthWest_Skip
+		//sprite_index = sProt_SouthWest_Skip
 	}
 	if save_sprite = sProt_West
 	{
-		sprite_index = sProt_West_Skip
+		//sprite_index = sProt_West_Skip
 	}
 	skipping = true
 	max_speed = 3

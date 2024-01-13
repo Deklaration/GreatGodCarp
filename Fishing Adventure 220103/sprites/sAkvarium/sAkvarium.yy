@@ -5,7 +5,7 @@
   "bbox_bottom": 47,
   "bbox_left": 0,
   "bbox_right": 85,
-  "bbox_top": 34,
+  "bbox_top": 32,
   "bboxMode": 2,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d168276-1f62-4f0f-bd14-932f5ed5d35e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4eb1be35-d639-47d0-a7c7-5b04df993a6f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"323e43be-cb64-4a1f-a4d6-deb9e5ebedc5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c76be32-336d-4551-b808-aa7317ad4c1d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"96cc7d04-e394-4e1f-9d94-1935e0887a2b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aed331fa-f95a-4dc9-a2cd-d48bb4717400","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0d168276-1f62-4f0f-bd14-932f5ed5d35e","path":"sprites/sAkvarium/sAkvarium.yy",},},},"Disabled":false,"id":"1fbf836b-c1a8-477a-bf36-eeabefa7d9dd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4eb1be35-d639-47d0-a7c7-5b04df993a6f","path":"sprites/sAkvarium/sAkvarium.yy",},},},"Disabled":false,"id":"a6c85c9f-674b-466c-88cf-2a57489bdfe6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"323e43be-cb64-4a1f-a4d6-deb9e5ebedc5","path":"sprites/sAkvarium/sAkvarium.yy",},},},"Disabled":false,"id":"1aa1917b-84c9-4c6c-93a2-33a9890d5d7a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4c76be32-336d-4551-b808-aa7317ad4c1d","path":"sprites/sAkvarium/sAkvarium.yy",},},},"Disabled":false,"id":"339c9035-468d-4246-8e17-b06635c1f71f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

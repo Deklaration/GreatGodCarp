@@ -1,5 +1,6 @@
 talking = false
 
+image_speed = 0.2
 
 wind_strength = random_range(1, 10); // Wind strength
 boat_direction = 0; // Initialize boat direction
@@ -13,3 +14,4 @@ wind_direction = 350
 boat_direction = 0; // Starting facing east
 move_speed = 0
 wind_boost = 0
+setsail = false
