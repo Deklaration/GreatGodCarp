@@ -10,13 +10,13 @@ else
 {
 	global.directionbeforefish = sProt_South
 	global.xbeforefish = 712
-	global.ybeforefish = 381
+	global.ybeforefish = 381-16
 	instance_create_depth(712,381,-1,oProt)
 }
 
 if global.cutscene2 = true
 	{
-	instance_create_depth(712,499,-1,oMrDaugava)	
+	instance_create_depth(720,480,-1,oMrDaugava)	
 	}
 	
 	oceanAquarium[0,0] = 0
