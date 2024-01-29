@@ -49,7 +49,7 @@ if shake = true
     if shake_duration > 0 
 	{
         // Randomly adjust position
-        x += irandom_range(-shake_intensity, shake_intensity);
+        drawx += irandom_range(-shake_intensity, shake_intensity);
         //y += irandom_range(-shake_intensity, shake_intensity);
 		//show_debug_message(shake_duration)
         shake_duration-=1
@@ -58,7 +58,7 @@ if shake = true
 	{
         // Reset position and stop shaking
 		shake = false
-        x = original_x;
-        y = original_y;
+        drawx = original_x;
+        drawy = original_y;
     }
 }

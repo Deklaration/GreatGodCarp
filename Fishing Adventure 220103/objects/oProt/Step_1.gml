@@ -11,6 +11,8 @@ if global.paused = true
 //Kläderna roteras tillsammans med gubben
 rotation = image_angle
 
+//Pushed from wall
+scrWallPusher()
 
 //WORSHIP THE GROUND I'M STANDING ON
 if place_meeting(x,y,oGrass) {
@@ -46,7 +48,7 @@ if place_meeting(x,y-2,oWaterspot) && sprite_index = sProt_North && keyboard_che
 scrStartFishing()
 }
 
-if place_meeting(x,y+2,oWaterspot) && sprite_index = sProt_South && keyboard_check_pressed(global.key_a)
+if place_meeting(x,y+2,oWaterspot) && sprite_index = sProt_South && keyboard_check_pressed(global.key_a) && !place_meeting(x,y+4,oBoat)
 {
 scrStartFishing()
 }

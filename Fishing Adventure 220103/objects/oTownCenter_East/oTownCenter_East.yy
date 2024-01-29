@@ -12,7 +12,10 @@
     "name": "Screenmove",
     "path": "folders/Objects/Controllers/Screenmove.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oScreenmove_parent",
+    "path": "objects/oScreenmove_parent/oScreenmove_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

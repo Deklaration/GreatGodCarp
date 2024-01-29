@@ -4,7 +4,7 @@
 depth = -y
 scrTalkToObject()
 
-if talking = true
+if talking = true && room = rMurmurWoods
 {
 global.gotBark = true	
 scrInventoryAdd(oKeyInventory,enumItem.Bark)

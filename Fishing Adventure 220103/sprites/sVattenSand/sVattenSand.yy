@@ -4,7 +4,7 @@
   "name": "sVattenSand",
   "bbox_bottom": 191,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 143,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -20,6 +20,8 @@
   "height": 192,
   "HTile": false,
   "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"73c692ca-ca2d-4799-a2e7-687a7ff0f81c","blendMode":0,"displayName":"pasteLayer","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c7dece0d-c593-478c-95b5-1d140cc5c303","blendMode":0,"displayName":"pasteLayer","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"db142e71-b3af-4c31-956e-757cb25389db","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
@@ -70,5 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 96,
+  "width": 146,
 }

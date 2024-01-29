@@ -15,5 +15,3 @@ if global.guineapig = true
 draw_sprite_ext(sprite_index,image_index,x,y,xscale,1,rotation,skincolor,image_alpha)	
 }
 
-//draw_text(x,y+20,x)
-//draw_text(x,y+40,y)

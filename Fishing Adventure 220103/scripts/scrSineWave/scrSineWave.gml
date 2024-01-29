@@ -16,3 +16,10 @@ x is time (increasing constantly)
 2pi is a mathematical constant (it's the circumference of a circle with radius 1)
 period is how long one cycle of the sine wave takes
 amplitude is how high up and down the sine wave goes
+
+
+*/
+function draw_col()
+{
+	draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,false);
+}

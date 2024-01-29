@@ -1,6 +1,6 @@
 depth = 50
-image_speed = 0
-image_index = irandom_range(0,3)
+image_speed = 0.3
+//image_index = irandom_range(0,3)
 speedbeforepaused = 0
 gettingspeedbeforepaused = false
 settingpath_speed = true

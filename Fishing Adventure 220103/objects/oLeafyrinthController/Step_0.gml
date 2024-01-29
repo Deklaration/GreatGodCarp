@@ -135,7 +135,7 @@ if (fadingOut) {
         if (uniqueMoveCount >= 10) && dir = "up" {
 			clearing = true
 			global.directionbeforefish = sProt_North
-			global.lastroom = rDarkAlley
+			global.lastroom = rGreatForest
 			global.exitx = 704
 			global.exity = 1210
 			global.cutscene = false

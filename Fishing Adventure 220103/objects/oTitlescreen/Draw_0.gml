@@ -1,7 +1,23 @@
-scrDrawSet(fTitle,c_black,fa_center)
-draw_text(room_width / 2,room_height / 10,"GREAT GOD CARP")
-scrDrawSet(fTitle,c_white,fa_center)
-draw_text(room_width / 2,room_height / 10 - 1,"GREAT GOD CARP")
+//scrDrawSet(fTitle,c_black,fa_center)
+//draw_text(room_width / 2,room_height / 10,"GREAT GOD CARP")
+//scrDrawSet(fTitle,c_white,fa_center)
+//draw_text(room_width / 2,room_height / 10 - 1,"GREAT GOD CARP")
+if (live_call()) return live_result;
+
+
+
+if settings = true
+{
+	draw_sprite_ext(sLogo,0,room_width / 2,room_height / 2 - 55,0.15,0.15,0,c_white,1)
+}
+if settings = false && starttext != "Press " + string(oGame.keyboard[global.key_a]) + " to start"
+{
+	draw_sprite_ext(sLogo,0,room_width / 2,room_height / 2 - 40,0.18,0.18,0,c_white,1)
+}
+if starttext = "Press " + string(oGame.keyboard[global.key_a]) + " to start" 
+{
+	draw_sprite_ext(sLogo,0,room_width / 2,room_height / 2 - 20,0.2,0.2,0,c_white,1)
+}
 
 scrDrawSet(fStandard,c_white,fa_center)
 draw_text_ext_color(room_width/2,room_height - (room_height / 10) ,starttext,20,1000,c_white,c_white,c_white,c_white,blinkingtext)

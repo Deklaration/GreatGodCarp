@@ -2,7 +2,7 @@ if (live_call()) return live_result;
 depth =-y;
 
 scrTalkToNPC()
-if x != 745 && room = rDarkAlley
+if x != 745 && room = rMurmurWoods
 {
 if distance_to_object(oProt) < 40
 {

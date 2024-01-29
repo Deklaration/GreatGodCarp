@@ -6,6 +6,8 @@ image_index = 2
 image_speed = 0
 original_x = x;
 original_y = y;
+drawx = x
+drawy = y
 shake = false
 shake_duration = 30
 

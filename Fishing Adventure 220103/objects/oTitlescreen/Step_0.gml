@@ -1,3 +1,5 @@
+if (live_call()) return live_result;
+
 //Blinking effect
 if blinkingtext > 1.1 
 {
@@ -32,6 +34,7 @@ if keyboard_check_pressed(global.key_up)
 	if choice > 1
 {
 	choice--;
+	audio_play_sound(soBoop,1,false)
 }
 }
 if keyboard_check_pressed(global.key_down)
@@ -39,11 +42,13 @@ if keyboard_check_pressed(global.key_down)
 	if choice < 3 && settings = false
 {
 	choice++;
+	audio_play_sound(soBoop,1,false)
 }
 
 	if choice < 4 && settings = true
 {
 	choice++;
+	audio_play_sound(soBoop,1,false)
 }
 }
 }
@@ -54,6 +59,7 @@ if keyboard_check_pressed(global.key_down)
 
 if keyboard_check_pressed(global.key_a)
 {
+	audio_play_sound(soBeep,1,false)
 	//STARTVAL
 
 if choice = 1 && starttext = "" && settings = false

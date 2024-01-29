@@ -8,3 +8,5 @@ mouthmove = sRunePortraitMouth
 dialog[0] = "First textbox"
 dialog[1] = "Second textbox"
 dialog[2] = "Third textbox"
+
+instance_destroy(self)

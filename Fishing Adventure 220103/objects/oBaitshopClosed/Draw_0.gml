@@ -1,0 +1,1 @@
+draw_sprite(sprite_index,2,drawx,drawy)
