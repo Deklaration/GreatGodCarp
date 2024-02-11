@@ -23,11 +23,11 @@ if timer < 0
 {
 	if global.fiskesida = "right"
 	{
-	instance_create_depth(room_width+20,random_range(0,oWater.y-10),0,oBird) 
+	instance_create_depth(room_width+20,random_range(0,oWater.y-20),0,oBird) 
 	}
 	if global.fiskesida = "left"
 	{
-	instance_create_depth(-20,random_range(0,oWater.y-10),0,oBird) 
+	instance_create_depth(-20,random_range(0,oWater.y-20),0,oBird) 
 	}
 	
 	timer = irandom_range(40,800)

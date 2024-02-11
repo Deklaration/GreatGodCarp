@@ -1,1 +1,0 @@
-global.searchedTheCave = !global.searchedTheCave

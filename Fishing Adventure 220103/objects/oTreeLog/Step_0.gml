@@ -1,4 +1,5 @@
-depth =-y;
+if (live_call()) return live_result;
+depth =-y+2;
  if global.paused=false && global.cutscene=false && global.textbox=false && oProt.disable=false && !instance_exists(oText) {
 
 

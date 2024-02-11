@@ -70,63 +70,7 @@ oWater.wavespeed = 0
 	instance_create_depth(0,0,0,oNothing) //Placeholderobjekt
 
 
+//Test för att få in massa Whisklashes
 
 //Skapa fiskarna!
 scrCreateFish()
-/*
-
-if global.lastroom = rBeachside
-{
-	for (var i = 0; i < irandom_range(3,6); i += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,global.fisharray[irandom_range(2,50),0])	//Skapar fisk1
-	//instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,oFishLakelight)	//Skapar fisk1
-	}
-
-for (var j = i; j < irandom_range(i,8); j += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),j,oFishMuddweller) //Skapar fisk2
-	}
-
-for (var k = j; k < irandom_range(j,10); k += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),k,oFishWhisklash) //Skapar fisk3
-	}
-}
-/*
-
-if global.lastroom = rTownCenter
-{
-	for (var i = 0; i < irandom_range(3,6); i += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,oFish1)	//Skapar fisk1
-	}
-
-for (var j = i; j < irandom_range(i,8); j += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),j,oFish2) //Skapar fisk2
-	}
-
-for (var k = j; k < irandom_range(j,10); k += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),k,oFish3) //Skapar fisk3
-	}
-	
-for (var l = k; l < irandom_range(k,10); l += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),l,oFish4) //Skapar fisk4
-	}
-}
-
-if global.lastroom = rEastBeach
-{
-	for (var i = 0; i < irandom_range(3,6); i += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),i,oFish5)	//Skapar fisk5
-	}
-
-	for (var j = i; j < irandom_range(i,18); j += 1)
-	{
-	instance_create_depth(random_range(25,oDock.x-30),random_range(oWater.y+25,oMark.y-25),j,oFish6) //Skapar fisk6
-	}
-}

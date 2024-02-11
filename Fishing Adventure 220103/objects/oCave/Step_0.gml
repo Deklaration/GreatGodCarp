@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 if scrStackSearch(oInventory,enumFish.Weedsnout) < 6
 {
     if (point_distance(x, y, oProt.x, oProt.y) < player_distance) {
@@ -11,9 +12,15 @@ else
 
 if state = "goodbye"
 {
+	if cliff = false
+	{
+	instance_create_depth(x-16,y-31,0,oCliffs)
+	cliff = true
+	}
 	image_alpha -=0.1
 	if image_alpha < 0
 	{
+		
 		instance_destroy(self)
 	}
 }
